@@ -738,8 +738,8 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.col-span-full{
-  grid-column: 1 / -1;
+.col-span-6{
+  grid-column: span 6 / span 6;
 }
 
 .float-start{
@@ -840,8 +840,20 @@ video {
   margin-top: 1rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mt-auto{
   margin-top: auto;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .box-border{
@@ -958,11 +970,6 @@ video {
   height: 4rem;
 }
 
-.size-4{
-  width: 1rem;
-  height: 1rem;
-}
-
 .size-8{
   width: 2rem;
   height: 2rem;
@@ -1073,6 +1080,10 @@ video {
   max-width: 32rem;
 }
 
+.max-w-40{
+  max-width: 10rem;
+}
+
 .flex-none{
   flex: none;
 }
@@ -1087,10 +1098,6 @@ video {
 
 .shrink{
   flex-shrink: 1;
-}
-
-.shrink-0{
-  flex-shrink: 0;
 }
 
 .flex-grow{
@@ -1447,8 +1454,12 @@ video {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.grid-cols-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1676,10 +1687,6 @@ video {
 .gap-x-\[2px\]{
   -moz-column-gap: 2px;
        column-gap: 2px;
-}
-
-.gap-y-2{
-  row-gap: 0.5rem;
 }
 
 .gap-y-3{
@@ -2158,6 +2165,11 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-gray-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 .border-red-600{
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
@@ -2190,6 +2202,11 @@ video {
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-theme1{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-theme2{
@@ -3557,14 +3574,23 @@ body{
   transform: translateY(-50%);
 }
 
+.hover\:bg-\[\#0a66c2\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 102 194 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#365899\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 88 153 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-theme1:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 0 0 / var(--tw-bg-opacity));
+.hover\:bg-theme1\/80:hover{
+  background-color: rgb(254 0 0 / 0.8);
 }
 
 .hover\:bg-violet-400:hover{
@@ -3572,8 +3598,9 @@ body{
   background-color: rgb(167 139 250 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-white\/10:hover{
-  background-color: rgb(255 255 255 / 0.1);
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover{
@@ -3597,6 +3624,11 @@ body{
 
 .hover\:font-bold:hover{
   font-weight: 700;
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-200:hover{
@@ -3642,10 +3674,6 @@ body{
   width: 100%;
 }
 
-.focus\:bg-white\/10:focus{
-  background-color: rgb(255 255 255 / 0.1);
-}
-
 .focus\:text-gray-200:focus{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -3666,14 +3694,6 @@ body{
 
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
-}
-
-.disabled\:pointer-events-none:disabled{
-  pointer-events: none;
-}
-
-.disabled\:opacity-50:disabled{
-  opacity: 0.5;
 }
 
 .group:hover .group-hover\:visible{
@@ -3758,10 +3778,6 @@ body{
     margin-top: 3rem;
   }
 
-  .sm\:flex{
-    display: flex;
-  }
-
   .sm\:w-1\/2{
     width: 50%;
   }
@@ -3770,16 +3786,8 @@ body{
     max-width: 36rem;
   }
 
-  .sm\:items-center{
-    align-items: center;
-  }
-
-  .sm\:justify-between{
-    justify-content: space-between;
-  }
-
-  .sm\:gap-y-0{
-    row-gap: 0px;
+  .sm\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .sm\:text-base{
@@ -3798,6 +3806,11 @@ body{
 }
 
 @media (min-width: 768px){
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -3823,8 +3836,8 @@ body{
     max-width: 42rem;
   }
 
-  .md\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-12{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md\:py-16{
