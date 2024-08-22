@@ -738,10 +738,6 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.col-span-6{
-  grid-column: span 6 / span 6;
-}
-
 .float-start{
   float: inline-start;
 }
@@ -844,16 +840,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-auto{
-  margin-top: auto;
-}
-
-.mt-12{
-  margin-top: 3rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-auto{
+  margin-top: auto;
 }
 
 .box-border{
@@ -1072,16 +1064,20 @@ video {
   width: 100%;
 }
 
+.w-0{
+  width: 0px;
+}
+
+.max-w-40{
+  max-width: 10rem;
+}
+
 .max-w-7xl{
   max-width: 80rem;
 }
 
 .max-w-lg{
   max-width: 32rem;
-}
-
-.max-w-40{
-  max-width: 10rem;
 }
 
 .flex-none{
@@ -1452,10 +1448,6 @@ video {
 
 .grid-cols-12{
   grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-cols-3{
@@ -2223,6 +2215,15 @@ video {
   background-color: rgb(255 255 255 / 0.6);
 }
 
+.bg-transparent{
+  background-color: transparent;
+}
+
+.bg-teal-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2561,6 +2562,11 @@ video {
   line-height: 1rem;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2649,6 +2655,10 @@ video {
   line-height: 110% !important;
 }
 
+.leading-tight{
+  line-height: 1.25;
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
@@ -2713,6 +2723,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -2757,6 +2772,16 @@ video {
 .subpixel-antialiased{
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.placeholder-white::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-white::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
 .opacity-0{
@@ -3574,16 +3599,6 @@ body{
   transform: translateY(-50%);
 }
 
-.hover\:bg-\[\#0a66c2\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 102 194 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#365899\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(54 88 153 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -3591,6 +3606,16 @@ body{
 
 .hover\:bg-theme1\/80:hover{
   background-color: rgb(254 0 0 / 0.8);
+}
+
+.hover\:bg-theme3:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 102 194 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-theme4:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 88 153 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-violet-400:hover{
@@ -3601,6 +3626,11 @@ body{
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover{
@@ -3672,6 +3702,28 @@ body{
 .hover\:after\:w-full:hover::after{
   content: var(--tw-content);
   width: 100%;
+}
+
+.focus\:rounded-none:focus{
+  border-radius: 0px;
+}
+
+.focus\:border-2:focus{
+  border-width: 2px;
+}
+
+.focus\:border-b-2:focus{
+  border-bottom-width: 2px;
+}
+
+.focus\:border-white:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.focus\:border-b-blue-500:focus{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
 .focus\:text-gray-200:focus{
@@ -3895,10 +3947,6 @@ body{
 }
 
 @media (min-width: 1024px){
-  .lg\:col-span-3{
-    grid-column: span 3 / span 3;
-  }
-
   .lg\:col-span-6{
     grid-column: span 6 / span 6;
   }
@@ -3921,10 +3969,6 @@ body{
 
   .lg\:max-w-3xl{
     max-width: 48rem;
-  }
-
-  .lg\:grid-cols-12{
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .lg\:px-8{
