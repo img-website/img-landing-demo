@@ -9,12 +9,12 @@
 </head>
 <body>
   <!-- header start  -->
-  <header class="relative bg-white py-2 z-[9999]">
+  <header class="relative bg-white py-2 z-[9999] ">
     <!-- top header  -->
      <!-- top header  -->
       <div class="flex items-center justify-between mx-auto max-w-7xl lg:px-8 px-6">
         <div class="">
-          <img src="../assets/img/logo.png" alt="logo">
+          <img src="./assets/img/logo.png" alt="logo">
         </div>
         <div class="searchbar -mr-40">
           <div class="flex items-center border border-gray-300 rounded-full overflow-hidden p-1 h-10">
@@ -339,7 +339,7 @@
       <!-- bottom header  -->
       <div class="max-w-7xl mx-auto py-3 px-6 lg:px-8 ">
         <div class="flex items-center justify-between relative">
-          <a href="http://localhost/edoovi/" class="md:size-10 *:size-full">
+          <a href="" class="md:size-10 *:size-full">
           <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6Z" fill="currentColor"></path><path d="M4 18C4 17.4477 4.44772 17 5 17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H5C4.44772 19 4 18.5523 4 18Z" fill="currentColor"></path><path d="M5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H13C13.5523 13 14 12.5523 14 12C14 11.4477 13.5523 11 13 11H5Z" fill="currentColor"></path></svg>
           </a>
 
@@ -354,7 +354,7 @@
                               </svg>
                           </span>
                       </a>
-                      <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-100 i nvisible duration-300 !w-full left-0 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible h-96">
+                      <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible h-96">
                         <div class="flex flex-wrap items-center h-full">
                           <div class="w-1/3 h-full">
                             <div class="flex items-center justify-center flex-col h-full gap-3 relative after:absolute  after:right-0 after:top-1/2 after:[transform:translateY(-50%)] after:h-52 after:w-1 after:bg-gradient-to-tr after:from-blue-500 after:via-red-500 after:to-blue-500">
@@ -366,20 +366,57 @@
                               <div class="text-4xl font-bold bg-gradient-to-tr from-blue-700 to-red-700 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">Who We Are</div>
                             </div>
                           </div>
-                          <div class="w-4/6">
-                            <div class="flex flex-col pt-4">
-                              <div class="flex flex-wrap justify-center gap-2 py-5 text-balance 2xl:max-w-5xl xl:max-w-4xl lg:max-w-3xl md:max-w-2xl sm:max-w-xl max-w-lg mx-auto *:relative *:font-semibold *:md:text-sm *:text-xs *:flex *:backdrop-blur-xl *:text-black/80 *:bg-white/10 *:border-2 *:border-white/10 *:hover:border-white/20 *:items-center *:gap-x-2 *:rounded-full *:md:pr-4 *:pr-3 *:pl-3 *:py-1 *:*:size-2 *:*:lg:size-2.5 *:*:opacity-90">
-                                <ul>
+                          <div class="w-4/6 ps-20">
+                            <div class="flex flex-wrpa gap-20">
+                              <div>
+                                <ul class="flex flex-col gap-2">
                                   <li>
-                                    <a href="javascript:;" class="group/db">
-                                        <svg class="group-hover/db:opacity-80 group-hover/db:animate-spin" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
-                                        Launch Your Solution In 3 Days
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
                                     </a>
-                                    
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z"></path></svg></span> Our Leaders
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14.63 7L13 3h1V2H9V1H8v1H3v1h1L2.38 7H2v1h.15c.156.498.473.93.9 1.23a2.47 2.47 0 0 0 2.9 0A2.44 2.44 0 0 0 6.86 8H7V7h-.45L4.88 3H8v8H6l-.39.18-2 2.51.39.81h9l.39-.81-2-2.51L11 11H9V3h3.13l-1.67 4H10v1h.15a2.48 2.48 0 0 0 4.71 0H15V7h-.37zM5.22 8.51a1.52 1.52 0 0 1-.72.19 1.45 1.45 0 0 1-.71-.19A1.47 1.47 0 0 1 3.25 8h2.5a1.52 1.52 0 0 1-.53.51zM5.47 7h-2l1-2.4 1 2.4zm5.29 5L12 13.5H5L6.24 12h4.52zm1.78-7.38l1 2.4h-2l1-2.4zm.68 3.91a1.41 1.41 0 0 1-.72.19 1.35 1.35 0 0 1-.71-.19 1.55 1.55 0 0 1-.54-.53h2.5a1.37 1.37 0 0 1-.53.53z"></path></svg></span> Ethics & Compliance
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Sustainability
+                                    </a>
                                   </li>
                                 </ul>
                               </div>
-                          </div>
+                              <div>
+                                <ul class="flex flex-col gap-2">
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -396,25 +433,25 @@
                       <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-60 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
                           <ul>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/school-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       School Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/insitute-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       Institute Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/college-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       College Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/university-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       University Software
                                   </a>
@@ -472,25 +509,25 @@
                       <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-60 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
                           <ul>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/school-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       School Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/insitute-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       Institute Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/college-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       College Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/university-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       University Software
                                   </a>
@@ -510,25 +547,25 @@
                       <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-60 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
                           <ul>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/school-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       School Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/insitute-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       Institute Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/college-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       College Software
                                   </a>
                               </li>
                               <li>
-                                  <a href="http://localhost/edoovi/oursolutions/university-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
                                   ">
                                       University Software
                                   </a>
@@ -631,7 +668,7 @@
 
 <section class="relative overflow-hidden lg:h-dvh lg:min-h-[700px] w-full z-50">
     <div class="absolute inset-0 !h-full size-full">
-    <video id="home-hero-video" class="per-video__video fadein max-sm:w-full max-sm:object-cover max-sm:h-full" src="../assets/img/hero-sect-video.mp4" autoplay="autoplay" loop="loop" muted="" ></video>
+    <video id="home-hero-video" class="per-video__video fadein max-sm:w-full max-sm:object-cover max-sm:h-full" src="./assets/img/hero-sect-video.mp4" autoplay="autoplay" loop="loop" muted="" ></video>
     </div>
     <div class="swiper mySwiper h-full !z-20 relative ">
       <div class="swiper-wrapper h-full relative z-50 ">
@@ -660,7 +697,7 @@
                           <div class="py-1">
                             <a href="javascript:;" class="inline-flex items-center gap-3 md:text-lg text-sm text-white relative ps-6 py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-white md:before:min-w-[42px] before:min-w-10 md:before:h-[42px] before:h-10 before:left-0 before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[256px]">
                               <span>
-                                  <img src="../assets/img/arrow.svg" alt="arrow" class="filter invert">
+                                  <img src="./assets/img/arrow.svg" alt="arrow" class="filter invert">
                               </span>
                               Drop Your Queries
                             </a>
@@ -669,16 +706,16 @@
                             <div class="text-white text-2xl mb-4 font-medium">official partner of :</div>
                             <ul class="flex items-center gap-3">
                               <li>
-                                <img src="../assets/img/partner-google.png" alt="">
+                                <img src="./assets/img/partner-google.png" alt="">
                               </li>
                               <li>
-                                <img src="../assets/img/partner-salesforce.png" alt="">
+                                <img src="./assets/img/partner-salesforce.png" alt="">
                               </li>
                               <li>
-                                <img src="../assets/img/partner-oracle.png" alt="">
+                                <img src="./assets/img/partner-oracle.png" alt="">
                               </li>
                               <li>
-                                <img src="../assets/img/partner-aws.png" alt="">
+                                <img src="./assets/img/partner-aws.png" alt="">
                               </li>
                             </ul>
                           </div> -->
@@ -725,7 +762,7 @@
                           <div class="py-1">
                             <a href="javascript:;" class="inline-flex items-center gap-3 md:text-lg text-sm text-white relative ps-6 py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-white md:before:min-w-[42px] before:min-w-10 md:before:h-[42px] before:h-10 before:left-0 before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[256px]">
                               <span>
-                                  <img src="../assets/img/arrow.svg" alt="arrow" class="filter invert">
+                                  <img src="./assets/img/arrow.svg" alt="arrow" class="filter invert">
                               </span>
                               Drop Your Queries
                             </a>
