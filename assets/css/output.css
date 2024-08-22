@@ -690,8 +690,8 @@ video {
   left: -7rem;
 }
 
-.-left-96{
-  left: -24rem;
+.-left-\[420px\]{
+  left: -420px;
 }
 
 .-right-24{
@@ -846,10 +846,6 @@ video {
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.-mr-40{
-  margin-right: -10rem;
 }
 
 .mb-0{
@@ -1015,6 +1011,11 @@ video {
   height: 10rem;
 }
 
+.size-5{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .size-8{
   width: 2rem;
   height: 2rem;
@@ -1057,8 +1058,8 @@ video {
   height: 100vh;
 }
 
-.h-\[500px\]{
-  height: 500px;
+.h-\[320px\]{
+  height: 320px;
 }
 
 .h-auto{
@@ -1077,8 +1078,12 @@ video {
   height: 100vh;
 }
 
-.max-h-\[470px\]{
-  max-height: 470px;
+.max-h-\[300px\]{
+  max-height: 300px;
+}
+
+.max-h-full{
+  max-height: 100%;
 }
 
 .\!w-full{
@@ -1113,8 +1118,8 @@ video {
   width: 40%;
 }
 
-.w-\[400px\]{
-  width: 400px;
+.w-\[550px\]{
+  width: 550px;
 }
 
 .w-\[this-is\\\\\]{
@@ -1217,6 +1222,11 @@ video {
 
 .translate-y-10{
   --tw-translate-y: 2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[20px\]{
+  --tw-translate-y: 20px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2101,6 +2111,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2520,6 +2534,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2557,6 +2576,10 @@ video {
 
 .pb-40{
   padding-bottom: 10rem;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
 }
 
 .pr-6{
@@ -2671,6 +2694,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -2801,6 +2829,11 @@ video {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
+.text-slate-800{
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
 .text-slate-900{
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
@@ -2809,6 +2842,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-slate-950{
+  --tw-text-opacity: 1;
+  color: rgb(2 6 23 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3398,6 +3436,11 @@ body{
   inset: -0px;
 }
 
+.before\:-inset-1::before{
+  content: var(--tw-content);
+  inset: -0.25rem;
+}
+
 .before\:inset-y-\[-200px\]::before{
   content: var(--tw-content);
   top: -200px;
@@ -3438,6 +3481,11 @@ body{
   content: var(--tw-content);
   margin-left: auto;
   margin-right: auto;
+}
+
+.before\:block::before{
+  content: var(--tw-content);
+  display: block;
 }
 
 .before\:size-14::before{
@@ -3620,19 +3668,39 @@ body{
   top: 50%;
 }
 
+.after\:top-0::after{
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.after\:-top-10::after{
+  content: var(--tw-content);
+  top: -2.5rem;
+}
+
+.after\:-top-5::after{
+  content: var(--tw-content);
+  top: -1.25rem;
+}
+
 .after\:-z-10::after{
   content: var(--tw-content);
   z-index: -10;
 }
 
-.after\:h-52::after{
+.after\:h-44::after{
   content: var(--tw-content);
-  height: 13rem;
+  height: 11rem;
 }
 
 .after\:h-\[2px\]::after{
   content: var(--tw-content);
   height: 2px;
+}
+
+.after\:h-10::after{
+  content: var(--tw-content);
+  height: 2.5rem;
 }
 
 .after\:w-0::after{
@@ -3645,6 +3713,11 @@ body{
   width: 0.25rem;
 }
 
+.after\:w-full::after{
+  content: var(--tw-content);
+  width: 100%;
+}
+
 .after\:rounded-md::after{
   content: var(--tw-content);
   border-radius: 0.375rem;
@@ -3654,6 +3727,17 @@ body{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.after\:bg-red-500::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.after\:bg-transparent::after{
+  content: var(--tw-content);
+  background-color: transparent;
 }
 
 .after\:bg-gradient-to-tr::after{
@@ -3772,6 +3856,17 @@ body{
   min-width: 256px;
 }
 
+.hover\:before\:-skew-y-3:hover::before{
+  content: var(--tw-content);
+  --tw-skew-y: -3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:before\:bg-blue-500\/50:hover::before{
+  content: var(--tw-content);
+  background-color: rgb(59 130 246 / 0.5);
+}
+
 .before\:hover\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
@@ -3780,6 +3875,13 @@ body{
 .hover\:before\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
+}
+
+.hover\:before\:shadow-xl:hover::before{
+  content: var(--tw-content);
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:after\:w-full:hover::after{
@@ -3933,12 +4035,207 @@ body{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.peer\/ass:checked ~ .peer-checked\/ass\:opacity-70{
-  opacity: 0.7;
+.peer\/ass:checked ~ .peer-checked\/ass\:opacity-100{
+  opacity: 1;
 }
 
 .peer\/sideToggle:checked ~ .peer-checked\/sideToggle\:opacity-100{
   opacity: 1;
+}
+
+.group:has(.Africa:checked) .group-has-\[\.Africa\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.AsiaPacific:checked) .group-has-\[\.AsiaPacific\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.Business:checked) .group-has-\[\.Business\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.Consulting:checked) .group-has-\[\.Consulting\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.Engineering:checked) .group-has-\[\.Engineering\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.Europe:checked) .group-has-\[\.Europe\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.GreaterChina:checked) .group-has-\[\.GreaterChina\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.LatinAmerica:checked) .group-has-\[\.LatinAmerica\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.MiddleEastern:checked) .group-has-\[\.MiddleEastern\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.Mission:checked) .group-has-\[\.Mission\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.NorthAmerica:checked) .group-has-\[\.NorthAmerica\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.ass:checked) .group-has-\[\.ass\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.tech:checked) .group-has-\[\.tech\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.group:has(.Africa:checked) .group-has-\[\.Africa\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.AsiaPacific:checked) .group-has-\[\.AsiaPacific\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.Business:checked) .group-has-\[\.Business\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.Consulting:checked) .group-has-\[\.Consulting\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.Engineering:checked) .group-has-\[\.Engineering\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.Europe:checked) .group-has-\[\.Europe\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.GreaterChina:checked) .group-has-\[\.GreaterChina\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.LatinAmerica:checked) .group-has-\[\.LatinAmerica\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.MiddleEastern:checked) .group-has-\[\.MiddleEastern\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.Mission:checked) .group-has-\[\.Mission\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.NorthAmerica:checked) .group-has-\[\.NorthAmerica\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.ass:checked) .group-has-\[\.ass\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.tech:checked) .group-has-\[\.tech\:checked\]\:bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.group:has(.Africa:checked) .group-has-\[\.Africa\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.AsiaPacific:checked) .group-has-\[\.AsiaPacific\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.Business:checked) .group-has-\[\.Business\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.Consulting:checked) .group-has-\[\.Consulting\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.Engineering:checked) .group-has-\[\.Engineering\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.Europe:checked) .group-has-\[\.Europe\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.GreaterChina:checked) .group-has-\[\.GreaterChina\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.LatinAmerica:checked) .group-has-\[\.LatinAmerica\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.MiddleEastern:checked) .group-has-\[\.MiddleEastern\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.Mission:checked) .group-has-\[\.Mission\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.NorthAmerica:checked) .group-has-\[\.NorthAmerica\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.ass:checked) .group-has-\[\.ass\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:has(.tech:checked) .group-has-\[\.tech\:checked\]\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media not all and (min-width: 640px){
@@ -4127,26 +4424,6 @@ body{
       paint-order: markers;
     }
   }
-}
-
-.\[\&\.active\]\:border-slate-700.active{
-  --tw-border-opacity: 1;
-  border-color: rgb(51 65 85 / var(--tw-border-opacity));
-}
-
-.\[\&\.active\]\:bg-blue-500.active{
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.\[\&\.active\]\:bg-white.active{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.\[\&\.active\]\:text-white.active{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .\[\&\:not\(\.swiper-slide-active\)\]\:\!opacity-0:not(.swiper-slide-active){
