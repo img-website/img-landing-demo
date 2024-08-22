@@ -746,14 +746,6 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.col-span-5{
-  grid-column: span 5 / span 5;
-}
-
-.col-span-7{
-  grid-column: span 7 / span 7;
-}
-
 .float-start{
   float: inline-start;
 }
@@ -862,18 +854,6 @@ video {
 
 .mt-auto{
   margin-top: auto;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
-.-mt-10{
-  margin-top: -2.5rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .box-border{
@@ -1100,10 +1080,6 @@ video {
   width: 100%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .max-w-40{
   max-width: 10rem;
 }
@@ -1130,10 +1106,6 @@ video {
 
 .shrink{
   flex-shrink: 1;
-}
-
-.shrink-0{
-  flex-shrink: 0;
 }
 
 .flex-grow{
@@ -1174,6 +1146,11 @@ video {
 
 .-translate-x-full{
   --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-6{
+  --tw-translate-y: -1.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1500,12 +1477,12 @@ video {
   grid-auto-flow: column dense;
 }
 
-.grid-cols-12{
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.grid-cols-12{
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .grid-cols-3{
@@ -1712,6 +1689,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -1753,6 +1734,18 @@ video {
 
 .gap-y-3{
   row-gap: 0.75rem;
+}
+
+.gap-y-6{
+  row-gap: 1.5rem;
+}
+
+.gap-y-8{
+  row-gap: 2rem;
+}
+
+.gap-y-5{
+  row-gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -2578,6 +2571,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -2763,6 +2760,18 @@ video {
 
 .\!leading-\[110\%\]{
   line-height: 110% !important;
+}
+
+.\!leading-\[120\%\]{
+  line-height: 120% !important;
+}
+
+.\!leading-\[130\%\]{
+  line-height: 130% !important;
+}
+
+.\!leading-\[150\%\]{
+  line-height: 150% !important;
 }
 
 .text-\[\#336699\]\/\[\.35\]{
@@ -3466,6 +3475,11 @@ body{
   inset: -0px;
 }
 
+.before\:-inset-1::before{
+  content: var(--tw-content);
+  inset: -0.25rem;
+}
+
 .before\:inset-y-\[-200px\]::before{
   content: var(--tw-content);
   top: -200px;
@@ -3513,6 +3527,11 @@ body{
   margin-right: auto;
 }
 
+.before\:block::before{
+  content: var(--tw-content);
+  display: block;
+}
+
 .before\:h-10::before{
   content: var(--tw-content);
   height: 2.5rem;
@@ -3546,6 +3565,12 @@ body{
 .before\:-skew-x-\[25deg\]::before{
   content: var(--tw-content);
   --tw-skew-x: -25deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:-skew-y-3::before{
+  content: var(--tw-content);
+  --tw-skew-y: -3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3585,6 +3610,12 @@ body{
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.before\:bg-theme2::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 120 188 / var(--tw-bg-opacity));
 }
 
 .before\:bg-gradient-to-l::before{
@@ -4129,8 +4160,29 @@ body{
     max-width: 36rem;
   }
 
+  .sm\:-translate-y-6{
+    --tw-translate-y: -1.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .sm\:gap-8{
+    gap: 2rem;
+  }
+
+  .sm\:gap-10{
+    gap: 2.5rem;
+  }
+
+  .sm\:gap-y-8{
+    row-gap: 2rem;
   }
 
   .sm\:text-base{
@@ -4140,6 +4192,11 @@ body{
 
   .sm\:text-xl{
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
@@ -4243,8 +4300,16 @@ body{
 }
 
 @media (min-width: 1024px){
+  .lg\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
   .lg\:col-span-6{
     grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-7{
+    grid-column: span 7 / span 7;
   }
 
   .lg\:block{
@@ -4267,6 +4332,10 @@ body{
     max-width: 48rem;
   }
 
+  .lg\:gap-5{
+    gap: 1.25rem;
+  }
+
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -4280,6 +4349,10 @@ body{
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:pt-10{
+    padding-top: 2.5rem;
   }
 
   .lg\:pt-20{
