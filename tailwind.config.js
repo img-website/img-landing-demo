@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         'theme1': '#FE0000',
         'theme2': '#1878bc',
+        'theme3': '#0a66c2',
+        'theme4': '#365899',
       },
     },
   },
