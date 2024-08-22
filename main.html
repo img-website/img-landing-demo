@@ -1,0 +1,1033 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- header start  -->
+  <header class="relative bg-white py-2 z-[9999] overflowhidden">
+    <!-- top header  -->
+     <!-- top header  -->
+      <div class="flex items-center justify-between mx-auto max-w-7xl lg:px-8 px-6 overflow-x-hidden">
+        <div class="">
+          <img src="./assets/img/logo.png" alt="logo">
+        </div>
+        <div class="searchbar -mr-40">
+          <div class="flex items-center border border-gray-300 rounded-full overflow-hidden p-1 h-10">
+              <input type="text" placeholder="Search..." class="px-4 py-2 w-full text-gray-700 placeholder:text-gray-700 text-base focus:outline-none">
+              <button class="size-8 rounded-full flex items-center justify-center flex-shrink-0 bg-gray-200 hover:bg-gray-300 focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m1.35-6.65a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+              </button>
+          </div>
+        </div>
+        <div>
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="javascript:;" class="text-sm text-black relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Employess</a>
+            </li>
+            <li>
+              <a href="javascript:;" class="text-sm text-black relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Suppliers</a>
+            </li>
+            <li>
+              <a href="javascript:;" class="text-sm text-black relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Contact us</a>
+            </li>
+            <li>
+              <div class="relative flex flex-col gap-y-3 cursor-pointer">
+                <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
+                <label for="mmCompany" class="flex items-center gap-x-[2px] cursor-pointer">
+                  <div  class="flex items-center text-black text-sm gap-1">
+                      <span>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-width="2" d="M12,23 C18.0751322,23 23,18.0751322 23,12 C23,5.92486775 18.0751322,1 12,1 C5.92486775,1 1,5.92486775 1,12 C1,18.0751322 5.92486775,23 12,23 Z M12,23 C15,23 16,18 16,12 C16,6 15,1 12,1 C9,1 8,6 8,12 C8,18 9,23 12,23 Z M2,16 L22,16 M2,8 L22,8"></path></svg>
+                      </span>
+                      <span class="ext-sm text-black">English</span>
+                  </div>
+                </label>
+                <div class="w-full peer-checked/mm:block hidden absolute inset-0 -left-96 top-6 ">
+                  <div class="shadow-2xl border border-gray-100 w-[400px] bg-gray-100 p-2 h-[500px] rounded-md">
+                    <div class="flex flex-wrap h-full">
+                      <div class="w-1/3">
+                        <ul class="flex flex-col gap-3">
+                          <li class="bg-white p-2 text-sm backdrop-blur-sm rounded-md  active [&.active]:bg-blue-500 [&.active]:text-white [&.active]:border-slate-700">
+                            <label class="cursor-pointer hoverLink " for="ass">All Countries / Regions </label>
+                          </li>
+                          <li class=" p-2 text-sm backdrop-blur-sm rounded-md   [&.active]:bg-white [&.active]:border-slate-700">
+                            <label class="cursor-pointer hoverLink " for="NorthAmerica">North America </label>
+                          </li>
+                      
+                          <li class=" p-2 text-sm backdrop-blur-sm rounded-md   [&.active]:bg-white [&.active]:border-slate-700">
+                            <label class="cursor-pointer hoverLink " for="Africa">Africa </label>
+                          </li>
+                          <li class=" p-2 text-sm backdrop-blur-sm rounded-md   [&.active]:bg-white [&.active]:border-slate-700">
+                            <label class="cursor-pointer hoverLink " for="AsiaPacific">Asia-Pacific </label>
+                          </li>
+                          <li class=" p-2 text-sm backdrop-blur-sm rounded-md   [&.active]:bg-white [&.active]:border-slate-700">
+                            <label class="cursor-pointer hoverLink " for="Europe">Europe</label>
+                          </li>
+                          <li class=" p-2 text-sm backdrop-blur-sm rounded-md   [&.active]:bg-white [&.active]:border-slate-700">
+                            <label class="cursor-pointer hoverLink " for="GreaterChina">Greater-China</label>
+                          </li>
+                          <li class=" p-2 text-sm backdrop-blur-sm rounded-md   [&.active]:bg-white [&.active]:border-slate-700">
+                            <label class="cursor-pointer hoverLink " for="LatinAmerica">Latin-America</label>
+                          </li>
+                          <li class=" p-2 text-sm backdrop-blur-sm rounded-md   [&.active]:bg-white [&.active]:border-slate-700">
+                            <label class="cursor-pointer hoverLink " for="MiddleEastern">Middle Eastern</label>
+                          </li>
+
+
+                        </ul>
+                      </div>
+                      <div class="w-4/6 h-full p-2 bg-white backdrop-blur-2xl ">
+                        <div class="overflow-y-auto max-h-[470px] overflow-x-hidden ">
+                          <input type="radio" name="mainly" id="ass" class="hidden peer/ass " checked>
+                          
+                            <div class=" text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-70 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                                <ul class="flex flex-col gap-3">
+                                  <li class="text-sm text-slate-900">English - <span class="text-blue-500 cursor-pointer text-sm" >English</span></li>
+                                  <li class="text-sm text-slate-900">Afrikaans - <span class="text-blue-500 cursor-pointer text-sm" >Afrikaans</span></li>
+                                  <li class="text-sm text-slate-900">Albanian - <span class="text-blue-500 cursor-pointer text-sm" >Shqip</span></li>
+                                  <li class="text-sm text-slate-900">Amharic - <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
+                                  <li class="text-sm text-slate-900">Arabic - <span class="text-blue-500 cursor-pointer text-sm" >العربية</span></li>
+                                  <li class="text-sm text-slate-900">Armenian - <span class="text-blue-500 cursor-pointer text-sm" >Հայերեն</span></li>
+                                  <li class="text-sm text-slate-900">Azerbaijani - <span class="text-blue-500 cursor-pointer text-sm" >Azərbaycanca</span></li>
+                                  <li class="text-sm text-slate-900">Basque - <span class="text-blue-500 cursor-pointer text-sm" >Euskara</span></li>
+                                  <li class="text-sm text-slate-900">Belarusian - <span class="text-blue-500 cursor-pointer text-sm" >Беларуская</span></li>
+                                  <li class="text-sm text-slate-900">Bengali - <span class="text-blue-500 cursor-pointer text-sm" >বাংলা</span></li>
+                                  <li class="text-sm text-slate-900">Bosnian - <span class="text-blue-500 cursor-pointer text-sm" >Bosanski</span></li>
+                                  <li class="text-sm text-slate-900">Bulgarian - <span class="text-blue-500 cursor-pointer text-sm" >Български</span></li>
+                                  <li class="text-sm text-slate-900">Catalan - <span class="text-blue-500 cursor-pointer text-sm" >Català</span></li>
+                                  <li class="text-sm text-slate-900">Cebuano - <span class="text-blue-500 cursor-pointer text-sm" >Cebuano</span></li>
+                                  <li class="text-sm text-slate-900">Chichewa - <span class="text-blue-500 cursor-pointer text-sm" >Chichewa</span></li>
+                                  <li class="text-sm text-slate-900">Chinese (Simplified) - <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
+                                  <li class="text-sm text-slate-900">Chinese (Traditional) - <span class="text-blue-500 cursor-pointer text-sm" >中文 (繁體)</span></li>
+                                  <li class="text-sm text-slate-900">Corsican - <span class="text-blue-500 cursor-pointer text-sm" >Corsican</span></li>
+                                  <li class="text-sm text-slate-900">Croatian - <span class="text-blue-500 cursor-pointer text-sm" >Hrvatski</span></li>
+                                  <li class="text-sm text-slate-900">Czech - <span class="text-blue-500 cursor-pointer text-sm" >Čeština</span></li>
+                                  <li class="text-sm text-slate-900">Danish - <span class="text-blue-500 cursor-pointer text-sm" >Dansk</span></li>
+                                  <li class="text-sm text-slate-900">Dutch - <span class="text-blue-500 cursor-pointer text-sm" >Nederlands</span></li>
+                                
+                                  <li class="text-sm text-slate-900">Esperanto - <span class="text-blue-500 cursor-pointer text-sm" >Esperanto</span></li>
+                                  <li class="text-sm text-slate-900">Estonian - <span class="text-blue-500 cursor-pointer text-sm" >Eesti</span></li>
+                                  <li class="text-sm text-slate-900">Filipino - <span class="text-blue-500 cursor-pointer text-sm" >Filipino</span></li>
+                                  <li class="text-sm text-slate-900">Finnish - <span class="text-blue-500 cursor-pointer text-sm" >Suomi</span></li>
+                                  <li class="text-sm text-slate-900">French - <span class="text-blue-500 cursor-pointer text-sm" >Français</span></li>
+                                  <li class="text-sm text-slate-900">Frisian - <span class="text-blue-500 cursor-pointer text-sm" >Frysk</span></li>
+                                  <li class="text-sm text-slate-900">Galician - <span class="text-blue-500 cursor-pointer text-sm" >Galego</span></li>
+                                  <li class="text-sm text-slate-900">Georgian - <span class="text-blue-500 cursor-pointer text-sm" >ქართული</span></li>
+                                  <li class="text-sm text-slate-900">German - <span class="text-blue-500 cursor-pointer text-sm" >Deutsch</span></li>
+                                  <li class="text-sm text-slate-900">Greek - <span class="text-blue-500 cursor-pointer text-sm" >Ελληνικά</span></li>
+                                  <li class="text-sm text-slate-900">Gujarati - <span class="text-blue-500 cursor-pointer text-sm" >ગુજરાતી</span></li>
+                                  <li class="text-sm text-slate-900">Haitian Creole - <span class="text-blue-500 cursor-pointer text-sm" >Kreyòl Ayisyen</span></li>
+                                  <li class="text-sm text-slate-900">Hausa - <span class="text-blue-500 cursor-pointer text-sm" >Hausa</span></li>
+                                  <li class="text-sm text-slate-900">Hawaiian - <span class="text-blue-500 cursor-pointer text-sm" >Hawaiian</span></li>
+                                  <li class="text-sm text-slate-900">Hebrew - <span class="text-blue-500 cursor-pointer text-sm" >עברית</span></li>
+                                  <li class="text-sm text-slate-900">Hindi - <span class="text-blue-500 cursor-pointer text-sm" >हिन्दी</span></li>
+                                  <li class="text-sm text-slate-900">Hmong - <span class="text-blue-500 cursor-pointer text-sm" >Hmong</span></li>
+                                  <li class="text-sm text-slate-900">Hungarian - <span class="text-blue-500 cursor-pointer text-sm" >Magyar</span></li>
+                                  <li class="text-sm text-slate-900">Icelandic - <span class="text-blue-500 cursor-pointer text-sm" >Íslenska</span></li>
+                                  <li class="text-sm text-slate-900">Igbo - <span class="text-blue-500 cursor-pointer text-sm" >Igbo</span></li>
+                                  <li class="text-sm text-slate-900">Indonesian - <span class="text-blue-500 cursor-pointer text-sm" >Indonesia</span></li>
+                                  <li class="text-sm text-slate-900">Irish - <span class="text-blue-500 cursor-pointer text-sm" >Gaeilge</span></li>
+                                  <li class="text-sm text-slate-900">Italian - <span class="text-blue-500 cursor-pointer text-sm" >Italiano</span></li>
+                                  <li class="text-sm text-slate-900">Japanese - <span class="text-blue-500 cursor-pointer text-sm" >日本語</span></li>
+                                  <li class="text-sm text-slate-900">Javanese - <span class="text-blue-500 cursor-pointer text-sm" >Jawa</span></li>
+                                  <li class="text-sm text-slate-900">Kannada - <span class="text-blue-500 cursor-pointer text-sm" >ಕನ್ನಡ</span></li>
+                                  <li class="text-sm text-slate-900">Kazakh - <span class="text-blue-500 cursor-pointer text-sm" >Қазақ тілі</span></li>
+                                  <li class="text-sm text-slate-900">Khmer - <span class="text-blue-500 cursor-pointer text-sm" >ភាសាខ្មែរ</span></li>
+                                  <li class="text-sm text-slate-900">Kinyarwanda - <span class="text-blue-500 cursor-pointer text-sm" >Kinyarwanda</span></li>
+                                  <li class="text-sm text-slate-900">Korean - <span class="text-blue-500 cursor-pointer text-sm" >한국어</span></li>
+                                  <li class="text-sm text-slate-900">Kurdish (Kurmanji) - <span class="text-blue-500 cursor-pointer text-sm" >Kurdî (Kurmancî)</span></li>
+                                  <li class="text-sm text-slate-900">Kyrgyz - <span class="text-blue-500 cursor-pointer text-sm" >Кыргызча</span></li>
+                                  <li class="text-sm text-slate-900">Lao - <span class="text-blue-500 cursor-pointer text-sm" >ລາວ</span></li>
+                                  <li class="text-sm text-slate-900">Latin - <span class="text-blue-500 cursor-pointer text-sm" >Latin</span></li>
+                                  <li class="text-sm text-slate-900">Latvian - <span class="text-blue-500 cursor-pointer text-sm" >Latviešu</span></li>
+                                  <li class="text-sm text-slate-900">Lithuanian - <span class="text-blue-500 cursor-pointer text-sm" >Lietuvių</span></li>
+                                  <li class="text-sm text-slate-900">Luxembourgish - <span class="text-blue-500 cursor-pointer text-sm" >Lëtzebuergesch</span></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overflow-y-auto max-h-[470px] overflow-x-hidden ">
+                          <input type="radio" name="mainly" id="NorthAmerica" class="hidden peer/ass ">
+                          
+                            <div class=" text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-70 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                                <ul class="flex flex-col gap-3">
+                                  <li class="text-sm text-slate-900">English - <span class="text-blue-500 cursor-pointer text-sm" >English</span></li>
+                                  <li class="text-sm text-slate-900">Spanish -   <span class="text-blue-500 cursor-pointer text-sm" >Español</span></li>
+
+                                  <li class="text-sm text-slate-900">French -   <span class="text-blue-500 cursor-pointer text-sm" >Français</span></li>
+                                  
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overflow-y-auto max-h-[470px] overflow-x-hidden ">
+                          <input type="radio" name="mainly" id="Africa" class="hidden peer/ass ">
+                          
+                            <div class=" text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-70 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                                <ul class="flex flex-col gap-3">
+                                  <li class="text-sm text-slate-900">Arabic - <span class="text-blue-500 cursor-pointer text-sm" >العربية</span></li>
+                                  <li class="text-sm text-slate-900">Swahili  -   <span class="text-blue-500 cursor-pointer text-sm" >Kiswahili</span></li>
+                                  <li class="text-sm text-slate-900">Hausa -    <span class="text-blue-500 cursor-pointer text-sm" >Hausa</span></li>
+                                  <li class="text-sm text-slate-900">Yoruba -    <span class="text-blue-500 cursor-pointer text-sm" >Yorùbá</span></li>
+                                  <li class="text-sm text-slate-900">Igbo -    <span class="text-blue-500 cursor-pointer text-sm" >Igbo</span></li>
+                                  <li class="text-sm text-slate-900">Amharic -    <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
+                                  <li class="text-sm text-slate-900">Oromo -  <span class="text-blue-500 cursor-pointer text-sm" >Oromo</span></li>
+                                  <li class="text-sm text-slate-900">Somali -     <span class="text-blue-500 cursor-pointer text-sm" >Soomaali</span></li>
+                                  <li class="text-sm text-slate-900">Swahili -  <span class="text-blue-500 cursor-pointer text-sm" >Kiswahili</span></li>
+                                  <li class="text-sm text-slate-900">Zulu -  <span class="text-blue-500 cursor-pointer text-sm" >isiZulu</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overflow-y-auto max-h-[470px] overflow-x-hidden ">
+                          <input type="radio" name="mainly" id="AsiaPacific" class="hidden peer/ass ">
+                          
+                            <div class=" text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-70 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                                <ul class="flex flex-col gap-3">
+                                  <li class="text-sm text-slate-900">Mandarin Chinese -  <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
+                                  <li class="text-sm text-slate-900">Mandarin Chinese - <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
+                                  <li class="text-sm text-slate-900">Hindi -  <span class="text-blue-500 cursor-pointer text-sm" >हिन्दी</span></li>
+                                  <li class="text-sm text-slate-900">Japanese -    <span class="text-blue-500 cursor-pointer text-sm" >日本語</span></li>
+                                  <li class="text-sm text-slate-900">Korean - <span class="text-blue-500 cursor-pointer text-sm" >한국어</span></li>
+                                  <li class="text-sm text-slate-900">Amharic -    <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
+                                  <li class="text-sm text-slate-900">Indonesian -  <span class="text-blue-500 cursor-pointer text-sm" >Bahasa Indonesia </span></li>
+                                  <li class="text-sm text-slate-900">Thai -     <span class="text-blue-500 cursor-pointer text-sm" >ไทย</span></li>
+                                  <li class="text-sm text-slate-900">Tagalog -  <span class="text-blue-500 cursor-pointer text-sm" >Tagalog</span></li>
+                                  <li class="text-sm text-slate-900">Zulu -  <span class="text-blue-500 cursor-pointer text-sm" >isiZulu</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overflow-y-auto max-h-[470px] overflow-x-hidden ">
+                          <input type="radio" name="mainly" id="Europe" class="hidden peer/ass ">
+                          
+                            <div class=" text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-70 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                                <ul class="flex flex-col gap-3">
+                                  <li class="text-sm text-slate-900">Arabic - <span class="text-blue-500 cursor-pointer text-sm" >العربية</span></li>
+                                  <li class="text-sm text-slate-900">Swahili  -   <span class="text-blue-500 cursor-pointer text-sm" >Kiswahili</span></li>
+                                  <li class="text-sm text-slate-900">Hausa -    <span class="text-blue-500 cursor-pointer text-sm" >Hausa</span></li>
+                                  <li class="text-sm text-slate-900">Yoruba -    <span class="text-blue-500 cursor-pointer text-sm" >Yorùbá</span></li>
+                                  <li class="text-sm text-slate-900">Igbo -    <span class="text-blue-500 cursor-pointer text-sm" >Igbo</span></li>
+                                  <li class="text-sm text-slate-900">Amharic -    <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
+                                  <li class="text-sm text-slate-900">Oromo -  <span class="text-blue-500 cursor-pointer text-sm" >Oromo</span></li>
+                                  <li class="text-sm text-slate-900">Somali -     <span class="text-blue-500 cursor-pointer text-sm" >Soomaali</span></li>
+                                  <li class="text-sm text-slate-900">Swahili -  <span class="text-blue-500 cursor-pointer text-sm" >Kiswahili</span></li>
+                                  <li class="text-sm text-slate-900">Zulu -  <span class="text-blue-500 cursor-pointer text-sm" >isiZulu</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overflow-y-auto max-h-[470px] overflow-x-hidden ">
+                          <input type="radio" name="mainly" id="GreaterChina" class="hidden peer/ass " checked>
+                          
+                            <div class=" text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-70 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                                <ul class="flex flex-col gap-3">
+                                  <li class="text-sm text-slate-900">English - <span class="text-blue-500 cursor-pointer text-sm" >English</span></li>
+                                  <li class="text-sm text-slate-900">Afrikaans - <span class="text-blue-500 cursor-pointer text-sm" >Afrikaans</span></li>
+                                  <li class="text-sm text-slate-900">Albanian - <span class="text-blue-500 cursor-pointer text-sm" >Shqip</span></li>
+                                  <li class="text-sm text-slate-900">Amharic - <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
+                                  <li class="text-sm text-slate-900">Arabic - <span class="text-blue-500 cursor-pointer text-sm" >العربية</span></li>
+                                  <li class="text-sm text-slate-900">Armenian - <span class="text-blue-500 cursor-pointer text-sm" >Հայերեն</span></li>
+                                  <li class="text-sm text-slate-900">Azerbaijani - <span class="text-blue-500 cursor-pointer text-sm" >Azərbaycanca</span></li>
+                                  <li class="text-sm text-slate-900">Basque - <span class="text-blue-500 cursor-pointer text-sm" >Euskara</span></li>
+                                  <li class="text-sm text-slate-900">Belarusian - <span class="text-blue-500 cursor-pointer text-sm" >Беларуская</span></li>
+                                  <li class="text-sm text-slate-900">Bengali - <span class="text-blue-500 cursor-pointer text-sm" >বাংলা</span></li>
+                                  <li class="text-sm text-slate-900">Bosnian - <span class="text-blue-500 cursor-pointer text-sm" >Bosanski</span></li>
+                                  <li class="text-sm text-slate-900">Bulgarian - <span class="text-blue-500 cursor-pointer text-sm" >Български</span></li>
+                                  <li class="text-sm text-slate-900">Catalan - <span class="text-blue-500 cursor-pointer text-sm" >Català</span></li>
+                                  <li class="text-sm text-slate-900">Cebuano - <span class="text-blue-500 cursor-pointer text-sm" >Cebuano</span></li>
+                                  <li class="text-sm text-slate-900">Chichewa - <span class="text-blue-500 cursor-pointer text-sm" >Chichewa</span></li>
+                                  <li class="text-sm text-slate-900">Chinese (Simplified) - <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
+                                  <li class="text-sm text-slate-900">Chinese (Traditional) - <span class="text-blue-500 cursor-pointer text-sm" >中文 (繁體)</span></li>
+                                  <li class="text-sm text-slate-900">Corsican - <span class="text-blue-500 cursor-pointer text-sm" >Corsican</span></li>
+                                  <li class="text-sm text-slate-900">Croatian - <span class="text-blue-500 cursor-pointer text-sm" >Hrvatski</span></li>
+                                  <li class="text-sm text-slate-900">Czech - <span class="text-blue-500 cursor-pointer text-sm" >Čeština</span></li>
+                                  <li class="text-sm text-slate-900">Danish - <span class="text-blue-500 cursor-pointer text-sm" >Dansk</span></li>
+                                  <li class="text-sm text-slate-900">Dutch - <span class="text-blue-500 cursor-pointer text-sm" >Nederlands</span></li>
+                                
+                                  <li class="text-sm text-slate-900">Esperanto - <span class="text-blue-500 cursor-pointer text-sm" >Esperanto</span></li>
+                                  <li class="text-sm text-slate-900">Estonian - <span class="text-blue-500 cursor-pointer text-sm" >Eesti</span></li>
+                                  <li class="text-sm text-slate-900">Filipino - <span class="text-blue-500 cursor-pointer text-sm" >Filipino</span></li>
+                                  <li class="text-sm text-slate-900">Finnish - <span class="text-blue-500 cursor-pointer text-sm" >Suomi</span></li>
+                                  <li class="text-sm text-slate-900">French - <span class="text-blue-500 cursor-pointer text-sm" >Français</span></li>
+                                  <li class="text-sm text-slate-900">Frisian - <span class="text-blue-500 cursor-pointer text-sm" >Frysk</span></li>
+                                  <li class="text-sm text-slate-900">Galician - <span class="text-blue-500 cursor-pointer text-sm" >Galego</span></li>
+                                  <li class="text-sm text-slate-900">Georgian - <span class="text-blue-500 cursor-pointer text-sm" >ქართული</span></li>
+                                  <li class="text-sm text-slate-900">German - <span class="text-blue-500 cursor-pointer text-sm" >Deutsch</span></li>
+                                  <li class="text-sm text-slate-900">Greek - <span class="text-blue-500 cursor-pointer text-sm" >Ελληνικά</span></li>
+                                  <li class="text-sm text-slate-900">Gujarati - <span class="text-blue-500 cursor-pointer text-sm" >ગુજરાતી</span></li>
+                                  <li class="text-sm text-slate-900">Haitian Creole - <span class="text-blue-500 cursor-pointer text-sm" >Kreyòl Ayisyen</span></li>
+                                  <li class="text-sm text-slate-900">Hausa - <span class="text-blue-500 cursor-pointer text-sm" >Hausa</span></li>
+                                  <li class="text-sm text-slate-900">Hawaiian - <span class="text-blue-500 cursor-pointer text-sm" >Hawaiian</span></li>
+                                  <li class="text-sm text-slate-900">Hebrew - <span class="text-blue-500 cursor-pointer text-sm" >עברית</span></li>
+                                  <li class="text-sm text-slate-900">Hindi - <span class="text-blue-500 cursor-pointer text-sm" >हिन्दी</span></li>
+                                  <li class="text-sm text-slate-900">Hmong - <span class="text-blue-500 cursor-pointer text-sm" >Hmong</span></li>
+                                  <li class="text-sm text-slate-900">Hungarian - <span class="text-blue-500 cursor-pointer text-sm" >Magyar</span></li>
+                                  <li class="text-sm text-slate-900">Icelandic - <span class="text-blue-500 cursor-pointer text-sm" >Íslenska</span></li>
+                                  <li class="text-sm text-slate-900">Igbo - <span class="text-blue-500 cursor-pointer text-sm" >Igbo</span></li>
+                                  <li class="text-sm text-slate-900">Indonesian - <span class="text-blue-500 cursor-pointer text-sm" >Indonesia</span></li>
+                                  <li class="text-sm text-slate-900">Irish - <span class="text-blue-500 cursor-pointer text-sm" >Gaeilge</span></li>
+                                  <li class="text-sm text-slate-900">Italian - <span class="text-blue-500 cursor-pointer text-sm" >Italiano</span></li>
+                                  <li class="text-sm text-slate-900">Japanese - <span class="text-blue-500 cursor-pointer text-sm" >日本語</span></li>
+                                  <li class="text-sm text-slate-900">Javanese - <span class="text-blue-500 cursor-pointer text-sm" >Jawa</span></li>
+                                  <li class="text-sm text-slate-900">Kannada - <span class="text-blue-500 cursor-pointer text-sm" >ಕನ್ನಡ</span></li>
+                                  <li class="text-sm text-slate-900">Kazakh - <span class="text-blue-500 cursor-pointer text-sm" >Қазақ тілі</span></li>
+                                  <li class="text-sm text-slate-900">Khmer - <span class="text-blue-500 cursor-pointer text-sm" >ភាសាខ្មែរ</span></li>
+                                  <li class="text-sm text-slate-900">Kinyarwanda - <span class="text-blue-500 cursor-pointer text-sm" >Kinyarwanda</span></li>
+                                  <li class="text-sm text-slate-900">Korean - <span class="text-blue-500 cursor-pointer text-sm" >한국어</span></li>
+                                  <li class="text-sm text-slate-900">Kurdish (Kurmanji) - <span class="text-blue-500 cursor-pointer text-sm" >Kurdî (Kurmancî)</span></li>
+                                  <li class="text-sm text-slate-900">Kyrgyz - <span class="text-blue-500 cursor-pointer text-sm" >Кыргызча</span></li>
+                                  <li class="text-sm text-slate-900">Lao - <span class="text-blue-500 cursor-pointer text-sm" >ລາວ</span></li>
+                                  <li class="text-sm text-slate-900">Latin - <span class="text-blue-500 cursor-pointer text-sm" >Latin</span></li>
+                                  <li class="text-sm text-slate-900">Latvian - <span class="text-blue-500 cursor-pointer text-sm" >Latviešu</span></li>
+                                  <li class="text-sm text-slate-900">Lithuanian - <span class="text-blue-500 cursor-pointer text-sm" >Lietuvių</span></li>
+                                  <li class="text-sm text-slate-900">Luxembourgish - <span class="text-blue-500 cursor-pointer text-sm" >Lëtzebuergesch</span></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overflow-y-auto max-h-[470px] overflow-x-hidden ">
+                          <input type="radio" name="mainly" id="LatinAmerica" class="hidden peer/ass ">
+                          
+                            <div class=" text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-70 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                                <ul class="flex flex-col gap-3">
+                                  <li class="text-sm text-slate-900">Mandarin Chinese -  <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
+                                  <li class="text-sm text-slate-900">Mandarin Chinese - <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
+                                  <li class="text-sm text-slate-900">Hindi -  <span class="text-blue-500 cursor-pointer text-sm" >हिन्दी</span></li>
+                                  <li class="text-sm text-slate-900">Japanese -    <span class="text-blue-500 cursor-pointer text-sm" >日本語</span></li>
+                                  <li class="text-sm text-slate-900">Korean - <span class="text-blue-500 cursor-pointer text-sm" >한국어</span></li>
+                                  <li class="text-sm text-slate-900">Amharic -    <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
+                                  <li class="text-sm text-slate-900">Indonesian -  <span class="text-blue-500 cursor-pointer text-sm" >Bahasa Indonesia </span></li>
+                                  <li class="text-sm text-slate-900">Thai -     <span class="text-blue-500 cursor-pointer text-sm" >ไทย</span></li>
+                                  <li class="text-sm text-slate-900">Tagalog -  <span class="text-blue-500 cursor-pointer text-sm" >Tagalog</span></li>
+                                  <li class="text-sm text-slate-900">Zulu -  <span class="text-blue-500 cursor-pointer text-sm" >isiZulu</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overflow-y-auto max-h-[470px] overflow-x-hidden ">
+                          <input type="radio" name="mainly" id="MiddleEastern" class="hidden peer/ass ">
+                          
+                            <div class=" text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-70 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                                <ul class="flex flex-col gap-3">
+                                  <li class="text-sm text-slate-900">English - <span class="text-blue-500 cursor-pointer text-sm" >English</span></li>
+                                  <li class="text-sm text-slate-900">Spanish -   <span class="text-blue-500 cursor-pointer text-sm" >Español</span></li>
+
+                                  <li class="text-sm text-slate-900">French -   <span class="text-blue-500 cursor-pointer text-sm" >Français</span></li>
+                                  
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+     <!-- top header  end-->
+      <!-- bottom header  -->
+      <div class="max-w-7xl mx-auto py-3 px-6 lg:px-8 ">
+        <div class="flex items-center justify-between relative">
+          <a href="" class="md:size-10 *:size-full">
+          <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6Z" fill="currentColor"></path><path d="M4 18C4 17.4477 4.44772 17 5 17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H5C4.44772 19 4 18.5523 4 18Z" fill="currentColor"></path><path d="M5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H13C13.5523 13 14 12.5523 14 12C14 11.4477 13.5523 11 13 11H5Z" fill="currentColor"></path></svg>
+          </a>
+
+          <div class="md:flex items-center gap-5 hidden">
+              <ul class="flex gap-8">
+                  <li class=" group">
+                      <a href="javascript:;" class="flex items-center font-medium text-base ">
+                        Company 
+                          <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
+                              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path>
+                              </svg>
+                          </span>
+                      </a>
+                      <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible h-96">
+                        <div class="flex flex-wrap items-center h-full">
+                          <div class="w-1/3 h-full">
+                            <div class="flex items-center justify-center flex-col h-full gap-3 relative after:absolute  after:right-0 after:top-1/2 after:[transform:translateY(-50%)] after:h-52 after:w-1 after:bg-gradient-to-tr after:from-blue-500 after:via-red-500 after:to-blue-500">
+                              <div class="bg-gradient-to-r from-red-500 to-blue-500 size-16 p-[1px] rounded-full flex justify-center items-center mx-auto">
+                               <span class="bg-white size-full rounded-full flex items-center justify-center  ">
+                                 <svg class="size-12  text-blue-500 " stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m179.9 388-76.16-132 76.16 132zm0 0h152.21l76.15-132-76.15-132H179.9l-76.16 132 76.16 132zm-76.16-132 76.16-132-76.16 132z"></path><path d="M496 256 376 48H239.74l-43.84 76h136.21l76.15 132-76.15 132H195.9l43.84 76H376l120-208z"></path><path d="m179.9 388-76.16-132 76.16-132 43.84-76H136L16 256l120 208h87.74l-43.84-76z"></path></svg>
+                               </span>
+                              </div>
+                              <div class="text-4xl font-bold bg-gradient-to-tr from-blue-700 to-red-700 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">Who We Are</div>
+                            </div>
+                          </div>
+                          <div class="w-4/6 ps-20">
+                            <div class="flex flex-wrpa gap-20">
+                              <div>
+                                <ul class="flex flex-col gap-2">
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z"></path></svg></span> Our Leaders
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14.63 7L13 3h1V2H9V1H8v1H3v1h1L2.38 7H2v1h.15c.156.498.473.93.9 1.23a2.47 2.47 0 0 0 2.9 0A2.44 2.44 0 0 0 6.86 8H7V7h-.45L4.88 3H8v8H6l-.39.18-2 2.51.39.81h9l.39-.81-2-2.51L11 11H9V3h3.13l-1.67 4H10v1h.15a2.48 2.48 0 0 0 4.71 0H15V7h-.37zM5.22 8.51a1.52 1.52 0 0 1-.72.19 1.45 1.45 0 0 1-.71-.19A1.47 1.47 0 0 1 3.25 8h2.5a1.52 1.52 0 0 1-.53.51zM5.47 7h-2l1-2.4 1 2.4zm5.29 5L12 13.5H5L6.24 12h4.52zm1.78-7.38l1 2.4h-2l1-2.4zm.68 3.91a1.41 1.41 0 0 1-.72.19 1.35 1.35 0 0 1-.71-.19 1.55 1.55 0 0 1-.54-.53h2.5a1.37 1.37 0 0 1-.53.53z"></path></svg></span> Ethics & Compliance
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Sustainability
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div>
+                                <ul class="flex flex-col gap-2">
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:;" class="flex items-center gap-2 font-medium text-base">
+                                      <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="relative group">
+                      <a href="javascript:;" class="flex items-center font-medium text-base ">
+                          Our Solutions
+                          <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
+                              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path>
+                              </svg>
+                          </span>
+                      </a>
+                      <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-60 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
+                          <ul>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      School Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      Institute Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      College Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      University Software
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="relative group">
+                      <a href="javascript:;" class="flex items-center font-medium text-base ">
+                          Our Solutions
+                          <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
+                              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path>
+                              </svg>
+                          </span>
+                      </a>
+                      <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-60 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
+                          <ul>
+                              <li>
+                                  <a href="http://localhost/edoovi/oursolutions/school-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      School Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="http://localhost/edoovi/oursolutions/insitute-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      Institute Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="http://localhost/edoovi/oursolutions/college-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      College Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="http://localhost/edoovi/oursolutions/university-software" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      University Software
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="relative group">
+                      <a href="javascript:;" class="flex items-center font-medium text-base ">
+                          Our Solutions
+                          <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
+                              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path>
+                              </svg>
+                          </span>
+                      </a>
+                      <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-60 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
+                          <ul>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      School Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      Institute Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      College Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      University Software
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="relative group">
+                      <a href="javascript:;" class="flex items-center font-medium text-base ">
+                          Our Solutions
+                          <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
+                              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path>
+                              </svg>
+                          </span>
+                      </a>
+                      <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-10 opacity-0 invisible duration-300 !w-60 absolute group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
+                          <ul>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      School Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      Institute Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      College Software
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="inline-flex w-full text-slate-600 font-medium text-base  px-4 py-2 hover:text-white border-slate-200 hover:bg-violet-400
+                                  ">
+                                      University Software
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+
+              </ul>
+           
+          </div>
+
+        </div>
+
+            <input type="checkbox" class="peer/sideToggle hidden" name="sideToggle" id="sideToggle">
+
+            <label for="sideToggle" class="-m-2.5 inline-flex items-center md:hidden justify-center rounded-md p-2.5">
+                <span class="sr-only">Open menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                </svg>
+            </label>
+            <div class="fixed flex flex-col inset-y-0 right-0 z-[1011] w-full select-none text-white bg-white/60 backdrop-blur-lg peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100
+                -translate-x-full opacity-0 ms-auto duration-300 h-dvh">
+                <div class="flex flex-col border-l h-[100vh] overflow-hidden sm:w-1/2">
+                    <nav class="sticky w-full top-0 bg-white py-3 px-6 shadow-lg flex items-center justify-between">
+                        <a href="http://localhost/edoovi/" class="*:size-10">
+                            <img src="http://localhost/edoovi/assets/img/edoovi.webp" alt="">
+                        </a>
+                        <label for="sideToggle" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6 text-slate-900" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </label>
+                    </nav>
+                    <div class="flex flex-col bg-white pb-40 h-screen overflow-y-auto !content-between">
+                        <ul class="h-full overflow-y-auto bg-white">
+                            <li class="w-full">
+                                <a href="http://localhost/edoovi/" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex text-red-600 border-b-2 border-red-600">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="http://localhost/edoovi/about" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="http://localhost/edoovi/oursolutions/school-software" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
+                                    School Software
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="http://localhost/edoovi/oursolutions/institute-software" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
+                                    Institute Software
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="http://localhost/edoovi/oursolutions/college-software" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
+                                    College Software
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="http://localhost/edoovi/oursolutions/university-software" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
+                                    University Software
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="http://localhost/edoovi/blogs" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
+                                    Blogs
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="http://localhost/edoovi/clients" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
+                                    Clients
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="fixed overflow-hidden sm:w-1/2 w-full bottom-0 bg-white shadow-lg rotate-180 flex items-center justify-between">
+                            <div class="flex overflow-hidden justify-between py-5 px-4 rotate-180 bg-white w-full">
+                                <a href="http://localhost/edoovi/contact" class="text-nowrap bg-gradient-to-b from-violet-300 to-violet-500/90 py-2 px-4 rounded-full shadow-xl shadow-violet-200/95 font-medium sm:text-base text-sm text-white duration-300 hover:[box-shadow:0px_0px_10px_0px_#e39943] hover:bg-gradient-to-r hover:from-[#fdad50] hover:via-[#ffa944] hover:to-[#ff971d]">
+                                    Contact Us
+                                </a>
+                                <a href="mailto:schoolsoftware@gmail.com" class="text-nowrap bg-gradient-to-b from-violet-300 to-violet-500/90 py-2 px-4 rounded-full shadow-xl shadow-violet-200/95 font-medium sm:text-base text-sm text-white duration-300 hover:[box-shadow:0px_0px_10px_0px_#e39943] hover:bg-gradient-to-r hover:from-[#fdad50] hover:via-[#ffa944] hover:to-[#ff971d]">
+                                    Email Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- bottom header end -->
+
+
+  </header>
+   <!-- header end  -->
+<!-- hero section  -->
+
+<section class="relative overflow-hidden lg:h-dvh lg:min-h-[700px] w-full z-50">
+    <div class="absolute inset-0 !h-full size-full">
+    <video id="home-hero-video" class="per-video__video fadein max-sm:w-full max-sm:object-cover max-sm:h-full" src="./assets/img/hero-sect-video.mp4" autoplay="autoplay" loop="loop" muted="" ></video>
+    </div>
+    <div class="swiper mySwiper h-full !z-20 relative ">
+      <div class="swiper-wrapper h-full relative z-50 ">
+        <div class="swiper-slide [&:not(.swiper-slide-active)]:!opacity-0 !transition-all h-full relative z-50 lg:py-20 md:py-16 py-10  before:absolute before:inset-y-[-200px] md:before:-left-96 before:-left-32 before:w-[78%] before:mx-auto before:bg-gradient-to-l before:from-black/20 before:via-black/10 before:to-black/0  before:transform before:-skew-x-[25deg] before:z-10 ">
+          <div class="mx-auto max-w-7xl overflow-hidden h-full px-6 lg:px-8 w-full relative z-10 text-white">
+              <div class="grid grid-cols-12 size-full">
+                  <div class="lg:col-span-6 col-span-12">
+                      <div class="size-full flex flex-col justify-center" data-aos="zoom-in-right" data-aos-duration="2000" >
+                          <div class="lg:text-7xl md:text-6xl text-4xl font-bold " >EXPLORE <span class="[-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:white]">VISION</span> </div>
+                          <div class="md:text-base text-sm text-white text-balance mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                          </div>
+                          <p class="font-medium my-3 md:mb-10 mb-6 col-span-12 xl:col-span-9 flex text-white">
+                              <label class="lg:text-7xl text-6xl font-semibold">#1</label>
+                              <label class="overflow-hidden flex flex-col ml-3 self-center">
+                                  <label  class="animate-txt font-bold text-xl mb-0 md:h-11 h-9">
+                                      <span class="text-red-500 sm:text-xl text-base">Mobile App</span>
+                                      <span class="text-red-500 sm:text-xl text-base hidden">Website</span>
+                                      <span class="text-red-500 sm:text-xl text-base hidden">Software</span>
+                                      <span class="text-red-500 sm:text-xl text-base hidden">Game</span>
+                                      <span class="text-red-500 sm:text-xl text-base hidden">Blockchain</span>
+                                  </label>
+                                  <label class="mb-0 font-normal sm:text-xl text-base">Development company in 2024</label>
+                              </label>
+                          </p>
+                          <div class="py-1">
+                            <a href="javascript:;" class="inline-flex items-center gap-3 md:text-lg text-sm text-white relative ps-6 py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-white md:before:min-w-[42px] before:min-w-10 md:before:h-[42px] before:h-10 before:left-0 before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[256px]">
+                              <span>
+                                  <img src="./assets/img/arrow.svg" alt="arrow" class="filter invert">
+                              </span>
+                              Drop Your Queries
+                            </a>
+                          </div>
+                          <!-- <div class="mt-auto">
+                            <div class="text-white text-2xl mb-4 font-medium">official partner of :</div>
+                            <ul class="flex items-center gap-3">
+                              <li>
+                                <img src="./assets/img/partner-google.png" alt="">
+                              </li>
+                              <li>
+                                <img src="./assets/img/partner-salesforce.png" alt="">
+                              </li>
+                              <li>
+                                <img src="./assets/img/partner-oracle.png" alt="">
+                              </li>
+                              <li>
+                                <img src="./assets/img/partner-aws.png" alt="">
+                              </li>
+                            </ul>
+                          </div> -->
+                  
+                      </div>
+                  </div>
+                  <div class="lg:col-span-6 col-span-12 lg:block hidden">
+                    <div class="size-full">
+                
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide [&:not(.swiper-slide-active)]:!opacity-0 !transition-all h-full relative z-50 lg:py-20 md:py-16 py-10  before:absolute before:inset-y-[-200px] md:before:-right-96 before:-right-32 before:w-[78%] before:mx-auto before:bg-gradient-to-r before:from-black/20 before:via-black/10 before:to-black/0  before:transform before:skew-x-[25deg] before:z-10 ">
+          <div class="mx-auto max-w-7xl overflow-hidden h-full px-6 lg:px-8 w-full relative z-10 text-white">
+              <div class="grid grid-cols-12 size-full">
+                  
+                  <div class="lg:col-span-6 col-span-12 lg:block hidden">
+                    <div class="size-full">
+                
+                    </div>
+                  </div>
+                  <div class="lg:col-span-6 col-span-12">
+                      <div class="size-full flex flex-col justify-center text-right" data-aos="zoom-in-right" data-aos-duration="2000" >
+                          <div class="lg:text-7xl md:text-6xl text-4xl font-bold " >EXPLORE <span class="[-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:white]">VISION</span> </div>
+                          <div class="md:text-base text-sm text-white text-balance mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                          </div>
+                          <p class="font-medium my-3 md:mb-10 mb-6 col-span-12 flex justify-end text-white text-left">
+                              <label class="lg:text-7xl text-6xl font-semibold">#1</label>
+                              <label class="overflow-hidden flex flex-col ml-3 self-center">
+                                  <label style="height: 44px; line-height: 1.5;" class="animate-txt font-bold text-xl mb-0">
+                                      <span class="text-red-500 sm:text-xl text-base">Mobile App</span>
+                                      <span class="text-red-500 sm:text-xl text-base hidden">Website</span>
+                                      <span class="text-red-500 sm:text-xl text-base hidden">Software</span>
+                                      <span class="text-red-500 sm:text-xl text-base hidden">Game</span>
+                                      <span class="text-red-500 sm:text-xl text-base hidden">Blockchain</span>
+                                  </label>
+                                  <label class="mb-0 font-normal sm:text-xl text-base">Development company in 2024</label>
+                              </label>
+                          </p>
+                          <div class="py-1">
+                            <a href="javascript:;" class="inline-flex items-center gap-3 md:text-lg text-sm text-white relative ps-6 py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-white md:before:min-w-[42px] before:min-w-10 md:before:h-[42px] before:h-10 before:left-0 before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[256px]">
+                              <span>
+                                  <img src="./assets/img/arrow.svg" alt="arrow" class="filter invert">
+                              </span>
+                              Drop Your Queries
+                            </a>
+                          </div>
+                  
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</section>
+<!-- hero section end  -->
+ <!-- card section  -->
+ <section class=" py-12 bg-black">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full">
+    <div class="swiper cardswiper ">
+      <div class="swiper-wrapper h-full d-flex !items-stretch py-4">
+        <div class="swiper-slide !h-auto  ">
+         <div class="group h-full  overflow-hidden relative duration-300 hover:scale-105">
+          <div class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+            <img class="size-full object-cover" src="./assets/img/spotlight01.jpg" alt="">
+          </div>
+          <button class="p-5 h-full relative group-hover:after:bsolute group-hover:after:size-full group-hover:after:bg-black/80 group-hover:after:inset-0 group-hover:after:-z-10 duration-400">
+         <div class="flex flex-col h-full">
+           <div class="font-semibold text-base text-white text-start" >Ethical</div>
+            <div class="font-semibold text-2xl text-white text-start">Cyber</div>
+            <div class="text-white pt-8 text-base font-normal text-start opacity-0 translate-x-full
+             group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+             Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum
+             is simply dummy text of the printing .
+            </div>
+            <div class="mt-auto flex items-center justify-end pt-10 opacity-0 translate-y-full
+            group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+             <a href="" class="text-white font-medium text-xl flex items-center">
+               Expand
+               <span class="text-white h-6">
+                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path></svg>
+               </span>
+             </a>
+            </div>
+         </div>
+          </button> 
+         </div>
+        </div>
+        <div class="swiper-slide !h-auto  ">
+          <div class="group h-full  overflow-hidden relative  duration-300 hover:scale-105">
+           <div class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+             <img class="size-full object-cover" src="./assets/img/spotlight02.jpg" alt="">
+           </div>
+           <button class="p-5 h-full relative group-hover:after:bsolute group-hover:after:size-full group-hover:after:bg-black/80 group-hover:after:inset-0 group-hover:after:-z-10 duration-400">
+            <div class="h-full flex flex-col">
+              <div class="font-semibold text-base text-white text-start" >Articles</div>
+                <div class="font-semibold text-2xl text-white text-start">Artificial Intelligence</div>
+                <div class="text-white pt-8 text-base font-normal text-start opacity-0 translate-x-full
+                 group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div class="flex mt-auto items-center justify-end pt-10 opacity-0 translate-y-full
+                group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                 <a href="" class="text-white font-medium text-xl flex items-center">
+                   Expand
+                   <span class="text-white h-6">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path></svg>
+                   </span>
+                 </a>
+                </div>
+
+            </div>
+           </button> 
+          </div>
+         </div>
+         <div class="swiper-slide !h-auto  ">
+          <div class="group h-full  overflow-hidden relative  duration-300 hover:scale-105">
+           <div class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+             <img class="size-full object-cover" src="./assets/img/spotlight03.jpg" alt="">
+           </div>
+           <button class="p-5 h-full relative group-hover:after:bsolute group-hover:after:size-full group-hover:after:bg-black/80 group-hover:after:inset-0 group-hover:after:-z-10 duration-400">
+           <div class="h-full flex flex-col ">
+             <div class="font-semibold text-base text-white text-start" >Case Study</div>
+               <div class="font-semibold text-2xl text-white text-start">5G Technology</div>
+               <div class="text-white pt-8 text-base font-normal text-start opacity-0 translate-x-full
+                group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               </div>
+               <div class="flex mt-auto items-center justify-end pt-10 opacity-0 translate-y-full
+               group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                <a href="" class="text-white font-medium text-xl flex items-center">
+                  Expand
+                  <span class="text-white h-6">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path></svg>
+                  </span>
+                </a>
+               </div>
+           </div>
+           </button> 
+          </div>
+         </div>
+         <div class="swiper-slide !h-auto  ">
+          <div class="group h-full  overflow-hidden relative duration-300 hover:scale-105">
+           <div class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+             <img class="size-full object-cover" src="./assets/img/spotlight04.jpg" alt="">
+           </div>
+           <button class="p-5 h-full relative group-hover:after:bsolute group-hover:after:size-full group-hover:after:bg-black/80 group-hover:after:inset-0 group-hover:after:-z-10 duration-400">
+            <div class="h-full flex flex-col">
+              <div class="font-semibold text-base text-white text-start" >Prespectives</div>
+                <div class="font-semibold text-2xl text-white text-start">Automation Intelligent</div>
+                <div class="text-white pt-8 text-base font-normal text-start opacity-0 translate-x-full
+                 group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.try.
+                </div>
+                <div class="flex mt-auto items-center justify-end pt-10 opacity-0 translate-y-full
+                group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                 <a href="" class="text-white font-medium text-xl flex items-center">
+                   Expand
+                   <span class="text-white h-6">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path></svg>
+                   </span>
+                 </a>
+                </div>
+            </div>
+           </button> 
+          </div>
+         </div>
+         <div class="swiper-slide !h-auto  ">
+          <div class="group h-full  overflow-hidden relative  duration-300 hover:scale-105">
+           <div class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+             <img class="size-full object-cover" src="./assets/img/spotlight02.jpg" alt="">
+           </div>
+           <button class="p-5 h-full relative group-hover:after:bsolute group-hover:after:size-full group-hover:after:bg-black/80 group-hover:after:inset-0 group-hover:after:-z-10 duration-400">
+            <div class="h-full flex flex-col">
+              <div class="font-semibold text-base text-white text-start" >Articles</div>
+                <div class="font-semibold text-2xl text-white text-start">Cloud</div>
+                <div class="text-white pt-8 text-base font-normal text-start opacity-0 translate-x-full
+                 group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div class="mt-auto flex items-center justify-end pt-10 opacity-0 translate-y-full
+                group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                 <a href="" class="text-white font-medium text-xl flex items-center">
+                   Expand
+                   <span class="text-white h-6">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path></svg>
+                   </span>
+                 </a>
+                </div>
+
+            </div>
+           </button> 
+          </div>
+         </div>
+         <div class="swiper-slide !h-auto ">
+          <div class="group h-full  overflow-hidden relative hover:scale-105 duration-300 ">
+           <div class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+             <img class="size-full object-cover" src="./assets/img/spotlight03.jpg" alt="">
+           </div>
+           <button class="p-5 h-full relative group-hover:after:bsolute group-hover:after:size-full group-hover:after:bg-black/80 group-hover:after:inset-0 group-hover:after:-z-10 duration-400">
+            <div class="h-full flex flex-col">
+              <div class="font-semibold text-base text-white text-start" >Case Study</div>
+               <div class="font-semibold text-2xl text-white text-start">Wifi Enterprises</div>
+               <div class="text-white pt-8 text-base font-normal text-start opacity-0 translate-x-full
+                group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               </div>
+               <div class="mt-auto flex items-center justify-end pt-10 opacity-0 translate-y-full
+               group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                <a href="" class="text-white font-medium text-xl flex items-center">
+                  Expand
+                  <span class="text-white h-6">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path></svg>
+                  </span>
+                </a>
+               </div>
+              </div>
+           </button> 
+          </div>
+         </div>
+      </div>
+      <!-- <div class="swiper-scrollbar !bg-red-600 !z-20"></div> -->
+    </div>
+  </div>
+ </section>
+
+ <!-- end  -->
+
+<!-- video section  -->
+<div class="max-w-7xl w-full overflow-hidden h-dvh md:h-auto py-28 mx-auto  px-6 lg:px-8  mt-20 flex justify-center">
+  <div class="md:flex justify-center">
+    <div class="md:w-[65%] w-full relative  ">
+      <a href="" class=" group shadow-2xl items-center rounded-3xl inline-flex w-full  aspect-[1/.6] *:w-full *:h-full *:object-cover overflow-hidden relative before:absolute before:size-full before:-z-10 before:rotate-180  before:shadow-2xl">
+        <img src="./assets/img/amelia-cover.jpg" alt="">
+        <div class="absolute md:!size-24 !size-14 flex items-center justify-center p-3 rounded-full backdrop-blur-sm bg-black/40 *:md:size-6 *:size-4 inset-1/2 -translate-y-1/2 -translate-x-1/2 *:text-white  before:absolute before:size-14 before:bg-white/40 before:rounded-full before:blur-lg before:-z-10 before:opacity-0 before:duration-700 group-hover:before:opacity-100">
+          <svg class="group-hover:scale-110 duration-700" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+            <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z">
+
+          </path>
+          </svg>
+        </div>
+      </a>
+      <div class="absolute lg:w-52 w-32 aspect-[1/.7] overflow-hidden *:object-cover rounded-2xl *:size-full -top-14 -z-30 -right-24">
+        <img src="./assets/img/amelia-small-1.jpg" alt="">
+      </div>
+      <div class="absolute lg:w-52 w-32 aspect-[1/.7] overflow-hidden *:object-cover rounded-2xl *:size-full top-1/2  -left-28 -translate-y-1/2">
+        <img src="./assets/img/amelia-small-2.jpg" alt="">
+      </div>
+      <div class="absolute lg:w-52 w-32 aspect-[1/.7] overflow-hidden *:object-cover rounded-2xl *:size-full md:-bottom-24 -bottom-12 md:right-24 right-8">
+        <img src="./assets/img/amelia-small-3.jpg" alt="">
+      </div>
+     </div>
+  </div>
+   </div>
+ <!-- end  -->
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "fade",
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+
+<script>
+  var swiper = new Swiper(".cardswiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop:true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+    breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+  });
+</script>
+
+</html>
