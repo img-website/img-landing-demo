@@ -16,7 +16,7 @@
         <div
             class="absolute inset-0 !h-full size-full lg:before:absolute lg:before:inset-y-[-200px] lg:before:right-0 lg:before:w-full lg:before:mx-auto lg:before:bg-gradient-to-r lg:before:from-black/80 lg:before:via-black/10 lg:before:to-black/0  lg:before:transform  lg:before:z-10">
             <video id="home-hero-video" class="per-video__video fadein max-sm:w-full max-sm:object-cover max-sm:h-full"
-                src="../assets/img/cta.mp4" autoplay="autoplay" loop="loop" muted=""></video>
+                src="./assets/img/cta.mp4" autoplay="autoplay" loop="loop" muted=""></video>
         </div>
         <div class="h-full !z-20 relative ">
             <div class="h-full relative z-50 ">
@@ -43,7 +43,7 @@
                                         <a href="javascript:;"
                                             class="inline-flex items-center gap-3 md:text-lg text-sm text-white relative ps-6 py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-white md:before:min-w-[42px] before:min-w-10 md:before:h-[42px] before:h-10 before:left-0 before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[206px]">
                                             <span>
-                                                <img src="../assets/img/arrow.svg" alt="arrow" class="filter invert">
+                                                <img src="./assets/img/arrow.svg" alt="arrow" class="filter invert">
                                             </span>
                                             Contact HPIT
                                         </a>
@@ -117,34 +117,357 @@
                 <div class="col-span-3">
                     <h4 class="font-semibold text-gray-100">Social Media</h4>
                     <p class="font-semibold text-gray-400 text-base py-5">Don't Miss To Follow Us On Our Social Networks Accounts.</p>
-                    <div class="mt-3 flex gap-2">
-                        <a class="size-10 inline-flex justify-center items-center gap-x-4 text-sm font-semibold rounded-full bg-theme1 border transition-all duration-300 border-transparent text-white hover:bg-theme3"
-                            href="javascript:;">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                    <div class="w-full flex flex-wrap items-center gap-2 pt-3">
+                        <a target="_blank" href="javascript:;" class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-sky-700 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-sky-700 p-2 lg:p-3 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"></path></svg>
                         </a>
-                        <a class="size-10 inline-flex justify-center items-center gap-x-4 text-sm font-semibold rounded-full bg-theme1 border transition-all duration-300 border-transparent text-white hover:bg-theme4"
-                            href="javascript:;">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                        <a target="_blank"  href="javascript:;" class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-blue-900 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-blue-900 p-2 lg:p-3 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
                         </a>
-                        <a class="size-10 inline-flex justify-center items-center gap-x-4 text-sm font-semibold rounded-full bg-theme1 border transition-all duration-300 border-transparent text-white hover:text-black hover:bg-white"
-                            href="javascript:;">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M15.527 17.921v-2.066c-.669.448-1.32.67-1.952.67-.298 0-.631-.094-1.004-.277-.223-.151-.354-.317-.393-.503-.11-.224-.178-.708-.178-1.454v-3.291h3v-2h-3v-3.356h-1.772c-.149.782-.298 1.338-.448 1.673-.184.41-.482.782-.891 1.116-.411.337-.837.577-1.285.725v1.842h1.396v4.521c0 .52.073.964.223 1.337.111.298.334.595.671.893.259.262.631.484 1.115.67.595.15 1.114.223 1.562.223.52 0 1.004-.056 1.45-.167.521-.112 1.023-.298 1.506-.556"></path></svg>
+                        <a target="_blank" href="javascript:;" class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-black before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-black p-2 lg:p-3 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-150 scale-150 duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.527 17.921v-2.066c-.669.448-1.32.67-1.952.67-.298 0-.631-.094-1.004-.277-.223-.151-.354-.317-.393-.503-.11-.224-.178-.708-.178-1.454v-3.291h3v-2h-3v-3.356h-1.772c-.149.782-.298 1.338-.448 1.673-.184.41-.482.782-.891 1.116-.411.337-.837.577-1.285.725v1.842h1.396v4.521c0 .52.073.964.223 1.337.111.298.334.595.671.893.259.262.631.484 1.115.67.595.15 1.114.223 1.562.223.52 0 1.004-.056 1.45-.167.521-.112 1.023-.298 1.506-.556"></path></svg>
                         </a>
-                        <a class="size-10 inline-flex justify-center items-center gap-x-4 text-sm font-semibold rounded-full bg-theme1 border transition-all duration-300 border-transparent text-white hover:bg-theme1/80"
-                            href="javascript:;">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M940.736 189.696C912.992 169.728 835.68 143.2 511.728 143.2c-347.152 0-398.656 30.464-415.185 40.432C8.575 236.479.223 470.447-.544 517.887.512 580.545 10.64 789.008 96.48 840.577c16.497 9.935 67.712 40.223 415.248 40.223 324.16 0 401.376-26.4 429.008-46.288 74.976-53.935 83.6-239.68 83.808-317.439-.192-62.528-6.752-271.872-83.807-327.376zm-37.376 592.88c-11.152 8.032-75.186 34.223-391.634 34.223-305.936 0-370.128-23.744-382.256-31.056-30.88-18.528-63.472-116.88-66.031-268.032 2.528-150.816 35.568-260.912 66.097-279.216 12.16-7.344 76.591-31.28 382.19-31.28 316.192 0 380.4 26.369 391.633 34.433 27.409 19.744 56.752 123.68 57.184 275.632-.432 154.336-29.968 245.712-57.184 265.296zM720.415 486.83L432.481 310.141a32.003 32.003 0 0 0-32.257-.464 32.016 32.016 0 0 0-16.288 27.872v353.44a32.016 32.016 0 0 0 32 32 32.02 32.02 0 0 0 16.527-4.592L720.4 541.645c9.6-5.807 15.472-16.19 15.472-27.407s-5.856-21.632-15.456-27.408zM447.953 634.301V394.204l194 120.032z"></path></svg>
+                        <a target="_blank" href="javascript:;" class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-red-700 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-red-700 p-2 lg:p-3 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
                         </a>
                     </div>
                 </div>
             </div>
 
             <div class="mt-6 sm:mt-12 flex justify-center items-center border-t border-gray-600">
-                <p class="text-base mt-5 text-gray-200">©2024 HighPoint Information Technology</p>
+                <p class="text-sm pt-10 text-gray-200">©2024 HighPoint Information Technology</p>
             </div>
         </div>
     </footer>
 
     <!-- footer Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="rounded-xl bg-white ">
+        <input type="radio" name="capabilities" id="insights" class="hidden peer/ass insights" checked>
+        <div
+            class="p-5 mt-10 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150">
+            <div class="swiper mySwiper ">
+                <div class="swiper-wrapper h-full d-flex !items-stretch py-4">
+                    <div class="swiper-slide !h-auto p-[1px]  overflow-hidden">
+                        <div class="px-4 sm:px-6 lg:px-8 mx-auto">
+                            <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+                                <a class="group block rounded-xl overflow-hidden focus:outline-none"
+                                    href="#">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+                                        <div
+                                            class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                                            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
+                                                src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                                                alt="Blog Image">
+                                        </div>
+
+                                        <div class="grow">
+                                            <h3
+                                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                                                Studio by Preline
+                                            </h3>
+                                            <p class="mt-3 text-gray-600">
+                                                Produce professional, reliable streams easily leveraging
+                                                Preline's innovative broadcast studio
+                                            </p>
+                                            <p
+                                                class="mt-4 inline-flex items-center gap-x-1 text-sm decoration-2 group-hover:underline group-focus:underline font-medium">
+                                                Read more
+                                                <svg class="shrink-0 size-4"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="group block rounded-xl overflow-hidden focus:outline-none"
+                                    href="#">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+                                        <div
+                                            class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                                            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
+                                                src="https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                                                alt="Blog Image">
+                                        </div>
+
+                                        <div class="grow">
+                                            <h3
+                                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                                                Onsite
+                                            </h3>
+                                            <p class="mt-3 text-gray-600">
+                                                Optimize your in-person experience with best-in-class
+                                                capabilities like badge printing and lead retrieval
+                                            </p>
+                                            <p
+                                                class="mt-4 inline-flex items-center gap-x-1 text-sm decoration-2 group-hover:underline group-focus:underline font-medium">
+                                                Read more
+                                                <svg class="shrink-0 size-4"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="group block rounded-xl overflow-hidden focus:outline-none"
+                                    href="#">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+                                        <div
+                                            class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                                            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
+                                                src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                                                alt="Blog Image">
+                                        </div>
+
+                                        <div class="grow">
+                                            <h3
+                                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                                                The complete guide to OKRs
+                                            </h3>
+                                            <p class="mt-3 text-gray-600">
+                                                How to make objectives and key results work for your
+                                                company
+                                            </p>
+                                            <p
+                                                class="mt-4 inline-flex items-center gap-x-1 text-sm decoration-2 group-hover:underline group-focus:underline font-medium">
+                                                Read more
+                                                <svg class="shrink-0 size-4"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="group block rounded-xl overflow-hidden focus:outline-none"
+                                    href="#">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+                                        <div
+                                            class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                                            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
+                                                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                                                alt="Blog Image">
+                                        </div>
+
+                                        <div class="grow">
+                                            <h3
+                                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                                                People program models
+                                            </h3>
+                                            <p class="mt-3 text-gray-600">
+                                                Six approaches to bringing your People strategy to life
+                                            </p>
+                                            <p
+                                                class="mt-4 inline-flex items-center gap-x-1 text-sm decoration-2 group-hover:underline group-focus:underline font-medium">
+                                                Read more
+                                                <svg class="shrink-0 size-4"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide !h-auto p-[1px]  overflow-hidden">
+                        <div class="px-4 sm:px-6 lg:px-8 mx-auto">
+                            <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+                                <a class="group block rounded-xl overflow-hidden focus:outline-none"
+                                    href="#">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+                                        <div
+                                            class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                                            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
+                                                src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                                                alt="Blog Image">
+                                        </div>
+
+                                        <div class="grow">
+                                            <h3
+                                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                                                Studio by Preline
+                                            </h3>
+                                            <p class="mt-3 text-gray-600">
+                                                Produce professional, reliable streams easily leveraging
+                                                Preline's innovative broadcast studio
+                                            </p>
+                                            <p
+                                                class="mt-4 inline-flex items-center gap-x-1 text-sm decoration-2 group-hover:underline group-focus:underline font-medium">
+                                                Read more
+                                                <svg class="shrink-0 size-4"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="group block rounded-xl overflow-hidden focus:outline-none"
+                                    href="#">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+                                        <div
+                                            class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                                            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
+                                                src="https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                                                alt="Blog Image">
+                                        </div>
+
+                                        <div class="grow">
+                                            <h3
+                                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                                                Onsite
+                                            </h3>
+                                            <p class="mt-3 text-gray-600">
+                                                Optimize your in-person experience with best-in-class
+                                                capabilities like badge printing and lead retrieval
+                                            </p>
+                                            <p
+                                                class="mt-4 inline-flex items-center gap-x-1 text-sm decoration-2 group-hover:underline group-focus:underline font-medium">
+                                                Read more
+                                                <svg class="shrink-0 size-4"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="group block rounded-xl overflow-hidden focus:outline-none"
+                                    href="#">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+                                        <div
+                                            class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                                            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
+                                                src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                                                alt="Blog Image">
+                                        </div>
+
+                                        <div class="grow">
+                                            <h3
+                                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                                                The complete guide to OKRs
+                                            </h3>
+                                            <p class="mt-3 text-gray-600">
+                                                How to make objectives and key results work for your
+                                                company
+                                            </p>
+                                            <p
+                                                class="mt-4 inline-flex items-center gap-x-1 text-sm decoration-2 group-hover:underline group-focus:underline font-medium">
+                                                Read more
+                                                <svg class="shrink-0 size-4"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="group block rounded-xl overflow-hidden focus:outline-none"
+                                    href="#">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+                                        <div
+                                            class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                                            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
+                                                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                                                alt="Blog Image">
+                                        </div>
+
+                                        <div class="grow">
+                                            <h3
+                                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                                                People program models
+                                            </h3>
+                                            <p class="mt-3 text-gray-600">
+                                                Six approaches to bringing your People strategy to life
+                                            </p>
+                                            <p
+                                                class="mt-4 inline-flex items-center gap-x-1 text-sm decoration-2 group-hover:underline group-focus:underline font-medium">
+                                                Read more
+                                                <svg class="shrink-0 size-4"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
