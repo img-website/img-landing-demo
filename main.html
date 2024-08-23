@@ -9,318 +9,37 @@
 </head>
 <body>
   <!-- header start  -->
-  <header class="relative bg-white   z-[9999] overflowhidden">
+  <header class=" shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-fixed-nav  bg-transparent backdrop-blur-sm z-[999] overflowhidden absolute top-0 w-full ">
+
     <!-- top header  -->
      <!-- top header  -->
-      <div class="bg-gray-100 py-2">
+      <div class="bg-transparent group-[]/nav:bg-gray-100 backdrop-blur-sm pt-2 group-[]/nav:py-2 relative  lg:block hidden">
         <div class="flex items-center justify-end mx-auto max-w-7xl lg:px-8 px-6 ">
-         
         
           <div>
-            <ul class="flex items-center gap-3">
-              <li>
-                <a href="javascript:;" class="text-xs text-black relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Employess</a>
+            <ul class="lg:flex items-center gap-3 ">
+              <li >
+                <a href="javascript:;" class="text-xs group-[]/nav:text-black text-white relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Employess</a>
+              </li>
+              <li >
+                <a href="javascript:;" class="text-xs group-[]/nav:text-black text-white relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Suppliers</a>
+              </li>
+              <li >
+                <a href="javascript:;" class="text-xs group-[]/nav:text-black text-white relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Contact us</a>
               </li>
               <li>
-                <a href="javascript:;" class="text-xs text-black relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Suppliers</a>
-              </li>
-              <li>
-                <a href="javascript:;" class="text-xs text-black relative py-1 after:absolute after:bottom-0 after:bg-blue-500 after:left-0 after:h-[2px] after:w-0 after:duration-300 hover:after:w-full after:transition-all duration-300 transition-all">Contact us</a>
-              </li>
-              <li>
-                <div class="relative flex flex-col gap-y-3 cursor-pointer">
-                  <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
+                <div class=" flex flex-col gap-y-3 cursor-pointer">
                   <label for="mmCompany" class="flex items-center gap-x-[2px] cursor-pointer">
-                    <div  class="flex items-center text-black text-sm gap-1">
+                    <div  class="flex items-center group-[]/nav:text-black text-white text-sm gap-1">
                         <span>
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-width="2" d="M12,23 C18.0751322,23 23,18.0751322 23,12 C23,5.92486775 18.0751322,1 12,1 C5.92486775,1 1,5.92486775 1,12 C1,18.0751322 5.92486775,23 12,23 Z M12,23 C15,23 16,18 16,12 C16,6 15,1 12,1 C9,1 8,6 8,12 C8,18 9,23 12,23 Z M2,16 L22,16 M2,8 L22,8"></path></svg>
                         </span>
-                        <span class="ext-sm text-black">English</span>
+                        <span class="ext-sm group-[]/nav:text-black text-white">English</span>
                     </div>
                   </label>
-                  <div class="w-full peer-checked/mm:block hidden absolute inset-0 -left-[420px] top-6 z-50 ">
-                    <div class="shadow-2xl border border-gray-100 w-[550px] bg-gray-100 p-2 h-[320px] rounded-md">
-                      <div class="flex flex-wrap h-full group">
-                        <div class="w-1/3">
-                          <ul class="flex flex-col 3">
-                            <li class="p-2 text-xs backdrop-blur-sm rounded-md group-has-[.ass:checked]:bg-blue-500 group-has-[.ass:checked]:text-white group-has-[.ass:checked]:border-slate-700">
-                              <label class="cursor-pointer hoverLink " for="ass">All Countries / Regions </label>
-                            </li>
-                            <li class=" p-2 text-xs backdrop-blur-sm rounded-md   group-has-[.NorthAmerica:checked]:bg-blue-500 group-has-[.NorthAmerica:checked]:text-white group-has-[.NorthAmerica:checked]:border-slate-700">
-                              <label class="cursor-pointer hoverLink " for="NorthAmerica">North America </label>
-                            </li>
-                        
-                            <li class=" p-2 text-xs backdrop-blur-sm rounded-md   group-has-[.Africa:checked]:bg-blue-500 group-has-[.Africa:checked]:text-white group-has-[.Africa:checked]:border-slate-700">
-                              <label class="cursor-pointer hoverLink " for="Africa">Africa </label>
-                            </li>
-                            <li class=" p-2 text-xs backdrop-blur-sm rounded-md   group-has-[.AsiaPacific:checked]:bg-blue-500 group-has-[.AsiaPacific:checked]:text-white group-has-[.AsiaPacific:checked]:border-slate-700">
-                              <label class="cursor-pointer hoverLink " for="AsiaPacific">Asia-Pacific </label>
-                            </li>
-                            <li class=" p-2 text-xs backdrop-blur-sm rounded-md   group-has-[.Europe:checked]:bg-blue-500 group-has-[.Europe:checked]:text-white group-has-[.Europe:checked]:border-slate-700">
-                              <label class="cursor-pointer hoverLink " for="Europe">Europe</label>
-                            </li>
-                            <li class=" p-2 text-xs backdrop-blur-sm rounded-md   group-has-[.GreaterChina:checked]:bg-blue-500 group-has-[.GreaterChina:checked]:text-white group-has-[.GreaterChina:checked]:border-slate-700">
-                              <label class="cursor-pointer hoverLink " for="GreaterChina">Greater-China</label>
-                            </li>
-                            <li class=" p-2 text-xs backdrop-blur-sm rounded-md   group-has-[.LatinAmerica:checked]:bg-blue-500 group-has-[.LatinAmerica:checked]:text-white group-has-[.LatinAmerica:checked]:border-slate-700">
-                              <label class="cursor-pointer hoverLink " for="LatinAmerica">Latin-America</label>
-                            </li>
-                            <li class=" p-2 text-xs backdrop-blur-sm rounded-md   group-has-[.MiddleEastern:checked]:bg-blue-500 group-has-[.MiddleEastern:checked]:text-white group-has-[.MiddleEastern:checked]:border-slate-700">
-                              <label class="cursor-pointer hoverLink " for="MiddleEastern">Middle Eastern</label>
-                            </li>
-  
-  
-                          </ul>
-                        </div>
-                        <div class="w-4/6 h-full  bg-white backdrop-blur-2xl ">
-                          <div class="overflow-y-auto max-h-full overflow-x-hidden ">
-                            <input type="radio" name="language" id="ass" class="hidden peer/ass ass" checked>
-
-                              <div class=" p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
-                                  <ul class="flex flex-col gap-3">
-                                    <li class="text-xs text-black">English - <span class="text-blue-500 cursor-pointer text-sm" >English</span></li>
-                                    <li class="text-xs text-black">Afrikaans - <span class="text-blue-500 cursor-pointer text-sm" >Afrikaans</span></li>
-                                    <li class="text-xs text-black">Albanian - <span class="text-blue-500 cursor-pointer text-sm" >Shqip</span></li>
-                                    <li class="text-xs text-black">Amharic - <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
-                                    <li class="text-xs text-black">Arabic - <span class="text-blue-500 cursor-pointer text-sm" >العربية</span></li>
-                                    <li class="text-xs text-black">Armenian - <span class="text-blue-500 cursor-pointer text-sm" >Հայերեն</span></li>
-                                    <li class="text-xs text-black">Azerbaijani - <span class="text-blue-500 cursor-pointer text-sm" >Azərbaycanca</span></li>
-                                    <li class="text-xs text-black">Basque - <span class="text-blue-500 cursor-pointer text-sm" >Euskara</span></li>
-                                    <li class="text-xs text-black">Belarusian - <span class="text-blue-500 cursor-pointer text-sm" >Беларуская</span></li>
-                                    <li class="text-xs text-black">Bengali - <span class="text-blue-500 cursor-pointer text-sm" >বাংলা</span></li>
-                                    <li class="text-xs text-black">Bosnian - <span class="text-blue-500 cursor-pointer text-sm" >Bosanski</span></li>
-                                    <li class="text-xs text-black">Bulgarian - <span class="text-blue-500 cursor-pointer text-sm" >Български</span></li>
-                                    <li class="text-xs text-black">Catalan - <span class="text-blue-500 cursor-pointer text-sm" >Català</span></li>
-                                    <li class="text-xs text-black">Cebuano - <span class="text-blue-500 cursor-pointer text-sm" >Cebuano</span></li>
-                                    <li class="text-xs text-black">Chichewa - <span class="text-blue-500 cursor-pointer text-sm" >Chichewa</span></li>
-                                    <li class="text-xs text-black">Chinese (Simplified) - <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
-                                    <li class="text-xs text-black">Chinese (Traditional) - <span class="text-blue-500 cursor-pointer text-sm" >中文 (繁體)</span></li>
-                                    <li class="text-xs text-black">Corsican - <span class="text-blue-500 cursor-pointer text-sm" >Corsican</span></li>
-                                    <li class="text-xs text-black">Croatian - <span class="text-blue-500 cursor-pointer text-sm" >Hrvatski</span></li>
-                                    <li class="text-xs text-black">Czech - <span class="text-blue-500 cursor-pointer text-sm" >Čeština</span></li>
-                                    <li class="text-xs text-black">Danish - <span class="text-blue-500 cursor-pointer text-sm" >Dansk</span></li>
-                                    <li class="text-xs text-black">Dutch - <span class="text-blue-500 cursor-pointer text-sm" >Nederlands</span></li>
-                                  
-                                    <li class="text-xs text-black">Esperanto - <span class="text-blue-500 cursor-pointer text-sm" >Esperanto</span></li>
-                                    <li class="text-xs text-black">Estonian - <span class="text-blue-500 cursor-pointer text-sm" >Eesti</span></li>
-                                    <li class="text-xs text-black">Filipino - <span class="text-blue-500 cursor-pointer text-sm" >Filipino</span></li>
-                                    <li class="text-xs text-black">Finnish - <span class="text-blue-500 cursor-pointer text-sm" >Suomi</span></li>
-                                    <li class="text-xs text-black">French - <span class="text-blue-500 cursor-pointer text-sm" >Français</span></li>
-                                    <li class="text-xs text-black">Frisian - <span class="text-blue-500 cursor-pointer text-sm" >Frysk</span></li>
-                                    <li class="text-xs text-black">Galician - <span class="text-blue-500 cursor-pointer text-sm" >Galego</span></li>
-                                    <li class="text-xs text-black">Georgian - <span class="text-blue-500 cursor-pointer text-sm" >ქართული</span></li>
-                                    <li class="text-xs text-black">German - <span class="text-blue-500 cursor-pointer text-sm" >Deutsch</span></li>
-                                    <li class="text-xs text-black">Greek - <span class="text-blue-500 cursor-pointer text-sm" >Ελληνικά</span></li>
-                                    <li class="text-xs text-black">Gujarati - <span class="text-blue-500 cursor-pointer text-sm" >ગુજરાતી</span></li>
-                                    <li class="text-xs text-black">Haitian Creole - <span class="text-blue-500 cursor-pointer text-sm" >Kreyòl Ayisyen</span></li>
-                                    <li class="text-xs text-black">Hausa - <span class="text-blue-500 cursor-pointer text-sm" >Hausa</span></li>
-                                    <li class="text-xs text-black">Hawaiian - <span class="text-blue-500 cursor-pointer text-sm" >Hawaiian</span></li>
-                                    <li class="text-xs text-black">Hebrew - <span class="text-blue-500 cursor-pointer text-sm" >עברית</span></li>
-                                    <li class="text-xs text-black">Hindi - <span class="text-blue-500 cursor-pointer text-sm" >हिन्दी</span></li>
-                                    <li class="text-xs text-black">Hmong - <span class="text-blue-500 cursor-pointer text-sm" >Hmong</span></li>
-                                    <li class="text-xs text-black">Hungarian - <span class="text-blue-500 cursor-pointer text-sm" >Magyar</span></li>
-                                    <li class="text-xs text-black">Icelandic - <span class="text-blue-500 cursor-pointer text-sm" >Íslenska</span></li>
-                                    <li class="text-xs text-black">Igbo - <span class="text-blue-500 cursor-pointer text-sm" >Igbo</span></li>
-                                    <li class="text-xs text-black">Indonesian - <span class="text-blue-500 cursor-pointer text-sm" >Indonesia</span></li>
-                                    <li class="text-xs text-black">Irish - <span class="text-blue-500 cursor-pointer text-sm" >Gaeilge</span></li>
-                                    <li class="text-xs text-black">Italian - <span class="text-blue-500 cursor-pointer text-sm" >Italiano</span></li>
-                                    <li class="text-xs text-black">Japanese - <span class="text-blue-500 cursor-pointer text-sm" >日本語</span></li>
-                                    <li class="text-xs text-black">Javanese - <span class="text-blue-500 cursor-pointer text-sm" >Jawa</span></li>
-                                    <li class="text-xs text-black">Kannada - <span class="text-blue-500 cursor-pointer text-sm" >ಕನ್ನಡ</span></li>
-                                    <li class="text-xs text-black">Kazakh - <span class="text-blue-500 cursor-pointer text-sm" >Қазақ тілі</span></li>
-                                    <li class="text-xs text-black">Khmer - <span class="text-blue-500 cursor-pointer text-sm" >ភាសាខ្មែរ</span></li>
-                                    <li class="text-xs text-black">Kinyarwanda - <span class="text-blue-500 cursor-pointer text-sm" >Kinyarwanda</span></li>
-                                    <li class="text-xs text-black">Korean - <span class="text-blue-500 cursor-pointer text-sm" >한국어</span></li>
-                                    <li class="text-xs text-black">Kurdish (Kurmanji) - <span class="text-blue-500 cursor-pointer text-sm" >Kurdî (Kurmancî)</span></li>
-                                    <li class="text-xs text-black">Kyrgyz - <span class="text-blue-500 cursor-pointer text-sm" >Кыргызча</span></li>
-                                    <li class="text-xs text-black">Lao - <span class="text-blue-500 cursor-pointer text-sm" >ລາວ</span></li>
-                                    <li class="text-xs text-black">Latin - <span class="text-blue-500 cursor-pointer text-sm" >Latin</span></li>
-                                    <li class="text-xs text-black">Latvian - <span class="text-blue-500 cursor-pointer text-sm" >Latviešu</span></li>
-                                    <li class="text-xs text-black">Lithuanian - <span class="text-blue-500 cursor-pointer text-sm" >Lietuvių</span></li>
-                                    <li class="text-xs text-black">Luxembourgish - <span class="text-blue-500 cursor-pointer text-sm" >Lëtzebuergesch</span></li>
-                                    
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
-                            <input type="radio" name="language" id="NorthAmerica" class="hidden peer/ass NorthAmerica" >
-                            
-                              <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
-                                  <ul class="flex flex-col gap-3">
-                                    <li class="text-xs text-black">English - <span class="text-blue-500 cursor-pointer text-sm" >English</span></li>
-                                    <li class="text-xs text-black">Spanish -   <span class="text-blue-500 cursor-pointer text-sm" >Español</span></li>
-  
-                                    <li class="text-xs text-black">French -   <span class="text-blue-500 cursor-pointer text-sm" >Français</span></li>
-                                    
-                                    
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
-                            <input type="radio" name="language" id="Africa" class="hidden peer/ass Africa" >
-                            
-                              <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
-                                  <ul class="flex flex-col gap-3">
-                                    <li class="text-xs text-black">Arabic - <span class="text-blue-500 cursor-pointer text-sm" >العربية</span></li>
-                                    <li class="text-xs text-black">Swahili  -   <span class="text-blue-500 cursor-pointer text-sm" >Kiswahili</span></li>
-                                    <li class="text-xs text-black">Hausa -    <span class="text-blue-500 cursor-pointer text-sm" >Hausa</span></li>
-                                    <li class="text-xs text-black">Yoruba -    <span class="text-blue-500 cursor-pointer text-sm" >Yorùbá</span></li>
-                                    <li class="text-xs text-black">Igbo -    <span class="text-blue-500 cursor-pointer text-sm" >Igbo</span></li>
-                                    <li class="text-xs text-black">Amharic -    <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
-                                    <li class="text-xs text-black">Oromo -  <span class="text-blue-500 cursor-pointer text-sm" >Oromo</span></li>
-                                    <li class="text-xs text-black">Somali -     <span class="text-blue-500 cursor-pointer text-sm" >Soomaali</span></li>
-                                    <li class="text-xs text-black">Swahili -  <span class="text-blue-500 cursor-pointer text-sm" >Kiswahili</span></li>
-                                    <li class="text-xs text-black">Zulu -  <span class="text-blue-500 cursor-pointer text-sm" >isiZulu</span></li>
-  
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
-                            <input type="radio" name="language" id="AsiaPacific" class="hidden peer/ass AsiaPacific" >
-                            
-                              <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
-                                  <ul class="flex flex-col gap-3">
-                                    <li class="text-xs text-black">Mandarin Chinese -  <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
-                                    <li class="text-xs text-black">Mandarin Chinese - <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
-                                    <li class="text-xs text-black">Hindi -  <span class="text-blue-500 cursor-pointer text-sm" >हिन्दी</span></li>
-                                    <li class="text-xs text-black">Japanese -    <span class="text-blue-500 cursor-pointer text-sm" >日本語</span></li>
-                                    <li class="text-xs text-black">Korean - <span class="text-blue-500 cursor-pointer text-sm" >한국어</span></li>
-                                    <li class="text-xs text-black">Amharic -    <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
-                                    <li class="text-xs text-black">Indonesian -  <span class="text-blue-500 cursor-pointer text-sm" >Bahasa Indonesia </span></li>
-                                    <li class="text-xs text-black">Thai -     <span class="text-blue-500 cursor-pointer text-sm" >ไทย</span></li>
-                                    <li class="text-xs text-black">Tagalog -  <span class="text-blue-500 cursor-pointer text-sm" >Tagalog</span></li>
-                                    <li class="text-xs text-black">Zulu -  <span class="text-blue-500 cursor-pointer text-sm" >isiZulu</span></li>
-  
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
-                            <input type="radio" name="language" id="Europe" class="hidden peer/ass Europe" >
-                            
-                              <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
-                                  <ul class="flex flex-col gap-3">
-                                    <li class="text-xs text-black">Arabic - <span class="text-blue-500 cursor-pointer text-sm" >العربية</span></li>
-                                    <li class="text-xs text-black">Swahili  -   <span class="text-blue-500 cursor-pointer text-sm" >Kiswahili</span></li>
-                                    <li class="text-xs text-black">Hausa -    <span class="text-blue-500 cursor-pointer text-sm" >Hausa</span></li>
-                                    <li class="text-xs text-black">Yoruba -    <span class="text-blue-500 cursor-pointer text-sm" >Yorùbá</span></li>
-                                    <li class="text-xs text-black">Igbo -    <span class="text-blue-500 cursor-pointer text-sm" >Igbo</span></li>
-                                    <li class="text-xs text-black">Amharic -    <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
-                                    <li class="text-xs text-black">Oromo -  <span class="text-blue-500 cursor-pointer text-sm" >Oromo</span></li>
-                                    <li class="text-xs text-black">Somali -     <span class="text-blue-500 cursor-pointer text-sm" >Soomaali</span></li>
-                                    <li class="text-xs text-black">Swahili -  <span class="text-blue-500 cursor-pointer text-sm" >Kiswahili</span></li>
-                                    <li class="text-xs text-black">Zulu -  <span class="text-blue-500 cursor-pointer text-sm" >isiZulu</span></li>
-  
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
-                            <input type="radio" name="language" id="GreaterChina" class="hidden peer/ass GreaterChina"  >
-                            
-                              <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
-                                  <ul class="flex flex-col gap-3">
-                                    <li class="text-xs text-black">English - <span class="text-blue-500 cursor-pointer text-sm" >English</span></li>
-                                    <li class="text-xs text-black">Afrikaans - <span class="text-blue-500 cursor-pointer text-sm" >Afrikaans</span></li>
-                                    <li class="text-xs text-black">Albanian - <span class="text-blue-500 cursor-pointer text-sm" >Shqip</span></li>
-                                    <li class="text-xs text-black">Amharic - <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
-                                    <li class="text-xs text-black">Arabic - <span class="text-blue-500 cursor-pointer text-sm" >العربية</span></li>
-                                    <li class="text-xs text-black">Armenian - <span class="text-blue-500 cursor-pointer text-sm" >Հայերեն</span></li>
-                                    <li class="text-xs text-black">Azerbaijani - <span class="text-blue-500 cursor-pointer text-sm" >Azərbaycanca</span></li>
-                                    <li class="text-xs text-black">Basque - <span class="text-blue-500 cursor-pointer text-sm" >Euskara</span></li>
-                                    <li class="text-xs text-black">Belarusian - <span class="text-blue-500 cursor-pointer text-sm" >Беларуская</span></li>
-                                    <li class="text-xs text-black">Bengali - <span class="text-blue-500 cursor-pointer text-sm" >বাংলা</span></li>
-                                    <li class="text-xs text-black">Bosnian - <span class="text-blue-500 cursor-pointer text-sm" >Bosanski</span></li>
-                                    <li class="text-xs text-black">Bulgarian - <span class="text-blue-500 cursor-pointer text-sm" >Български</span></li>
-                                    <li class="text-xs text-black">Catalan - <span class="text-blue-500 cursor-pointer text-sm" >Català</span></li>
-                                    <li class="text-xs text-black">Cebuano - <span class="text-blue-500 cursor-pointer text-sm" >Cebuano</span></li>
-                                    <li class="text-xs text-black">Chichewa - <span class="text-blue-500 cursor-pointer text-sm" >Chichewa</span></li>
-                                    <li class="text-xs text-black">Chinese (Simplified) - <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
-                                    <li class="text-xs text-black">Chinese (Traditional) - <span class="text-blue-500 cursor-pointer text-sm" >中文 (繁體)</span></li>
-                                    <li class="text-xs text-black">Corsican - <span class="text-blue-500 cursor-pointer text-sm" >Corsican</span></li>
-                                    <li class="text-xs text-black">Croatian - <span class="text-blue-500 cursor-pointer text-sm" >Hrvatski</span></li>
-                                    <li class="text-xs text-black">Czech - <span class="text-blue-500 cursor-pointer text-sm" >Čeština</span></li>
-                                    <li class="text-xs text-black">Danish - <span class="text-blue-500 cursor-pointer text-sm" >Dansk</span></li>
-                                    <li class="text-xs text-black">Dutch - <span class="text-blue-500 cursor-pointer text-sm" >Nederlands</span></li>
-                                  
-                                    <li class="text-xs text-black">Esperanto - <span class="text-blue-500 cursor-pointer text-sm" >Esperanto</span></li>
-                                    <li class="text-xs text-black">Estonian - <span class="text-blue-500 cursor-pointer text-sm" >Eesti</span></li>
-                                    <li class="text-xs text-black">Filipino - <span class="text-blue-500 cursor-pointer text-sm" >Filipino</span></li>
-                                    <li class="text-xs text-black">Finnish - <span class="text-blue-500 cursor-pointer text-sm" >Suomi</span></li>
-                                    <li class="text-xs text-black">French - <span class="text-blue-500 cursor-pointer text-sm" >Français</span></li>
-                                    <li class="text-xs text-black">Frisian - <span class="text-blue-500 cursor-pointer text-sm" >Frysk</span></li>
-                                    <li class="text-xs text-black">Galician - <span class="text-blue-500 cursor-pointer text-sm" >Galego</span></li>
-                                    <li class="text-xs text-black">Georgian - <span class="text-blue-500 cursor-pointer text-sm" >ქართული</span></li>
-                                    <li class="text-xs text-black">German - <span class="text-blue-500 cursor-pointer text-sm" >Deutsch</span></li>
-                                    <li class="text-xs text-black">Greek - <span class="text-blue-500 cursor-pointer text-sm" >Ελληνικά</span></li>
-                                    <li class="text-xs text-black">Gujarati - <span class="text-blue-500 cursor-pointer text-sm" >ગુજરાતી</span></li>
-                                    <li class="text-xs text-black">Haitian Creole - <span class="text-blue-500 cursor-pointer text-sm" >Kreyòl Ayisyen</span></li>
-                                    <li class="text-xs text-black">Hausa - <span class="text-blue-500 cursor-pointer text-sm" >Hausa</span></li>
-                                    <li class="text-xs text-black">Hawaiian - <span class="text-blue-500 cursor-pointer text-sm" >Hawaiian</span></li>
-                                    <li class="text-xs text-black">Hebrew - <span class="text-blue-500 cursor-pointer text-sm" >עברית</span></li>
-                                    <li class="text-xs text-black">Hindi - <span class="text-blue-500 cursor-pointer text-sm" >हिन्दी</span></li>
-                                    <li class="text-xs text-black">Hmong - <span class="text-blue-500 cursor-pointer text-sm" >Hmong</span></li>
-                                    <li class="text-xs text-black">Hungarian - <span class="text-blue-500 cursor-pointer text-sm" >Magyar</span></li>
-                                    <li class="text-xs text-black">Icelandic - <span class="text-blue-500 cursor-pointer text-sm" >Íslenska</span></li>
-                                    <li class="text-xs text-black">Igbo - <span class="text-blue-500 cursor-pointer text-sm" >Igbo</span></li>
-                                    <li class="text-xs text-black">Indonesian - <span class="text-blue-500 cursor-pointer text-sm" >Indonesia</span></li>
-                                    <li class="text-xs text-black">Irish - <span class="text-blue-500 cursor-pointer text-sm" >Gaeilge</span></li>
-                                    <li class="text-xs text-black">Italian - <span class="text-blue-500 cursor-pointer text-sm" >Italiano</span></li>
-                                    <li class="text-xs text-black">Japanese - <span class="text-blue-500 cursor-pointer text-sm" >日本語</span></li>
-                                    <li class="text-xs text-black">Javanese - <span class="text-blue-500 cursor-pointer text-sm" >Jawa</span></li>
-                                    <li class="text-xs text-black">Kannada - <span class="text-blue-500 cursor-pointer text-sm" >ಕನ್ನಡ</span></li>
-                                    <li class="text-xs text-black">Kazakh - <span class="text-blue-500 cursor-pointer text-sm" >Қазақ тілі</span></li>
-                                    <li class="text-xs text-black">Khmer - <span class="text-blue-500 cursor-pointer text-sm" >ភាសាខ្មែរ</span></li>
-                                    <li class="text-xs text-black">Kinyarwanda - <span class="text-blue-500 cursor-pointer text-sm" >Kinyarwanda</span></li>
-                                    <li class="text-xs text-black">Korean - <span class="text-blue-500 cursor-pointer text-sm" >한국어</span></li>
-                                    <li class="text-xs text-black">Kurdish (Kurmanji) - <span class="text-blue-500 cursor-pointer text-sm" >Kurdî (Kurmancî)</span></li>
-                                    <li class="text-xs text-black">Kyrgyz - <span class="text-blue-500 cursor-pointer text-sm" >Кыргызча</span></li>
-                                    <li class="text-xs text-black">Lao - <span class="text-blue-500 cursor-pointer text-sm" >ລາວ</span></li>
-                                    <li class="text-xs text-black">Latin - <span class="text-blue-500 cursor-pointer text-sm" >Latin</span></li>
-                                    <li class="text-xs text-black">Latvian - <span class="text-blue-500 cursor-pointer text-sm" >Latviešu</span></li>
-                                    <li class="text-xs text-black">Lithuanian - <span class="text-blue-500 cursor-pointer text-sm" >Lietuvių</span></li>
-                                    <li class="text-xs text-black">Luxembourgish - <span class="text-blue-500 cursor-pointer text-sm" >Lëtzebuergesch</span></li>
-                                    
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
-                            <input type="radio" name="language" id="LatinAmerica" class="hidden peer/ass LatinAmerica" >
-                            
-                              <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
-                                  <ul class="flex flex-col gap-3">
-                                    <li class="text-xs text-black">Mandarin Chinese -  <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
-                                    <li class="text-xs text-black">Mandarin Chinese - <span class="text-blue-500 cursor-pointer text-sm" >中文 (简体)</span></li>
-                                    <li class="text-xs text-black">Hindi -  <span class="text-blue-500 cursor-pointer text-sm" >हिन्दी</span></li>
-                                    <li class="text-xs text-black">Japanese -    <span class="text-blue-500 cursor-pointer text-sm" >日本語</span></li>
-                                    <li class="text-xs text-black">Korean - <span class="text-blue-500 cursor-pointer text-sm" >한국어</span></li>
-                                    <li class="text-xs text-black">Amharic -    <span class="text-blue-500 cursor-pointer text-sm" >አማርኛ</span></li>
-                                    <li class="text-xs text-black">Indonesian -  <span class="text-blue-500 cursor-pointer text-sm" >Bahasa Indonesia </span></li>
-                                    <li class="text-xs text-black">Thai -     <span class="text-blue-500 cursor-pointer text-sm" >ไทย</span></li>
-                                    <li class="text-xs text-black">Tagalog -  <span class="text-blue-500 cursor-pointer text-sm" >Tagalog</span></li>
-                                    <li class="text-xs text-black">Zulu -  <span class="text-blue-500 cursor-pointer text-sm" >isiZulu</span></li>
-  
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
-                            <input type="radio" name="language" id="MiddleEastern" class="hidden peer/ass MiddleEastern" >
-                            
-                              <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
-                                  <ul class="flex flex-col gap-3">
-                                    <li class="text-xs text-black">English - <span class="text-blue-500 cursor-pointer text-sm" >English</span></li>
-                                    <li class="text-xs text-black">Spanish -   <span class="text-blue-500 cursor-pointer text-sm" >Español</span></li>
-  
-                                    <li class="text-xs text-black">French -   <span class="text-blue-500 cursor-pointer text-sm" >Français</span></li>
-                                    
-                                    
-                                  </ul>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-  
-                    </div>
-                  </div>
+                  
                 </div>
+
               </li>
             </ul>
           </div>
@@ -329,19 +48,20 @@
       </div>
      <!-- top header  end-->
       <!-- bottom header  -->
-      <div class="max-w-7xl mx-auto py-3 px-6 lg:px-8 ">
+      
+      <div class="max-w-7xl mx-auto lg:pb-3 group-[]/nav:py-3 py-3 px-6 lg:px-8 z-50">
         <div class="flex items-center justify-between relative">
           <div class="">
-            <img src="./assets/img/logo.png" alt="logo">
+            <img class="h-10  group-[]/nav:[filter:invert(1)]" src="./assets/img/footer-logo.png" alt="logo">
           </div>
           <!-- <a href="" class="md:size-10 *:size-full">
           <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6Z" fill="currentColor"></path><path d="M4 18C4 17.4477 4.44772 17 5 17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H5C4.44772 19 4 18.5523 4 18Z" fill="currentColor"></path><path d="M5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H13C13.5523 13 14 12.5523 14 12C14 11.4477 13.5523 11 13 11H5Z" fill="currentColor"></path></svg>
           </a> -->
 
-          <div class="md:flex items-center gap-5 hidden">
-              <ul class="flex gap-8">
+          <div class="flex items-center gap-5">
+              <ul class="lg:flex gap-8 hidden">
                   <li class=" group">
-                      <a href="javascript:;" class="flex items-center text-sm text-slate-950 ">
+                      <a href="javascript:;" class="flex items-center text-sm text-white group-[]/nav:text-black ">
                         Company 
                           <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
                               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -349,7 +69,7 @@
                               </svg>
                           </span>
                       </a>
-                      <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-[20px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible py-16 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                      <div class="bg-white shadow-md rounded-md border-gray-100 z-50 border translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible py-16 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                        <div class="w-full relative">
                         <div class="absolute -z-10 top-0 !right-0 [background:radial-gradient(circle,_rgba(255,200,_200,_0.8),rgba(255,200,_200,_0.5))] blur-2xl size-40"></div>
                         
@@ -368,7 +88,7 @@
                            <div class="w-4/6 ps-20">
                              <div class="flex flex-wrpa gap-20">
                                <div>
-                                 <ul class="flex flex-col gap-3">
+                                 <ul class="flex flex-col gap-4">
                                    <li>
                                      <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                        <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Company Overview
@@ -422,7 +142,7 @@
                       </div>
                   </li>
                   <li class=" group">
-                    <a href="javascript:;" class="flex items-center text-sm text-slate-950 ">
+                    <a href="javascript:;" class="flex items-center text-sm text-white group-[]/nav:text-black">
                       Capabilities 
                         <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -430,10 +150,11 @@
                             </svg>
                         </span>
                     </a>
-                    <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-[20px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                    <div class="bg-white shadow-md rounded-md border-gray-100 z-50 border translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                      <div class="w-full relative">
                       <!-- <div class="absolute -z-10 top-0 !right-0 [background:radial-gradient(circle,_rgba(255,200,_200,_0.8),rgba(255,200,_200,_0.5))] blur-2xl size-40"></div>
                       <div class="absolute -z-10 -top-20 !left-0 [background:radial-gradient(circle,_rgba(77 89 183 / 80%),rgb(146 219 255 / 50%))] blur-2xl size-40"></div> -->
+                      <div class="absolute -z-10 top-0 !right-0 [background:radial-gradient(circle,_rgba(255,200,_200,_0.8),rgba(255,200,_200,_0.5))] blur-2xl size-40"></div>
 
                        <div class="flex flex-wrap items-center h-full ">
                          <div class="w-1/3 pr-5 h-full">
@@ -447,31 +168,31 @@
                            </div>
                          </div>
                          <div class="w-4/6 group">
-                           <div class="flex flex-wrpa  w-full ">
+                           <div class="flex flex-wrpa  w-full  my-5">
                              <div class=" rounded-xl bg-gray-100 p-5 ">
                                <ul class="flex flex-col gap-2 w-full">
-                                 <li class="p-2 text-xs backdrop-blur-sm text-black cursor-pointer rounded-md group-has-[.tech:checked]:bg-blue-500 group-has-[.tech:checked]:text-white group-has-[.tech:checked]:border-slate-700">
-                                   <label for="tech" class="flex items-center gap-2  text-sm cursor-pointer duration-300 transition-all">
+                                 <li class="">
+                                   <label for="tech" class="p-2 text-sm backdrop-blur-sm  cursor-pointer rounded-md group-has-[.tech:checked]:bg-blue-500 group-has-[.tech:checked]:text-white group-has-[.tech:checked]:border-slate-700 flex item-center gap-3 w-full">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0A11.992 11.992 0 00.015 11.985 12.019 12.019 0 0012 24a12.019 12.019 0 0011.985-12.015A11.992 11.992 0 0012.004 0zm0 .903a11.078 11.078 0 0111.085 11.078c0 6.123-4.958 11.112-11.085 11.112A11.104 11.104 0 01.922 11.985 11.078 11.078 0 0111.996.907zm.087 1.16l-.43 1.252-5.674 16.063-.204.604h12.654l-.23-.604L12.524 3.31zm0 2.797l2.007 5.643-3.024 8.553H7.056zm2.502 7.038l2.532 7.155h-5.09z"></path></svg></span> Technology
                                    </label>
                                  </li>
-                                 <li class="p-2 text-xs backdrop-blur-sm text-black cursor-pointer rounded-md group-has-[.Business:checked]:bg-blue-500 group-has-[.Business:checked]:text-white group-has-[.Business:checked]:border-slate-700">
-                                   <label for="Business" class="flex items-center gap-2  text-sm cursor-pointer duration-300 transition-all">
+                                 <li class="">
+                                   <label for="Business" class="p-2 text-sm backdrop-blur-sm  cursor-pointer rounded-md group-has-[.Business:checked]:bg-blue-500 group-has-[.Business:checked]:text-white group-has-[.Business:checked]:border-slate-700 flex item-center gap-3 w-full">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 32 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M 14 3 C 13.48 3 12.940547 3.1805469 12.560547 3.5605469 C 12.180547 3.9405469 12 4.48 12 5 L 12 6 L 3 6 L 3 26 L 14.199219 26 C 14.069219 25.36 14 24.69 14 24 L 5 24 L 5 17.439453 C 5.59 17.779453 6.27 18 7 18 L 16.009766 18 C 16.569766 17.24 17.249766 16.56 18.009766 16 L 7 16 C 5.81 16 5 15.19 5 14 L 5 8 L 27 8 L 27 14 C 27 14.16 26.990938 14.309219 26.960938 14.449219 C 27.680937 14.669219 28.36 14.969844 29 15.339844 L 29 6 L 20 6 L 20 5 C 20 4.48 19.819453 3.9405469 19.439453 3.5605469 C 19.059453 3.1805469 18.52 3 18 3 L 14 3 z M 14 5 L 18 5 L 18 6 L 14 6 L 14 5 z M 9 12 L 9 15 L 11 15 L 11 12 L 9 12 z M 21 12 L 21 14.460938 C 21.32 14.360938 21.646719 14.275781 21.980469 14.207031 C 22.314219 14.138281 22.655 14.085781 23 14.050781 L 23 12 L 21 12 z M 24 16 C 19.59 16 16 19.59 16 24 C 16 28.41 19.59 32 24 32 C 28.41 32 32 28.41 32 24 C 32 19.59 28.41 16 24 16 z M 24 18 C 27.32 18 30 20.68 30 24 C 30 27.32 27.32 30 24 30 C 20.68 30 18 27.32 18 24 C 18 20.68 20.68 18 24 18 z M 23 19 L 23 25 L 28 25 L 28 23 L 25 23 L 25 19 L 23 19 z"></path></svg></span>Business
                                    </label>
                                  </li>
-                                 <li class="p-2 text-xs backdrop-blur-sm text-black cursor-pointer rounded-md group-has-[.Engineering:checked]:bg-blue-500 group-has-[.Engineering:checked]:text-white group-has-[.Engineering:checked]:border-slate-700">
-                                   <label for="Engineering" class="flex items-center gap-2  text-sm cursor-pointer duration-300 transition-all">
+                                 <li class="">
+                                   <label for="Engineering" class="p-2 text-sm backdrop-blur-sm  cursor-pointer rounded-md group-has-[.Engineering:checked]:bg-blue-500 group-has-[.Engineering:checked]:text-white group-has-[.Engineering:checked]:border-slate-700 flex item-center gap-3 w-full">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0a12 12 0 1012 12A12 12 0 0012 0zm0 23.52A11.52 11.52 0 1123.52 12 11.52 11.52 0 0112 23.52zm7.13-9.791c-.206.997-1.126 3.557-4.06 4.942l-1.179-1.325-1.988 2a7.338 7.338 0 01-5.804-2.978 2.859 2.859 0 00.65.123c.326.006.678-.114.678-.66v-5.394a.89.89 0 00-1.116-.89c-.92.212-1.656 2.509-1.656 2.509a7.304 7.304 0 012.528-5.597 7.408 7.408 0 013.73-1.721c-1.006.573-1.57 1.507-1.57 2.29 0 1.262.76 1.109.984.923v7.28a1.157 1.157 0 00.148.256 1.075 1.075 0 00.88.445c.76 0 1.747-.868 1.747-.868V9.172c0-.6-.452-1.324-.905-1.572 0 0 .838-.149 1.484.346a5.537 5.537 0 01.387-.425c1.508-1.48 2.929-1.902 4.112-2.112 0 0-2.151 1.69-2.151 3.96 0 1.687.043 5.801.043 5.801.799.771 1.986-.342 3.059-1.441Z"></path></svg></span> Engineering
                                    </label>
                                  </li>
-                                 <li class="p-2 text-xs backdrop-blur-sm text-black cursor-pointer rounded-md group-has-[.Mission:checked]:bg-blue-500 group-has-[.Mission:checked]:text-white group-has-[.Mission:checked]:border-slate-700">
-                                   <label for="Mission" class="flex items-center gap-2  text-sm cursor-pointer duration-300 transition-all">
+                                 <li class="">
+                                   <label for="Mission" class="p-2 text-sm backdrop-blur-sm  cursor-pointer rounded-md group-has-[.Mission:checked]:bg-blue-500 group-has-[.Mission:checked]:text-white group-has-[.Mission:checked]:border-slate-700 flex item-center gap-3 w-full">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Mission
                                    </label>
                                  </li>
-                                 <li class="p-2 text-xs backdrop-blur-sm text-black cursor-pointer rounded-md group-has-[.Consulting:checked]:bg-blue-500 group-has-[.Consulting:checked]:text-white group-has-[.Consulting:checked]:border-slate-700">
-                                  <label for="Consulting" class="flex items-center gap-2  text-sm cursor-pointer duration-300 transition-all">
+                                 <li class="">
+                                  <label for="Consulting" class="p-2 text-sm backdrop-blur-sm  cursor-pointer rounded-md group-has-[.Consulting:checked]:bg-blue-500 group-has-[.Consulting:checked]:text-white group-has-[.Consulting:checked]:border-slate-700 flex item-center gap-3 w-full">
                                     <span><svg clas="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14.0754 12.0285a2.5059 2.5059 0 0 0-2.506-2.506 2.5059 2.5059 0 0 0-2.5058 2.506 2.5059 2.5059 0 0 0 2.5059 2.5059 2.5059 2.5059 0 0 0 2.5059-2.506zm3.5317.0003a1.1559 1.1556 0 0 0-1.1558-1.1556 1.1559 1.1556 0 0 0-1.1559 1.1556 1.1559 1.1556 0 0 0 1.1559 1.1555 1.1559 1.1556 0 0 0 1.1558-1.1555zm4.7917 5.5103a1.1576 1.1564 0 0 0-1.1577-1.1564 1.1576 1.1564 0 0 0-1.1576 1.1564 1.1576 1.1564 0 0 0 1.1576 1.1564 1.1576 1.1564 0 0 0 1.1577-1.1564zM20.748 13.888a1.1534 1.157 0 0 0-1.1533-1.157 1.1534 1.157 0 0 0-1.1534 1.157 1.1534 1.157 0 0 0 1.1534 1.1571 1.1534 1.157 0 0 0 1.1533-1.157zm3.2512.0619a1.1542 1.1538 0 0 0-1.1542-1.1538 1.1542 1.1538 0 0 0-1.1542 1.1538 1.1542 1.1538 0 0 0 1.1542 1.1538 1.1542 1.1538 0 0 0 1.1542-1.1538zm-3.279-3.883a1.1561 1.1535 0 0 0-1.156-1.1535 1.1561 1.1535 0 0 0-1.1562 1.1535 1.1561 1.1535 0 0 0 1.1561 1.1535 1.1561 1.1535 0 0 0 1.1562-1.1535zm3.2798.045a1.1614 1.157 0 0 0-1.1614-1.157 1.1614 1.157 0 0 0-1.1613 1.157 1.1614 1.157 0 0 0 1.1613 1.1572A1.1614 1.157 0 0 0 24 10.1119zm-1.626-3.631a1.1575 1.1601 0 0 0-1.1575-1.16 1.1575 1.1601 0 0 0-1.1575 1.16 1.1575 1.1601 0 0 0 1.1575 1.1602A1.1575 1.1601 0 0 0 22.374 6.481zM11.6171.3832c-3.1098 0-6.029 1.2063-8.2197 3.3974C1.206 5.9822 0 8.9007 0 11.9998c0 3.109 1.2067 6.0279 3.3974 8.2193 2.2028 2.1922 5.1213 3.3978 8.2197 3.3978 2.578 0 5.0176-.8252 7.055-2.386l-1.4196-1.8524c-1.6263 1.246-3.5748 1.9048-5.6354 1.9048-2.4776 0-4.8112-.9641-6.5717-2.7154-1.748-1.7488-2.7118-4.0828-2.7118-6.568 0-2.4784.9645-4.812 2.7158-6.5703 1.7484-1.7488 4.0817-2.713 6.5677-2.713 2.058 0 4.0069.659 5.6365 1.9057l1.4179-1.854C16.6314 1.2083 14.1922.3831 11.617.3831Z"></path></svg></span> Consulting
                                   </label>
                                 </li>
@@ -480,8 +201,8 @@
                              </div>
                              <div class="rounded-xl bg-white ">
                               <input type="radio" name="capabilities" id="tech" class="hidden peer/ass tech" checked>
-                              <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
-                                <ul class="flex flex-col gap-2">
+                              <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20  peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
+                                <ul class="flex flex-col gap-4">
                                   <li>
                                     <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                       <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.016 22.762H12c-5.95-.009-10.765-4.84-10.756-10.789.009-5.95 4.839-10.766 10.789-10.757 5.943.009 10.756 4.829 10.756 10.773 0 5.95-4.823 10.773-10.773 10.773zm9.475-10.857a5.562 5.562 0 0 1-9.142 3.214 6.331 6.331 0 0 0 3.251-2.062l.104.169c.339.584.568 1.226.676 1.893a6.281 6.281 0 0 0-.349-2.656 6.328 6.328 0 0 0-8.94-8.63 5.563 5.563 0 0 1 7.418 6.256 6.334 6.334 0 0 0-3.425-1.762l.093-.175a5.53 5.53 0 0 1 1.304-1.533 6.31 6.31 0 0 0-2.122 1.636 6.327 6.327 0 0 0-3.016 12.044 5.564 5.564 0 0 1 1.713-9.562 6.33 6.33 0 0 0 .185 3.818h-.186a5.535 5.535 0 0 1-1.98-.36 6.295 6.295 0 0 0 2.471 1.025 6.328 6.328 0 0 0 8.513 2.758 6.319 6.319 0 0 0 3.432-6.073zm-11.018-1.443a5.582 5.582 0 0 1 3.6.998 5.584 5.584 0 0 1-2.667 2.618 5.57 5.57 0 0 1-.933-3.616z"></path></svg></span> 	Analytics
@@ -523,8 +244,8 @@
                              </div>
                              <div class="rounded-xl bg-white  ">
                               <input type="radio" name="capabilities" id="Business" class="hidden peer/ass Business" >
-                              <div class="p-5 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
-                                <ul class="flex flex-col gap-2">
+                              <div class="p-5 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20  peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
+                                <ul class="flex flex-col gap-4">
                                   <li>
                                     <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                       <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.016 22.762H12c-5.95-.009-10.765-4.84-10.756-10.789.009-5.95 4.839-10.766 10.789-10.757 5.943.009 10.756 4.829 10.756 10.773 0 5.95-4.823 10.773-10.773 10.773zm9.475-10.857a5.562 5.562 0 0 1-9.142 3.214 6.331 6.331 0 0 0 3.251-2.062l.104.169c.339.584.568 1.226.676 1.893a6.281 6.281 0 0 0-.349-2.656 6.328 6.328 0 0 0-8.94-8.63 5.563 5.563 0 0 1 7.418 6.256 6.334 6.334 0 0 0-3.425-1.762l.093-.175a5.53 5.53 0 0 1 1.304-1.533 6.31 6.31 0 0 0-2.122 1.636 6.327 6.327 0 0 0-3.016 12.044 5.564 5.564 0 0 1 1.713-9.562 6.33 6.33 0 0 0 .185 3.818h-.186a5.535 5.535 0 0 1-1.98-.36 6.295 6.295 0 0 0 2.471 1.025 6.328 6.328 0 0 0 8.513 2.758 6.319 6.319 0 0 0 3.432-6.073zm-11.018-1.443a5.582 5.582 0 0 1 3.6.998 5.584 5.584 0 0 1-2.667 2.618 5.57 5.57 0 0 1-.933-3.616z"></path></svg></span> 	Business Modernization
@@ -566,8 +287,8 @@
                              </div>
                              <div class="rounded-xl bg-white ">
                               <input type="radio" name="capabilities" id="Engineering" class="hidden peer/ass Engineering" >
-                              <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
-                                <ul class="flex flex-col gap-2">
+                              <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20  peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
+                                <ul class="flex flex-col gap-4">
                                   <li>
                                     <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                       <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.016 22.762H12c-5.95-.009-10.765-4.84-10.756-10.789.009-5.95 4.839-10.766 10.789-10.757 5.943.009 10.756 4.829 10.756 10.773 0 5.95-4.823 10.773-10.773 10.773zm9.475-10.857a5.562 5.562 0 0 1-9.142 3.214 6.331 6.331 0 0 0 3.251-2.062l.104.169c.339.584.568 1.226.676 1.893a6.281 6.281 0 0 0-.349-2.656 6.328 6.328 0 0 0-8.94-8.63 5.563 5.563 0 0 1 7.418 6.256 6.334 6.334 0 0 0-3.425-1.762l.093-.175a5.53 5.53 0 0 1 1.304-1.533 6.31 6.31 0 0 0-2.122 1.636 6.327 6.327 0 0 0-3.016 12.044 5.564 5.564 0 0 1 1.713-9.562 6.33 6.33 0 0 0 .185 3.818h-.186a5.535 5.535 0 0 1-1.98-.36 6.295 6.295 0 0 0 2.471 1.025 6.328 6.328 0 0 0 8.513 2.758 6.319 6.319 0 0 0 3.432-6.073zm-11.018-1.443a5.582 5.582 0 0 1 3.6.998 5.584 5.584 0 0 1-2.667 2.618 5.57 5.57 0 0 1-.933-3.616z"></path></svg></span> 	Digital Engineering
@@ -601,8 +322,8 @@
                              </div>
                              <div class="rounded-xl bg-white ">
                               <input type="radio" name="capabilities" id="Mission" class="hidden peer/ass Mission" >
-                              <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
-                                <ul class="flex flex-col gap-2">
+                              <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20  peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
+                                <ul class="flex flex-col gap-4">
                                   <li>
                                     <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                       <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.016 22.762H12c-5.95-.009-10.765-4.84-10.756-10.789.009-5.95 4.839-10.766 10.789-10.757 5.943.009 10.756 4.829 10.756 10.773 0 5.95-4.823 10.773-10.773 10.773zm9.475-10.857a5.562 5.562 0 0 1-9.142 3.214 6.331 6.331 0 0 0 3.251-2.062l.104.169c.339.584.568 1.226.676 1.893a6.281 6.281 0 0 0-.349-2.656 6.328 6.328 0 0 0-8.94-8.63 5.563 5.563 0 0 1 7.418 6.256 6.334 6.334 0 0 0-3.425-1.762l.093-.175a5.53 5.53 0 0 1 1.304-1.533 6.31 6.31 0 0 0-2.122 1.636 6.327 6.327 0 0 0-3.016 12.044 5.564 5.564 0 0 1 1.713-9.562 6.33 6.33 0 0 0 .185 3.818h-.186a5.535 5.535 0 0 1-1.98-.36 6.295 6.295 0 0 0 2.471 1.025 6.328 6.328 0 0 0 8.513 2.758 6.319 6.319 0 0 0 3.432-6.073zm-11.018-1.443a5.582 5.582 0 0 1 3.6.998 5.584 5.584 0 0 1-2.667 2.618 5.57 5.57 0 0 1-.933-3.616z"></path></svg></span> 	C2/4 & ISR
@@ -631,8 +352,8 @@
                              </div>
                              <div class="rounded-xl bg-white ">
                               <input type="radio" name="capabilities" id="Consulting" class="hidden peer/ass Consulting" >
-                              <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
-                                <ul class="flex flex-col gap-2">
+                              <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20  peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity]">
+                                <ul class="flex flex-col gap-4">
                                   <li>
                                     <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                       <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.016 22.762H12c-5.95-.009-10.765-4.84-10.756-10.789.009-5.95 4.839-10.766 10.789-10.757 5.943.009 10.756 4.829 10.756 10.773 0 5.95-4.823 10.773-10.773 10.773zm9.475-10.857a5.562 5.562 0 0 1-9.142 3.214 6.331 6.331 0 0 0 3.251-2.062l.104.169c.339.584.568 1.226.676 1.893a6.281 6.281 0 0 0-.349-2.656 6.328 6.328 0 0 0-8.94-8.63 5.563 5.563 0 0 1 7.418 6.256 6.334 6.334 0 0 0-3.425-1.762l.093-.175a5.53 5.53 0 0 1 1.304-1.533 6.31 6.31 0 0 0-2.122 1.636 6.327 6.327 0 0 0-3.016 12.044 5.564 5.564 0 0 1 1.713-9.562 6.33 6.33 0 0 0 .185 3.818h-.186a5.535 5.535 0 0 1-1.98-.36 6.295 6.295 0 0 0 2.471 1.025 6.328 6.328 0 0 0 8.513 2.758 6.319 6.319 0 0 0 3.432-6.073zm-11.018-1.443a5.582 5.582 0 0 1 3.6.998 5.584 5.584 0 0 1-2.667 2.618 5.57 5.57 0 0 1-.933-3.616z"></path></svg></span> 	Advisor Overview
@@ -664,7 +385,7 @@
                     </div>
                   </li>
                   <li class=" group">
-                    <a href="javascript:;" class="flex items-center text-sm text-slate-950 ">
+                    <a href="javascript:;" class="flex items-center text-sm text-white group-[]/nav:text-black">
                       Industries   
                         <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -672,7 +393,7 @@
                             </svg>
                         </span>
                     </a>
-                    <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-[20px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible py-16 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                    <div class="bg-white shadow-md rounded-md border-gray-100 z-50 border translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible py-16 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                      <div class="w-full relative">
                       <div class="absolute -z-10 top-0 !right-0 [background:radial-gradient(circle,_rgba(255,200,_200,_0.8),rgba(255,200,_200,_0.5))] blur-2xl size-40"></div>
                        <div class="flex flex-wrap items-center h-full">
@@ -689,7 +410,7 @@
                          <div class="w-4/6 ps-20">
                            <div class="flex flex-wrpa gap-20">
                              <div>
-                               <ul class="flex flex-col gap-2">
+                               <ul class="flex flex-col gap-4">
                                  <li>
                                    <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> Automotive
@@ -723,7 +444,7 @@
                                </ul>
                              </div>
                              <div>
-                               <ul class="flex flex-col gap-2">
+                               <ul class="flex flex-col gap-4">
                                  <li>
                                    <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M212,100a23.78,23.78,0,0,0-11.65,3L165.9,60a24,24,0,1,0-41.28-10.56L72.29,71.21A24,24,0,1,0,49,107.8l2.11,52.71A24,24,0,1,0,77.7,194.23l54.43,15.24c-.08.83-.13,1.68-.13,2.53a24,24,0,1,0,40.07-17.81l30.6-48.08A23.78,23.78,0,0,0,212,148a24,24,0,0,0,0-48Zm-23.82,21.13-55.06,2.62,13.29-55.81q.79.06,1.59.06a23.78,23.78,0,0,0,11.65-3L194.1,108A23.91,23.91,0,0,0,188.18,121.13Zm-116,45.19a23.9,23.9,0,0,0-13.16-6.12l-2.11-52.71a24.05,24.05,0,0,0,13.52-8.18l50.4,29.18ZM148,28a16,16,0,1,1-16,16A16,16,0,0,1,148,28ZM127.71,56.79a24,24,0,0,0,10.92,9.3l-13.28,55.76L74.48,92.39A23.83,23.83,0,0,0,76,84a24.12,24.12,0,0,0-.62-5.41ZM36,84a16,16,0,1,1,16,16A16,16,0,0,1,36,84ZM56,200a16,16,0,1,1,16-16A16,16,0,0,1,56,200Zm23.87-13.47c.08-.83.13-1.68.13-2.53a23.86,23.86,0,0,0-2.87-11.37l48.86-38,18.73,56.19a24.17,24.17,0,0,0-10.42,11ZM156,228a16,16,0,1,1,16-16A16,16,0,0,1,156,228Zm9.33-38.11A23.78,23.78,0,0,0,156,188a24.94,24.94,0,0,0-3.69.28l-18.85-56.54,55.1-2.62a23.92,23.92,0,0,0,7.37,12.69ZM212,140a16,16,0,1,1,16-16A16,16,0,0,1,212,140Z"></path></svg></span> 	Homeland Security
@@ -763,7 +484,7 @@
                     </div>
                   </li>
                   <li class=" group">
-                    <a href="javascript:;" class="flex items-center text-sm text-slate-950 ">
+                    <a href="javascript:;" class="flex items-center text-sm text-white group-[]/nav:text-black">
                       Insights  
                         <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -771,7 +492,7 @@
                             </svg>
                         </span>
                     </a>
-                    <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-[20px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible py-16 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                    <div class="bg-white shadow-md rounded-md border-gray-100 z-50 border translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible py-16 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                      <div class="w-full relative">
                       <div class="absolute -z-10 top-0 !right-0 [background:radial-gradient(circle,_rgba(255,200,_200,_0.8),rgba(255,200,_200,_0.5))] blur-2xl size-40"></div>
                       
@@ -790,7 +511,7 @@
                          <div class="w-4/6 ps-20">
                            <div class="flex flex-wrpa gap-20">
                              <div>
-                               <ul class="flex flex-col gap-3">
+                               <ul class="flex flex-col gap-4">
                                  <li>
                                    <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> 	Articles
@@ -825,7 +546,7 @@
                     </div>
                   </li>
                   <li class=" group">
-                    <a href="javascript:;" class="flex items-center text-sm text-slate-950 ">
+                    <a href="javascript:;" class="flex items-center text-sm text-white group-[]/nav:text-black">
                       Career     
                         <span class="*:size-6 *:group-hover:rotate-180 *:duration-300">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -833,7 +554,7 @@
                             </svg>
                         </span>
                     </a>
-                    <div class="bg-white shadow-md border-gray-100 z-50 border translate-y-[20px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible py-16 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                    <div class="bg-white shadow-md rounded-md border-gray-100 z-50 border translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute  group-hover:opacity-100 group-hover:visible py-16 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                      <div class="w-full relative">
                       <div class="absolute -z-10 top-0 !right-0 [background:radial-gradient(circle,_rgba(255,200,_200,_0.8),rgba(255,200,_200,_0.5))] blur-2xl size-40"></div>
                        <div class="flex flex-wrap items-center h-full">
@@ -850,7 +571,7 @@
                          <div class="w-4/6 ps-20">
                            <div class="flex flex-wrpa gap-20">
                              <div>
-                               <ul class="flex flex-col gap-2">
+                               <ul class="flex flex-col gap-4">
                                  <li>
                                    <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> 	About Life HPIT 
@@ -879,7 +600,7 @@
                               </ul>
                             </div>
                             <div>
-                              <ul class="flex flex-col gap-2">
+                              <ul class="flex flex-col gap-4">
                                  <li>
                                    <a href="javascript:;" class="flex items-center gap-2 text-slate-800 text-sm duration-300 transition-all hover:text-blue-500">
                                      <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M95.31,101.2a57.37,57.37,0,0,1,0,53.6,6,6,0,0,1-10.62-5.6,44.75,44.75,0,0,0,0-42.4,6,6,0,1,1,10.62-5.6Zm47.86-34.49a6,6,0,0,0-2.46,8.12,112.67,112.67,0,0,1,0,106.34,6,6,0,1,0,10.58,5.66,124.65,124.65,0,0,0,0-117.66A6,6,0,0,0,143.17,66.71Zm-28,16a6,6,0,0,0-2.48,8.12,79,79,0,0,1,0,74.36,6,6,0,0,0,10.6,5.64,91,91,0,0,0,0-85.64A6,6,0,0,0,115.18,82.7ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"></path></svg></span> 	Awards & Recognition 
@@ -909,103 +630,43 @@
                     </div>
                   </li>
               </ul>
-           
-              <div class="searchbar ">
-                <div class="relative">
-                  <button class="absolute  right-0 flex items-center justify-center size-7 text-gray-600 bg-transparent rounded-full focus:outline-none">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M21 21l-4.35-4.35m1.35-6.65a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                  </button>
-                  <input type="text" class="h-7 w-7 p-2 text-sm font-light text-transparent focus:text-black placeholder-black transition-all duration-500 ease-in-out transform rounded-full border border-slate-300 bg-transparent focus:border-0 focus:w-72 focus:rounded-none focus:bg-transparent focus:border-b focus:border-black focus:outline-none placeholder-opacity-0 focus:placeholder-opacity-100"
-                      placeholder="Type to Search...">
-              </div>
+              <div class="flex items-center gap-4">
+                <div class="searchbar ">
+                  <div class="relative">
+                    <button class="absolute  right-0 flex items-center justify-center size-7 text-white group-[]/nav:text-black bg-transparent rounded-full focus:outline-none">
+                      <svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z"></path></svg>
+                    </button>
+                    <input type="text" class="h-7 w-7 p-2 text-sm font-light text-transparent focus:text-white group-[]/nav:focus:text-black placeholder-white transition-all duration-500 ease-in-out transform rounded-full bg-transparent focus:border-0 focus:w-72 focus:rounded-none focus:bg-transparent focus:border-b group-[]/nav:focus:border-black focus:border-white focus:outline-none placeholder-opacity-0 focus:placeholder-opacity-100"
+                        placeholder="Type to Search...">
+                </div>
+                </div>
+                <div class=" flex lg:hidden flex-col gap-y-3 cursor-pointer">
+                  <label for="mmCompany" class="flex items-center gap-x-[2px] cursor-pointer">
+                    <div  class="flex items-center text-white group-[]/nav:text-black text-sm gap-1">
+                        <span>
+                        <svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-width="2" d="M12,23 C18.0751322,23 23,18.0751322 23,12 C23,5.92486775 18.0751322,1 12,1 C5.92486775,1 1,5.92486775 1,12 C1,18.0751322 5.92486775,23 12,23 Z M12,23 C15,23 16,18 16,12 C16,6 15,1 12,1 C9,1 8,6 8,12 C8,18 9,23 12,23 Z M2,16 L22,16 M2,8 L22,8"></path></svg>
+                        </span>
+                        <!-- <span class="ext-sm text-black ">English</span> -->
+                    </div>
+                  </label>
+                  
+                </div>
+                <div class="flex lg:hidden">
+                  <label for="sideToggle" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white group-[]/nav:text-black">
+                    <span class="sr-only">Open menu</span>
+                    <svg class="size-7" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                    </svg>
+                  </label>
+                </div>
               </div>
           </div>
 
         </div>
 
-            <input type="checkbox" class="peer/sideToggle hidden" name="sideToggle" id="sideToggle">
-
-            <label for="sideToggle" class="-m-2.5 inline-flex items-center md:hidden justify-center rounded-md p-2.5">
-                <span class="sr-only">Open menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-                </svg>
-            </label>
-            <div class="fixed flex flex-col inset-y-0 right-0 z-[1011] w-full select-none text-white bg-white/60 backdrop-blur-lg peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100
-                -translate-x-full opacity-0 ms-auto duration-300 h-dvh">
-                <div class="flex flex-col border-l h-[100vh] overflow-hidden sm:w-1/2">
-                    <nav class="sticky w-full top-0 bg-white py-3 px-6 shadow-lg flex items-center justify-between">
-                        <a href="http://localhost/edoovi/" class="*:size-10">
-                            <img src="http://localhost/edoovi/assets/img/edoovi.webp" alt="">
-                        </a>
-                        <label for="sideToggle" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200">
-                            <span class="sr-only">Close menu</span>
-                            <svg class="h-6 w-6 text-slate-900" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                            </svg>
-                        </label>
-                    </nav>
-                    <div class="flex flex-col bg-white pb-40 h-screen overflow-y-auto !content-between">
-                        <ul class="h-full overflow-y-auto bg-white">
-                            <li class="w-full">
-                                <a href="http://localhost/edoovi/" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex text-red-600 border-b-2 border-red-600">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="w-full">
-                                <a href="http://localhost/edoovi/about" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
-                                    About Us
-                                </a>
-                            </li>
-                            <li class="w-full">
-                                <a href="http://localhost/edoovi/oursolutions/school-software" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
-                                    School Software
-                                </a>
-                            </li>
-                            <li class="w-full">
-                                <a href="http://localhost/edoovi/oursolutions/institute-software" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
-                                    Institute Software
-                                </a>
-                            </li>
-                            <li class="w-full">
-                                <a href="http://localhost/edoovi/oursolutions/college-software" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
-                                    College Software
-                                </a>
-                            </li>
-                            <li class="w-full">
-                                <a href="http://localhost/edoovi/oursolutions/university-software" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
-                                    University Software
-                                </a>
-                            </li>
-                            <li class="w-full">
-                                <a href="http://localhost/edoovi/blogs" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
-                                    Blogs
-                                </a>
-                            </li>
-                            <li class="w-full">
-                                <a href="http://localhost/edoovi/clients" class="hover:bg-violet-400 duration-300 text-slate-600 font-semibold px-4 py-2 hover:text-white border-b border-slate-200 w-full inline-flex ">
-                                    Clients
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="fixed overflow-hidden sm:w-1/2 w-full bottom-0 bg-white shadow-lg rotate-180 flex items-center justify-between">
-                            <div class="flex overflow-hidden justify-between py-5 px-4 rotate-180 bg-white w-full">
-                                <a href="http://localhost/edoovi/contact" class="text-nowrap bg-gradient-to-b from-violet-300 to-violet-500/90 py-2 px-4 rounded-full shadow-xl shadow-violet-200/95 font-medium sm:text-base text-sm text-white duration-300 hover:[box-shadow:0px_0px_10px_0px_#e39943] hover:bg-gradient-to-r hover:from-[#fdad50] hover:via-[#ffa944] hover:to-[#ff971d]">
-                                    Contact Us
-                                </a>
-                                <a href="mailto:schoolsoftware@gmail.com" class="text-nowrap bg-gradient-to-b from-violet-300 to-violet-500/90 py-2 px-4 rounded-full shadow-xl shadow-violet-200/95 font-medium sm:text-base text-sm text-white duration-300 hover:[box-shadow:0px_0px_10px_0px_#e39943] hover:bg-gradient-to-r hover:from-[#fdad50] hover:via-[#ffa944] hover:to-[#ff971d]">
-                                    Email Us
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>  
        <!-- bottom header end -->
+
 
 
   </header>
@@ -1031,16 +692,28 @@
                           </div>
                           <p class="font-medium my-3 md:mb-10 mb-6 col-span-12 xl:col-span-9 flex text-white">
                               <label class="lg:text-7xl text-6xl font-semibold">#1</label>
-                              <label class="overflow-hidden flex flex-col ml-3 self-center">
-                                  <label  class="animate-txt font-bold text-xl mb-0 md:h-11 h-9">
-                                      <span class="text-red-500 sm:text-xl text-base">Mobile App</span>
-                                      <span class="text-red-500 sm:text-xl text-base hidden">Website</span>
-                                      <span class="text-red-500 sm:text-xl text-base hidden">Software</span>
-                                      <span class="text-red-500 sm:text-xl text-base hidden">Game</span>
-                                      <span class="text-red-500 sm:text-xl text-base hidden">Blockchain</span>
+                              <!-- <label class="overflow-hidden flex flex-col ml-3 self-center">
+                                  <label  class="animate-txt font-bold text-xl mb-0 md:h-11 h-9 group/rotateWord relative w-full flex flex-col">
+                                      <span class="text-red-500 sm:text-xl text-base [animation-duration:50s]">Mobile App</span>
+                                      <span class="text-red-500 sm:text-xl text-base [animation-duration:50s] ">Website</span>
+                                      <span class="text-red-500 sm:text-xl text-base [animation-duration:50s] ">Software</span>
+                                      <span class="text-red-500 sm:text-xl text-base [animation-duration:50s] ">Game</span>
+                                      <span class="text-red-500 sm:text-xl text-base [animation-duration:50s] ">Blockchain</span>
                                   </label>
                                   <label class="mb-0 font-normal sm:text-xl text-base">Development company in 2024</label>
+                              </label> -->
+                              <label class="overflow-hidden flex flex-col ml-3 self-center">
+                                <label class="font-bold text-xl mb-0 md:h-11 h-9 group relative w-full flex flex-col group/rotateWord">
+                                  <span class="absolute w-full ml-[-50%] opacity-0 overflow-hidden sm:text-xl text-base text-red-500 animate-rotateWord [ animation-delay:0s]">Mobile App</span>
+                                  <span class="absolute w-full ml-[-50%] opacity-0 overflow-hidden sm:text-xl text-base text-[#03A9F4] animate-rotateWord [ animation-delay:3s]">Website</span>
+                                  <span class="absolute w-full ml-[-50%] opacity-0 overflow-hidden sm:text-xl text-base text-[#FF9800] animate-rotateWord [ animation-delay:6s]">Software</span>
+                                  <span class="absolute w-full ml-[-50%] opacity-0 overflow-hidden sm:text-xl text-base text-[#4CAF50] animate-rotateWord [ animation-delay:9s]">Game</span>
+                                  <span class="absolute w-full ml-[-50%] opacity-0 overflow-hidden sm:text-xl text-base text-[#621737] animate-rotateWord [ animation-delay:12s]">Blockchain</span>
+                                </label>
+                                <label class="mb-0 font-normal sm:text-xl text-base">Development company in 2024</label>
                               </label>
+                              
+
                           </p>
                           <div class="py-1">
                             <a href="javascript:;" class="inline-flex items-center gap-3 md:text-lg text-sm text-white relative ps-6 py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-white md:before:min-w-[42px] before:min-w-10 md:before:h-[42px] before:h-10 before:left-0 before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[256px]">
@@ -1661,6 +1334,1101 @@
 </footer>
 
 <!-- footer Ends -->
+ 
+
+<!-- language   -->
+
+<input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
+<div class=" peer-checked/mm:block hidden absolute group-[]/nav:fixed right-2 top-12 z-[999] ">
+  
+  <label for="mmCompany" class="fixed inset-0 -z-[1011] backdrop-blur-xl bg-sky-950/70 peer-checked/mm:z-[888] peer-checked/mm:opacity-100 opacity-0 duration-100"></label>
+  <div class="shadow-2xl border border-gray-100 sm:w-[550px] w-[340px] bg-gray-100 h-[320px] rounded-md overflow-hidden z-[999]">
+    <div class="flex flex-wrap h-full group pl-2 py-2">
+      <div class="w-1/3 border-r border-blue-500">
+        <ul class="flex flex-col  ">
+          <li class="p-2 text-xs backdrop-blur-sm rounded-s-md group-has-[.ass:checked]:bg-blue-500 group-has-[.ass:checked]:text-white group-has-[.ass:checked]:border-slate-700">
+            <label class="cursor-pointer hoverLink " for="ass">All Countries / Regions </label>
+          </li>
+          <li class=" p-2 text-xs backdrop-blur-sm rounded-s-md   group-has-[.NorthAmerica:checked]:bg-blue-500 group-has-[.NorthAmerica:checked]:text-white group-has-[.NorthAmerica:checked]:border-slate-700">
+            <label class="cursor-pointer hoverLink " for="NorthAmerica">North America </label>
+          </li>
+      
+          <li class=" p-2 text-xs backdrop-blur-sm rounded-s-md   group-has-[.Africa:checked]:bg-blue-500 group-has-[.Africa:checked]:text-white group-has-[.Africa:checked]:border-slate-700">
+            <label class="cursor-pointer hoverLink " for="Africa">Africa </label>
+          </li>
+          <li class=" p-2 text-xs backdrop-blur-sm rounded-s-md   group-has-[.AsiaPacific:checked]:bg-blue-500 group-has-[.AsiaPacific:checked]:text-white group-has-[.AsiaPacific:checked]:border-slate-700">
+            <label class="cursor-pointer hoverLink " for="AsiaPacific">Asia-Pacific </label>
+          </li>
+          <li class=" p-2 text-xs backdrop-blur-sm rounded-s-md   group-has-[.Europe:checked]:bg-blue-500 group-has-[.Europe:checked]:text-white group-has-[.Europe:checked]:border-slate-700">
+            <label class="cursor-pointer hoverLink " for="Europe">Europe</label>
+          </li>
+          <li class=" p-2 text-xs backdrop-blur-sm rounded-s-md   group-has-[.GreaterChina:checked]:bg-blue-500 group-has-[.GreaterChina:checked]:text-white group-has-[.GreaterChina:checked]:border-slate-700">
+            <label class="cursor-pointer hoverLink " for="GreaterChina">Greater-China</label>
+          </li>
+          <li class=" p-2 text-xs backdrop-blur-sm rounded-s-md   group-has-[.LatinAmerica:checked]:bg-blue-500 group-has-[.LatinAmerica:checked]:text-white group-has-[.LatinAmerica:checked]:border-slate-700">
+            <label class="cursor-pointer hoverLink " for="LatinAmerica">Latin-America</label>
+          </li>
+          <li class=" p-2 text-xs backdrop-blur-sm rounded-s-md   group-has-[.MiddleEastern:checked]:bg-blue-500 group-has-[.MiddleEastern:checked]:text-white group-has-[.MiddleEastern:checked]:border-slate-700">
+            <label class="cursor-pointer hoverLink " for="MiddleEastern">Middle Eastern</label>
+          </li>
+
+
+        </ul>
+      </div>
+      <div class="w-4/6 h-full  bg-white backdrop-blur-2xl rounded-md overflow-hidden ">
+        <div class="overflow-y-auto max-h-full overflow-x-hidden ">
+          <input type="radio" name="language" id="ass" class="hidden peer/ass ass" checked>
+
+            <div class=" p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                <ul class="flex flex-col gap-3">
+                  <li class="text-xs text-black">English - <span class="text-blue-500 cursor-pointer text-xs" >English</span></li>
+                  <li class="text-xs text-black">Afrikaans - <span class="text-blue-500 cursor-pointer text-xs" >Afrikaans</span></li>
+                  <li class="text-xs text-black">Albanian - <span class="text-blue-500 cursor-pointer text-xs" >Shqip</span></li>
+                  <li class="text-xs text-black">Amharic - <span class="text-blue-500 cursor-pointer text-xs" >አማርኛ</span></li>
+                  <li class="text-xs text-black">Arabic - <span class="text-blue-500 cursor-pointer text-xs" >العربية</span></li>
+                  <li class="text-xs text-black">Armenian - <span class="text-blue-500 cursor-pointer text-xs" >Հայերեն</span></li>
+                  <li class="text-xs text-black">Azerbaijani - <span class="text-blue-500 cursor-pointer text-xs" >Azərbaycanca</span></li>
+                  <li class="text-xs text-black">Basque - <span class="text-blue-500 cursor-pointer text-xs" >Euskara</span></li>
+                  <li class="text-xs text-black">Belarusian - <span class="text-blue-500 cursor-pointer text-xs" >Беларуская</span></li>
+                  <li class="text-xs text-black">Bengali - <span class="text-blue-500 cursor-pointer text-xs" >বাংলা</span></li>
+                  <li class="text-xs text-black">Bosnian - <span class="text-blue-500 cursor-pointer text-xs" >Bosanski</span></li>
+                  <li class="text-xs text-black">Bulgarian - <span class="text-blue-500 cursor-pointer text-xs" >Български</span></li>
+                  <li class="text-xs text-black">Catalan - <span class="text-blue-500 cursor-pointer text-xs" >Català</span></li>
+                  <li class="text-xs text-black">Cebuano - <span class="text-blue-500 cursor-pointer text-xs" >Cebuano</span></li>
+                  <li class="text-xs text-black">Chichewa - <span class="text-blue-500 cursor-pointer text-xs" >Chichewa</span></li>
+                  <li class="text-xs text-black">Chinese (Simplified) - <span class="text-blue-500 cursor-pointer text-xs" >中文 (简体)</span></li>
+                  <li class="text-xs text-black">Chinese (Traditional) - <span class="text-blue-500 cursor-pointer text-xs" >中文 (繁體)</span></li>
+                  <li class="text-xs text-black">Corsican - <span class="text-blue-500 cursor-pointer text-xs" >Corsican</span></li>
+                  <li class="text-xs text-black">Croatian - <span class="text-blue-500 cursor-pointer text-xs" >Hrvatski</span></li>
+                  <li class="text-xs text-black">Czech - <span class="text-blue-500 cursor-pointer text-xs" >Čeština</span></li>
+                  <li class="text-xs text-black">Danish - <span class="text-blue-500 cursor-pointer text-xs" >Dansk</span></li>
+                  <li class="text-xs text-black">Dutch - <span class="text-blue-500 cursor-pointer text-xs" >Nederlands</span></li>
+                
+                  <li class="text-xs text-black">Esperanto - <span class="text-blue-500 cursor-pointer text-xs" >Esperanto</span></li>
+                  <li class="text-xs text-black">Estonian - <span class="text-blue-500 cursor-pointer text-xs" >Eesti</span></li>
+                  <li class="text-xs text-black">Filipino - <span class="text-blue-500 cursor-pointer text-xs" >Filipino</span></li>
+                  <li class="text-xs text-black">Finnish - <span class="text-blue-500 cursor-pointer text-xs" >Suomi</span></li>
+                  <li class="text-xs text-black">French - <span class="text-blue-500 cursor-pointer text-xs" >Français</span></li>
+                  <li class="text-xs text-black">Frisian - <span class="text-blue-500 cursor-pointer text-xs" >Frysk</span></li>
+                  <li class="text-xs text-black">Galician - <span class="text-blue-500 cursor-pointer text-xs" >Galego</span></li>
+                  <li class="text-xs text-black">Georgian - <span class="text-blue-500 cursor-pointer text-xs" >ქართული</span></li>
+                  <li class="text-xs text-black">German - <span class="text-blue-500 cursor-pointer text-xs" >Deutsch</span></li>
+                  <li class="text-xs text-black">Greek - <span class="text-blue-500 cursor-pointer text-xs" >Ελληνικά</span></li>
+                  <li class="text-xs text-black">Gujarati - <span class="text-blue-500 cursor-pointer text-xs" >ગુજરાતી</span></li>
+                  <li class="text-xs text-black">Haitian Creole - <span class="text-blue-500 cursor-pointer text-xs" >Kreyòl Ayisyen</span></li>
+                  <li class="text-xs text-black">Hausa - <span class="text-blue-500 cursor-pointer text-xs" >Hausa</span></li>
+                  <li class="text-xs text-black">Hawaiian - <span class="text-blue-500 cursor-pointer text-xs" >Hawaiian</span></li>
+                  <li class="text-xs text-black">Hebrew - <span class="text-blue-500 cursor-pointer text-xs" >עברית</span></li>
+                  <li class="text-xs text-black">Hindi - <span class="text-blue-500 cursor-pointer text-xs" >हिन्दी</span></li>
+                  <li class="text-xs text-black">Hmong - <span class="text-blue-500 cursor-pointer text-xs" >Hmong</span></li>
+                  <li class="text-xs text-black">Hungarian - <span class="text-blue-500 cursor-pointer text-xs" >Magyar</span></li>
+                  <li class="text-xs text-black">Icelandic - <span class="text-blue-500 cursor-pointer text-xs" >Íslenska</span></li>
+                  <li class="text-xs text-black">Igbo - <span class="text-blue-500 cursor-pointer text-xs" >Igbo</span></li>
+                  <li class="text-xs text-black">Indonesian - <span class="text-blue-500 cursor-pointer text-xs" >Indonesia</span></li>
+                  <li class="text-xs text-black">Irish - <span class="text-blue-500 cursor-pointer text-xs" >Gaeilge</span></li>
+                  <li class="text-xs text-black">Italian - <span class="text-blue-500 cursor-pointer text-xs" >Italiano</span></li>
+                  <li class="text-xs text-black">Japanese - <span class="text-blue-500 cursor-pointer text-xs" >日本語</span></li>
+                  <li class="text-xs text-black">Javanese - <span class="text-blue-500 cursor-pointer text-xs" >Jawa</span></li>
+                  <li class="text-xs text-black">Kannada - <span class="text-blue-500 cursor-pointer text-xs" >ಕನ್ನಡ</span></li>
+                  <li class="text-xs text-black">Kazakh - <span class="text-blue-500 cursor-pointer text-xs" >Қазақ тілі</span></li>
+                  <li class="text-xs text-black">Khmer - <span class="text-blue-500 cursor-pointer text-xs" >ភាសាខ្មែរ</span></li>
+                  <li class="text-xs text-black">Kinyarwanda - <span class="text-blue-500 cursor-pointer text-xs" >Kinyarwanda</span></li>
+                  <li class="text-xs text-black">Korean - <span class="text-blue-500 cursor-pointer text-xs" >한국어</span></li>
+                  <li class="text-xs text-black">Kurdish (Kurmanji) - <span class="text-blue-500 cursor-pointer text-xs" >Kurdî (Kurmancî)</span></li>
+                  <li class="text-xs text-black">Kyrgyz - <span class="text-blue-500 cursor-pointer text-xs" >Кыргызча</span></li>
+                  <li class="text-xs text-black">Lao - <span class="text-blue-500 cursor-pointer text-xs" >ລາວ</span></li>
+                  <li class="text-xs text-black">Latin - <span class="text-blue-500 cursor-pointer text-xs" >Latin</span></li>
+                  <li class="text-xs text-black">Latvian - <span class="text-blue-500 cursor-pointer text-xs" >Latviešu</span></li>
+                  <li class="text-xs text-black">Lithuanian - <span class="text-blue-500 cursor-pointer text-xs" >Lietuvių</span></li>
+                  <li class="text-xs text-black">Luxembourgish - <span class="text-blue-500 cursor-pointer text-xs" >Lëtzebuergesch</span></li>
+                  
+                </ul>
+            </div>
+        </div>
+        <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
+          <input type="radio" name="language" id="NorthAmerica" class="hidden peer/ass NorthAmerica" >
+          
+            <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                <ul class="flex flex-col gap-3">
+                  <li class="text-xs text-black">English - <span class="text-blue-500 cursor-pointer text-xs" >English</span></li>
+                  <li class="text-xs text-black">Spanish -   <span class="text-blue-500 cursor-pointer text-xs" >Español</span></li>
+
+                  <li class="text-xs text-black">French -   <span class="text-blue-500 cursor-pointer text-xs" >Français</span></li>
+                  
+                  
+                </ul>
+            </div>
+        </div>
+        <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
+          <input type="radio" name="language" id="Africa" class="hidden peer/ass Africa" >
+          
+            <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                <ul class="flex flex-col gap-3">
+                  <li class="text-xs text-black">Arabic - <span class="text-blue-500 cursor-pointer text-xs" >العربية</span></li>
+                  <li class="text-xs text-black">Swahili  -   <span class="text-blue-500 cursor-pointer text-xs" >Kiswahili</span></li>
+                  <li class="text-xs text-black">Hausa -    <span class="text-blue-500 cursor-pointer text-xs" >Hausa</span></li>
+                  <li class="text-xs text-black">Yoruba -    <span class="text-blue-500 cursor-pointer text-xs" >Yorùbá</span></li>
+                  <li class="text-xs text-black">Igbo -    <span class="text-blue-500 cursor-pointer text-xs" >Igbo</span></li>
+                  <li class="text-xs text-black">Amharic -    <span class="text-blue-500 cursor-pointer text-xs" >አማርኛ</span></li>
+                  <li class="text-xs text-black">Oromo -  <span class="text-blue-500 cursor-pointer text-xs" >Oromo</span></li>
+                  <li class="text-xs text-black">Somali -     <span class="text-blue-500 cursor-pointer text-xs" >Soomaali</span></li>
+                  <li class="text-xs text-black">Swahili -  <span class="text-blue-500 cursor-pointer text-xs" >Kiswahili</span></li>
+                  <li class="text-xs text-black">Zulu -  <span class="text-blue-500 cursor-pointer text-xs" >isiZulu</span></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
+          <input type="radio" name="language" id="AsiaPacific" class="hidden peer/ass AsiaPacific" >
+          
+            <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                <ul class="flex flex-col gap-3">
+                  <li class="text-xs text-black">Mandarin Chinese -  <span class="text-blue-500 cursor-pointer text-xs" >中文 (简体)</span></li>
+                  <li class="text-xs text-black">Mandarin Chinese - <span class="text-blue-500 cursor-pointer text-xs" >中文 (简体)</span></li>
+                  <li class="text-xs text-black">Hindi -  <span class="text-blue-500 cursor-pointer text-xs" >हिन्दी</span></li>
+                  <li class="text-xs text-black">Japanese -    <span class="text-blue-500 cursor-pointer text-xs" >日本語</span></li>
+                  <li class="text-xs text-black">Korean - <span class="text-blue-500 cursor-pointer text-xs" >한국어</span></li>
+                  <li class="text-xs text-black">Amharic -    <span class="text-blue-500 cursor-pointer text-xs" >አማርኛ</span></li>
+                  <li class="text-xs text-black">Indonesian -  <span class="text-blue-500 cursor-pointer text-xs" >Bahasa Indonesia </span></li>
+                  <li class="text-xs text-black">Thai -     <span class="text-blue-500 cursor-pointer text-xs" >ไทย</span></li>
+                  <li class="text-xs text-black">Tagalog -  <span class="text-blue-500 cursor-pointer text-xs" >Tagalog</span></li>
+                  <li class="text-xs text-black">Zulu -  <span class="text-blue-500 cursor-pointer text-xs" >isiZulu</span></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
+          <input type="radio" name="language" id="Europe" class="hidden peer/ass Europe" >
+          
+            <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                <ul class="flex flex-col gap-3">
+                  <li class="text-xs text-black">Arabic - <span class="text-blue-500 cursor-pointer text-xs" >العربية</span></li>
+                  <li class="text-xs text-black">Swahili  -   <span class="text-blue-500 cursor-pointer text-xs" >Kiswahili</span></li>
+                  <li class="text-xs text-black">Hausa -    <span class="text-blue-500 cursor-pointer text-xs" >Hausa</span></li>
+                  <li class="text-xs text-black">Yoruba -    <span class="text-blue-500 cursor-pointer text-xs" >Yorùbá</span></li>
+                  <li class="text-xs text-black">Igbo -    <span class="text-blue-500 cursor-pointer text-xs" >Igbo</span></li>
+                  <li class="text-xs text-black">Amharic -    <span class="text-blue-500 cursor-pointer text-xs" >አማርኛ</span></li>
+                  <li class="text-xs text-black">Oromo -  <span class="text-blue-500 cursor-pointer text-xs" >Oromo</span></li>
+                  <li class="text-xs text-black">Somali -     <span class="text-blue-500 cursor-pointer text-xs" >Soomaali</span></li>
+                  <li class="text-xs text-black">Swahili -  <span class="text-blue-500 cursor-pointer text-xs" >Kiswahili</span></li>
+                  <li class="text-xs text-black">Zulu -  <span class="text-blue-500 cursor-pointer text-xs" >isiZulu</span></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
+          <input type="radio" name="language" id="GreaterChina" class="hidden peer/ass GreaterChina"  >
+          
+            <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                <ul class="flex flex-col gap-3">
+                  <li class="text-xs text-black">English - <span class="text-blue-500 cursor-pointer text-xs" >English</span></li>
+                  <li class="text-xs text-black">Afrikaans - <span class="text-blue-500 cursor-pointer text-xs" >Afrikaans</span></li>
+                  <li class="text-xs text-black">Albanian - <span class="text-blue-500 cursor-pointer text-xs" >Shqip</span></li>
+                  <li class="text-xs text-black">Amharic - <span class="text-blue-500 cursor-pointer text-xs" >አማርኛ</span></li>
+                  <li class="text-xs text-black">Arabic - <span class="text-blue-500 cursor-pointer text-xs" >العربية</span></li>
+                  <li class="text-xs text-black">Armenian - <span class="text-blue-500 cursor-pointer text-xs" >Հայերեն</span></li>
+                  <li class="text-xs text-black">Azerbaijani - <span class="text-blue-500 cursor-pointer text-xs" >Azərbaycanca</span></li>
+                  <li class="text-xs text-black">Basque - <span class="text-blue-500 cursor-pointer text-xs" >Euskara</span></li>
+                  <li class="text-xs text-black">Belarusian - <span class="text-blue-500 cursor-pointer text-xs" >Беларуская</span></li>
+                  <li class="text-xs text-black">Bengali - <span class="text-blue-500 cursor-pointer text-xs" >বাংলা</span></li>
+                  <li class="text-xs text-black">Bosnian - <span class="text-blue-500 cursor-pointer text-xs" >Bosanski</span></li>
+                  <li class="text-xs text-black">Bulgarian - <span class="text-blue-500 cursor-pointer text-xs" >Български</span></li>
+                  <li class="text-xs text-black">Catalan - <span class="text-blue-500 cursor-pointer text-xs" >Català</span></li>
+                  <li class="text-xs text-black">Cebuano - <span class="text-blue-500 cursor-pointer text-xs" >Cebuano</span></li>
+                  <li class="text-xs text-black">Chichewa - <span class="text-blue-500 cursor-pointer text-xs" >Chichewa</span></li>
+                  <li class="text-xs text-black">Chinese (Simplified) - <span class="text-blue-500 cursor-pointer text-xs" >中文 (简体)</span></li>
+                  <li class="text-xs text-black">Chinese (Traditional) - <span class="text-blue-500 cursor-pointer text-xs" >中文 (繁體)</span></li>
+                  <li class="text-xs text-black">Corsican - <span class="text-blue-500 cursor-pointer text-xs" >Corsican</span></li>
+                  <li class="text-xs text-black">Croatian - <span class="text-blue-500 cursor-pointer text-xs" >Hrvatski</span></li>
+                  <li class="text-xs text-black">Czech - <span class="text-blue-500 cursor-pointer text-xs" >Čeština</span></li>
+                  <li class="text-xs text-black">Danish - <span class="text-blue-500 cursor-pointer text-xs" >Dansk</span></li>
+                  <li class="text-xs text-black">Dutch - <span class="text-blue-500 cursor-pointer text-xs" >Nederlands</span></li>
+                
+                  <li class="text-xs text-black">Esperanto - <span class="text-blue-500 cursor-pointer text-xs" >Esperanto</span></li>
+                  <li class="text-xs text-black">Estonian - <span class="text-blue-500 cursor-pointer text-xs" >Eesti</span></li>
+                  <li class="text-xs text-black">Filipino - <span class="text-blue-500 cursor-pointer text-xs" >Filipino</span></li>
+                  <li class="text-xs text-black">Finnish - <span class="text-blue-500 cursor-pointer text-xs" >Suomi</span></li>
+                  <li class="text-xs text-black">French - <span class="text-blue-500 cursor-pointer text-xs" >Français</span></li>
+                  <li class="text-xs text-black">Frisian - <span class="text-blue-500 cursor-pointer text-xs" >Frysk</span></li>
+                  <li class="text-xs text-black">Galician - <span class="text-blue-500 cursor-pointer text-xs" >Galego</span></li>
+                  <li class="text-xs text-black">Georgian - <span class="text-blue-500 cursor-pointer text-xs" >ქართული</span></li>
+                  <li class="text-xs text-black">German - <span class="text-blue-500 cursor-pointer text-xs" >Deutsch</span></li>
+                  <li class="text-xs text-black">Greek - <span class="text-blue-500 cursor-pointer text-xs" >Ελληνικά</span></li>
+                  <li class="text-xs text-black">Gujarati - <span class="text-blue-500 cursor-pointer text-xs" >ગુજરાતી</span></li>
+                  <li class="text-xs text-black">Haitian Creole - <span class="text-blue-500 cursor-pointer text-xs" >Kreyòl Ayisyen</span></li>
+                  <li class="text-xs text-black">Hausa - <span class="text-blue-500 cursor-pointer text-xs" >Hausa</span></li>
+                  <li class="text-xs text-black">Hawaiian - <span class="text-blue-500 cursor-pointer text-xs" >Hawaiian</span></li>
+                  <li class="text-xs text-black">Hebrew - <span class="text-blue-500 cursor-pointer text-xs" >עברית</span></li>
+                  <li class="text-xs text-black">Hindi - <span class="text-blue-500 cursor-pointer text-xs" >हिन्दी</span></li>
+                  <li class="text-xs text-black">Hmong - <span class="text-blue-500 cursor-pointer text-xs" >Hmong</span></li>
+                  <li class="text-xs text-black">Hungarian - <span class="text-blue-500 cursor-pointer text-xs" >Magyar</span></li>
+                  <li class="text-xs text-black">Icelandic - <span class="text-blue-500 cursor-pointer text-xs" >Íslenska</span></li>
+                  <li class="text-xs text-black">Igbo - <span class="text-blue-500 cursor-pointer text-xs" >Igbo</span></li>
+                  <li class="text-xs text-black">Indonesian - <span class="text-blue-500 cursor-pointer text-xs" >Indonesia</span></li>
+                  <li class="text-xs text-black">Irish - <span class="text-blue-500 cursor-pointer text-xs" >Gaeilge</span></li>
+                  <li class="text-xs text-black">Italian - <span class="text-blue-500 cursor-pointer text-xs" >Italiano</span></li>
+                  <li class="text-xs text-black">Japanese - <span class="text-blue-500 cursor-pointer text-xs" >日本語</span></li>
+                  <li class="text-xs text-black">Javanese - <span class="text-blue-500 cursor-pointer text-xs" >Jawa</span></li>
+                  <li class="text-xs text-black">Kannada - <span class="text-blue-500 cursor-pointer text-xs" >ಕನ್ನಡ</span></li>
+                  <li class="text-xs text-black">Kazakh - <span class="text-blue-500 cursor-pointer text-xs" >Қазақ тілі</span></li>
+                  <li class="text-xs text-black">Khmer - <span class="text-blue-500 cursor-pointer text-xs" >ភាសាខ្មែរ</span></li>
+                  <li class="text-xs text-black">Kinyarwanda - <span class="text-blue-500 cursor-pointer text-xs" >Kinyarwanda</span></li>
+                  <li class="text-xs text-black">Korean - <span class="text-blue-500 cursor-pointer text-xs" >한국어</span></li>
+                  <li class="text-xs text-black">Kurdish (Kurmanji) - <span class="text-blue-500 cursor-pointer text-xs" >Kurdî (Kurmancî)</span></li>
+                  <li class="text-xs text-black">Kyrgyz - <span class="text-blue-500 cursor-pointer text-xs" >Кыргызча</span></li>
+                  <li class="text-xs text-black">Lao - <span class="text-blue-500 cursor-pointer text-xs" >ລາວ</span></li>
+                  <li class="text-xs text-black">Latin - <span class="text-blue-500 cursor-pointer text-xs" >Latin</span></li>
+                  <li class="text-xs text-black">Latvian - <span class="text-blue-500 cursor-pointer text-xs" >Latviešu</span></li>
+                  <li class="text-xs text-black">Lithuanian - <span class="text-blue-500 cursor-pointer text-xs" >Lietuvių</span></li>
+                  <li class="text-xs text-black">Luxembourgish - <span class="text-blue-500 cursor-pointer text-xs" >Lëtzebuergesch</span></li>
+                  
+                </ul>
+            </div>
+        </div>
+        <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
+          <input type="radio" name="language" id="LatinAmerica" class="hidden peer/ass LatinAmerica" >
+          
+            <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                <ul class="flex flex-col gap-3">
+                  <li class="text-xs text-black">Mandarin Chinese -  <span class="text-blue-500 cursor-pointer text-xs" >中文 (简体)</span></li>
+                  <li class="text-xs text-black">Mandarin Chinese - <span class="text-blue-500 cursor-pointer text-xs" >中文 (简体)</span></li>
+                  <li class="text-xs text-black">Hindi -  <span class="text-blue-500 cursor-pointer text-xs" >हिन्दी</span></li>
+                  <li class="text-xs text-black">Japanese -    <span class="text-blue-500 cursor-pointer text-xs" >日本語</span></li>
+                  <li class="text-xs text-black">Korean - <span class="text-blue-500 cursor-pointer text-xs" >한국어</span></li>
+                  <li class="text-xs text-black">Amharic -    <span class="text-blue-500 cursor-pointer text-xs" >አማርኛ</span></li>
+                  <li class="text-xs text-black">Indonesian -  <span class="text-blue-500 cursor-pointer text-xs" >Bahasa Indonesia </span></li>
+                  <li class="text-xs text-black">Thai -     <span class="text-blue-500 cursor-pointer text-xs" >ไทย</span></li>
+                  <li class="text-xs text-black">Tagalog -  <span class="text-blue-500 cursor-pointer text-xs" >Tagalog</span></li>
+                  <li class="text-xs text-black">Zulu -  <span class="text-blue-500 cursor-pointer text-xs" >isiZulu</span></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="overflow-y-auto max-h-full  overflow-x-hidden ">
+          <input type="radio" name="language" id="MiddleEastern" class="hidden peer/ass MiddleEastern" >
+          
+            <div class="p-2 text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:translate-x-0 translate-x-1/4 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 transition-[transform,opacity] ">
+                <ul class="flex flex-col gap-3">
+                  <li class="text-xs text-black">English - <span class="text-blue-500 cursor-pointer text-xs" >English</span></li>
+                  <li class="text-xs text-black">Spanish -   <span class="text-blue-500 cursor-pointer text-xs" >Español</span></li>
+
+                  <li class="text-xs text-black">French -   <span class="text-blue-500 cursor-pointer text-xs" >Français</span></li>
+                  
+                  
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ <!-- language  -->
+
+
+ <!-- side bar  -->
+ <input type="checkbox" class="peer/sideToggle hidden" name="sideToggle" id="sideToggle">
+ <label for="sideToggle" class="fixed inset-0 -z-[1011] backdrop-blur-xl bg-sky-950/10 peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"></label>
+
+ <div class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none  text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
+  <div class="flex items-center justify-between">
+    <a href="" class="-ml-1.5">
+      <span class="sr-only">hpit</span>
+      <img class="h-7 w-auto [filter:invert(1)] " width="174" height="48" src="./assets/img/logo.png" alt=" Logo">
+      
+    </a>
+    <label for="sideToggle" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200 ">
+      <span class="sr-only">Close menu</span>
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </label>
+  </div>
+  <div class="mt-6 flow-root flex-fill overflow-auto -mr-4 pr-4">
+    <div class="-my-6 divide-y divide-gray-500/10">
+      <div class="space-y-2 py-6">
+        <div class="flex flex-col gap-5 items-center">
+            <div class="flex flex-col w-full gap-y-5">
+              <div class="relative flex flex-col gap-y-3">
+                <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany2" >
+                
+                <label for="mmCompany2" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                  Company
+                  <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                  </svg>
+                </label>
+                <div class="w-full peer-checked/mm:block hidden">
+                  <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div>
+                        <div class="flex h-4 w-4 flex-none">
+                          <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 9v4"></path><path d="M12 16v.01"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            Company Overview
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-4 w-4 flex-none">
+                          <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path><path d="M12 15l1.57-3.43L17 10l-3.43-1.57L12 5l-1.57 3.43L7 10l3.43 1.57z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold opacity-80">
+                            Our Leaders
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-4 w-4 flex-none">
+                          <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold opacity-80">
+                            Ethics & Compliance
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-4 w-4 flex-none">
+                          <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 12H9C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12H17C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12Z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold opacity-80">
+                            Sustainability
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-4 w-4 flex-none">
+                          <svg class="h-3 w-3 opacity-90" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path>
+                          </svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold opacity-80">
+                            Diversity, Equity And Inclusion
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-4 w-4 flex-none">
+                          <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold opacity-80">
+                            Contract Vehicles
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-4 w-4 flex-none">
+                          <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M15 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1"></path><path d="M12 9l0 3"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold opacity-80">
+                            Partnership
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-4 w-4 flex-none">
+                          <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M15 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1"></path><path d="M12 9l0 3"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold opacity-80">
+                            Global
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col gap-y-3">
+                <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmServices">
+                <label for="mmServices" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                  Capabilities  
+                  <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                  </svg>
+                </label>
+                <div class="w-full peer-checked/mm:block hidden">
+                  <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div class="text-sm font-bold py-1 block">Technology</div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Analytics
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            Application
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Cloud
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Cyber
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Digital
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            Enterprice IT
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	WiFi Enterprice
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div class="text-sm font-bold py-1 block">Business</div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Business Modernization
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Business Transformation
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Change Management
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Supply Chain Management
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Customer Experience
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            		Digital Commerce
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Finance Consulting
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div class="text-sm font-bold py-1 block">Engineering</div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Digital Engineering
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Engineering Lifecycle Management
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Integrated Engineering
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Software Development
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Systems Engineering
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div class="text-sm font-bold py-1 block">Mission</div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            C2/4 & ISR
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Platforms Mission Support
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Operations & Sustainment
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Intelligence Operations Support
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+               
+                     
+                    
+                    </div>
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div class="text-sm font-bold py-1 block">Consulting</div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            Advisor Overview
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Experience advisory
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            Strategic advisory
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Technology advisory
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col gap-y-3">
+                <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmTrending">
+                <label for="mmTrending" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                  Industries  
+                  <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                  </svg>
+                </label>
+                <div class="w-full peer-checked/mm:block hidden">
+                  <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Automotive
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Banking
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Defense
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Energy
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Government
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Health
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Homeland Security
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Intelligence
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Manufacturing
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Science
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Space
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Travel And Transportation
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col gap-y-3">
+                <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmHire">
+                <label for="mmHire" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                  Preceptive
+                  <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                  </svg>
+                </label>
+                <div class="w-full peer-checked/mm:block hidden">
+                  <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Articles
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Blogs
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Press Release
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	In The News 
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Success Story
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col gap-y-3">
+                <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmHire">
+                <label for="mmHire" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                  Career  
+                  <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                  </svg>
+                </label>
+                <div class="w-full peer-checked/mm:block hidden">
+                  <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	About Life HPIT 
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            Employee & Alumn 
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            Employees Benefits
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Experienced Professionals
+
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Military Veterans 
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            Awards & Recognition  
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Our Culture  
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Events  
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex h-1.5 w-1.5 flex-none">
+                          <svg class="h-1.5 w-1.5 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="javascript:;" class="block font-semibold opacity-80">
+                            	Latest Opportunities  
+                            <span class="absolute inset-0 z-[1]"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <a href="javascript:;" class="text-sm font-bold text-gray-50">Employess              </a>
+              <a href="javascript:;" class="text-sm font-bold text-gray-50">Suppliers</a>
+              <a href="javascript:;" class="text-sm font-bold text-gray-50">Contact Us</a>
+             
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- side bar end -->
 
 </body>
 
@@ -1712,5 +2480,22 @@
   },
   });
 </script>
+
+
+
+<!-- header -->
+
+<script>
+  window.addEventListener('scroll', function() {
+    var scroll = window.scrollY;
+    var navbar = document.querySelector('body');
+    if (scroll <= 120) {
+        navbar.classList.remove('group/nav');
+    } else {
+        navbar.classList.add('group/nav');
+    }
+});
+</script>
+ <!-- end  -->
 
 </html>
