@@ -1527,10 +1527,6 @@ video {
   transform: none;
 }
 
-.animate-move{
-  animation: move1 18s linear infinite;
-}
-
 @keyframes move{
   0%{
     offset-distance: 0%;
@@ -2700,10 +2696,6 @@ video {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.bg-\[radial-gradient_\(\#cdd6df\2c _transparent\2c _transparent\)\]{
-  background-color: radial-gradient (#cdd6df, transparent, transparent);
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
