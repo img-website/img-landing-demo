@@ -1531,7 +1531,11 @@ video {
   transform: none;
 }
 
-@keyframes move1{
+.animate-move{
+  animation: move1 18s linear infinite;
+}
+
+@keyframes move{
   0%{
     offset-distance: 0%;
   }
@@ -1541,8 +1545,8 @@ video {
   }
 }
 
-.animate-move{
-  animation: move1 18s linear infinite;
+.animate-move1{
+  animation: move 5s linear infinite;
 }
 
 @keyframes rotateWord{
@@ -2668,6 +2672,11 @@ video {
   border-style: none;
 }
 
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .border-blue-500{
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
@@ -2695,11 +2704,6 @@ video {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.\!bg-red-600{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-\[radial-gradient_\(\#cdd6df\2c _transparent\2c _transparent\)\]{
@@ -2779,6 +2783,10 @@ video {
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-\[radial-gradient\(theme\(colors\.gray\.300\)\2c _transparent\2c _transparent\)\]{
+  background-image: radial-gradient(#d1d5db, transparent, transparent);
 }
 
 .bg-gradient-to-r{
@@ -3222,6 +3230,10 @@ video {
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-\[10px\]{
+  font-size: 10px;
 }
 
 .text-base{
@@ -4043,6 +4055,10 @@ video {
 
 .\[filter\:invert\(1\)\]{
   filter: invert(1);
+}
+
+.\[offset-path\:rect\(0\%_auto_100\%_auto\)\]{
+  offset-path: rect(0% auto 100% auto);
 }
 
 .\[transition-timing-function\:cubic-bezier\(0\.85\2c 0\2c 0\2c 1\)\;\]{
@@ -4955,10 +4971,10 @@ body{
   line-height: 1.25rem !important;
 }
 
-.after\:\!text-white::after{
+.after\:\!text-black::after{
   content: var(--tw-content);
   --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 
 .after\:transition-all::after{
@@ -5424,6 +5440,10 @@ body{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.peer\/ass:checked ~ .peer-checked\/ass\:pointer-events-auto{
+  pointer-events: auto;
+}
+
 .peer\/ass:checked ~ .peer-checked\/ass\:relative{
   position: relative;
 }
@@ -5568,6 +5588,11 @@ body{
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
+.group:has(.insightsEvents:checked) .group-has-\[\.insightsEvents\:checked\]\:border-slate-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
 .group:has(.tech:checked) .group-has-\[\.tech\:checked\]\:border-slate-700{
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
@@ -5644,6 +5669,11 @@ body{
 }
 
 .group:has(.insights:checked) .group-has-\[\.insights\:checked\]\:bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.group:has(.insightsEvents:checked) .group-has-\[\.insightsEvents\:checked\]\:bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }

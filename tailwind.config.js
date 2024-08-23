@@ -11,13 +11,13 @@ module.exports = {
         // 'theme5': '#1978BC',
       },
       animation: {
-         'move': 'move1 5s linear infinite',
+         'move1': 'move 5s linear infinite',
         'fixed-nav': 'fixedNav 0.6s',
         'rotate-word': 'rotateWord 18s linear infinite',
         move: 'move1 18s linear infinite'
       },
       keyframes: {
-        move1: {
+        move: {
           '0%': { 'offset-distance': '0%' },
           '100%': { 'offset-distance': '100%' },
         },
@@ -60,6 +60,7 @@ module.exports = {
         },
     
       }
+      
     },
   },
   plugins: [],
