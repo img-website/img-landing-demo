@@ -290,7 +290,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
  <div class="bg-slate-900">
   <div class="max-w-7xl mx-auto px:6 lg:px-8 py-10 p-1 relative">
     <div class="grid grid-cols-12 gap-4 items-stretch relative">
-    <div class="col-span-8  skew-x-6 hover:skew-x-0 duration-300 relative  !z-[400] overflow-hidden h-full ">
+    <div class="col-span-8  skewElem hover:skew-x-0  relative  !z-[400] overflow-hidden h-full ">
 
       <div class="grid grid-cols-12 bg-white h-full items-center relative before:absolute before:size-full before:bg-gradient-to-br before:from-theme2/50 before:theme3/60 before:inset-0">
         <div class="col-span-5 h-full *:size-full">
@@ -316,7 +316,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
       </div>
 
     </div>
-    <div class="col-span-4 skew-x-6 hover:skew-x-0 duration-300 bg-white h-full relative before:absolute before:size-full before:bg-gradient-to-br before:from-rose-500/40  before:theme3/60 before:inset-0">
+    <div class="col-span-4 skewElem hover:skew-x-0  bg-white h-full relative before:absolute before:size-full before:bg-gradient-to-br before:from-rose-500/40  before:theme3/60 before:inset-0">
       <div class="grid grid-cols-12 h-full ">
         <div class="col-span-3 h-full *:h-full *:object-cover ">
           <img src="./assets/img/team-3.jpeg" alt="">
@@ -342,7 +342,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
     </div>
-    <div class="col-span-4 skew-x-6 hover:skew-x-0 duration-300 bg-white h-full relative before:absolute before:size-full before:bg-gradient-to-br before:from-lime-300/40 before:theme3/60 before:inset-0">
+    <div class="col-span-4 skewElem hover:skew-x-0  bg-white h-full relative before:absolute before:size-full before:bg-gradient-to-br before:from-lime-300/40 before:theme3/60 before:inset-0">
       <div class="grid grid-cols-12 h-full ">
         <div class="col-span-3 order-2 h-full *:h-full *:object-cover ">
           <img src="./assets/img/team-2.jpeg" alt="">
@@ -368,7 +368,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
     </div>
-    <div class="col-span-8  relative skew-x-6 hover:skew-x-0 duration-300 !z-[400] overflow-hidden h-full ">
+    <div class="col-span-8  relative skewElem hover:skew-x-0  !z-[400] overflow-hidden h-full ">
 
       <div class="grid grid-cols-12 bg-white h-full items-center relative before:absolute before:size-full before:bg-gradient-to-br before:from-orange-400/50 before:theme3/60 before:inset-0">
         <div class="col-span-5 order-2 h-full *:size-full">
@@ -401,7 +401,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
    </div>
  </div>
   <!-- team end -->
-<script>
+   <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+   <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+<script type="module">
   let proxy = { skew: 0 },
     skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
     clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees. 
