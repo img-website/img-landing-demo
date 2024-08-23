@@ -1584,6 +1584,10 @@ video {
   animation: rotateWord 18s linear infinite;
 }
 
+.animate-move{
+  animation: move1 18s linear infinite;
+}
+
 .cursor-default{
   cursor: default;
 }
@@ -2786,6 +2790,10 @@ video {
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-\[radial-gradient_\(\#cdd6df\2c _transparent\2c _transparent\)\]{
+  background-color: radial-gradient (#cdd6df, transparent, transparent);
 }
 
 .bg-\[radial-gradient\(theme\(colors\.gray\.300\)\2c _transparent\2c _transparent\)\]{
