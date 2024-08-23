@@ -12,40 +12,71 @@
 <body>
 
 
-    <!--  uses radio buttons -->
-    <section class="flex flex-row flex-wrap m-8">
 
-        <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
-        <label for="tab-one"
-            class="bg-slate-300 hover:bg-slate-200 peer-checked/tab-one:bg-amber-200 cursor-default p-4 rounded-t-lg block">
-            One
-        </label>
-
-        <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
-        <label for="tab-two"
-            class="bg-slate-300 hover:bg-slate-200 peer-checked/tab-two:bg-amber-200 cursor-default p-4 rounded-t-lg block">
-            Two
-        </label>
-
-        <input id="tab-three" type="radio" name="tabs" class="peer/tab-three opacity-0 absolute" />
-        <label for="tab-three"
-            class="bg-slate-300 hover:bg-slate-200 peer-checked/tab-three:bg-amber-200 cursor-default p-4 rounded-t-lg block">
-            Three
-        </label>
-
-        <div class="basis-full h-0"></div>
-
-        <div class="bg-amber-200 hidden peer-checked/tab-one:block p-4 w-full">
-            First tab pane
+    <!-- tabs section start -->
+    <section class="mt-auto max-w-7xl px-6 lg:px-8 w-full py-10 lg:pt-20 mx-auto">
+        <div class="lg:text-6xl !leading-[150%] md:text-6xl text-4xl font-bold ">Explore  
+            <span
+                class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-theme2 relative inline-block">
+                <span class="relative text-white">Our  </span>
+            </span> latest
+            <span
+                class="[-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:black]">
+                insights</span>
         </div>
-        <div class="bg-amber-200 hidden peer-checked/tab-two:block p-4 w-full">
-            Second tab pane
-        </div>
-        <div class="bg-amber-200 hidden peer-checked/tab-three:block p-4 w-full">
-            Third tab pane
-        </div>
+
+        <!-- radio start -->
+            <div class="group pt-14">
+                <ul class="flex gap-10 bg-zinc-200 p-1.5 rounded-full w-fit mx-auto">
+                    <li class="">
+                        <label for="insights" class="flex items-center gap-2 min-w-40 justify-center text-base cursor-pointer duration-300 transition-all px-4 py-4  backdrop-blur-sm text-black  rounded-full group-has-[.insights:checked]:bg-white group-has-[.insights:checked]:text-black font-semibold group-has-[.insights:checked]:border-slate-700">
+                        <!-- <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0A11.992 11.992 0 00.015 11.985 12.019 12.019 0 0012 24a12.019 12.019 0 0011.985-12.015A11.992 11.992 0 0012.004 0zm0 .903a11.078 11.078 0 0111.085 11.078c0 6.123-4.958 11.112-11.085 11.112A11.104 11.104 0 01.922 11.985 11.078 11.078 0 0111.996.907zm.087 1.16l-.43 1.252-5.674 16.063-.204.604h12.654l-.23-.604L12.524 3.31zm0 2.797l2.007 5.643-3.024 8.553H7.056zm2.502 7.038l2.532 7.155h-5.09z"></path></svg></span>  -->
+                        Press Release
+                        </label>
+                    </li>
+                    <li class="">
+                        <label for="insights1" class="flex items-center gap-2 min-w-40 justify-center text-base cursor-pointer duration-300 transition-all px-4 py-4  backdrop-blur-sm text-black  rounded-full group-has-[.insights1:checked]:bg-white group-has-[.insights1:checked]:textblatext-black font-semibold group-has-[.insights1:checked]:border-slate-700">
+                        <!-- <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0A11.992 11.992 0 00.015 11.985 12.019 12.019 0 0012 24a12.019 12.019 0 0011.985-12.015A11.992 11.992 0 0012.004 0zm0 .903a11.078 11.078 0 0111.085 11.078c0 6.123-4.958 11.112-11.085 11.112A11.104 11.104 0 01.922 11.985 11.078 11.078 0 0111.996.907zm.087 1.16l-.43 1.252-5.674 16.063-.204.604h12.654l-.23-.604L12.524 3.31zm0 2.797l2.007 5.643-3.024 8.553H7.056zm2.502 7.038l2.532 7.155h-5.09z"></path></svg></span>  -->
+                        Latest News
+                        </label>
+                    </li>
+                    <li class="">
+                        <label for="insights2" class="flex items-center gap-2 min-w-40 justify-center text-base cursor-pointer duration-300 transition-all px-4 py-4  backdrop-blur-sm text-black  rounded-full group-has-[.insights2:checked]:bg-white group-has-[.insights2:checked]:textblatext-black font-semibold group-has-[.insights2:checked]:border-slate-700">
+                        <!-- <span><svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0A11.992 11.992 0 00.015 11.985 12.019 12.019 0 0012 24a12.019 12.019 0 0011.985-12.015A11.992 11.992 0 0012.004 0zm0 .903a11.078 11.078 0 0111.085 11.078c0 6.123-4.958 11.112-11.085 11.112A11.104 11.104 0 01.922 11.985 11.078 11.078 0 0111.996.907zm.087 1.16l-.43 1.252-5.674 16.063-.204.604h12.654l-.23-.604L12.524 3.31zm0 2.797l2.007 5.643-3.024 8.553H7.056zm2.502 7.038l2.532 7.155h-5.09z"></path></svg></span>  -->
+                        Events
+                        </label>
+                    </li>
+                </ul>
+        
+                <div class="rounded-xl bg-white ">
+                    <input type="radio" name="capabilities" id="insights" class="hidden peer/ass insights" checked>
+                    <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusamus sint necessitatibus commodi ducimus, consequuntur adipisci recusandae, impedit reiciendis molestias voluptate optio veniam id, debitis minus enim. Fugit, facere nobis?
+        
+                    </div>
+                </div>
+                <div class="rounded-xl bg-white ">
+                    <input type="radio" name="capabilities" id="insights1" class="hidden peer/ass insights1">
+                    <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 uppercase">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iure eius odit, quia dolore recusandae magnam corporis voluptas repellat quod tempore? Harum, dolore tempore. Minima velit perferendis laborum ullam explicabo.
+                    </div>
+                </div>
+                <div class="rounded-xl bg-white ">
+                    <input type="radio" name="capabilities" id="insights2" class="hidden peer/ass insights2">
+                    <div class="p-5  text-sm md:text-base md:leading-8 peer-checked/ass:relative absolute peer-checked/ass:z-[1] -z-20 peer-checked/ass:opacity-100 opacity-0 duration-300 delay-150 text-blue-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iure eius odit, quia dolore recusandae magnam corporis voluptas repellat quod tempore? Harum, dolore tempore. Minima velit perferendis laborum ullam explicabo.
+                    </div>
+                </div>
+            </div>
+        <!-- radio Ends -->
 
     </section>
+    <!-- tabs section ends -->
+
+
+
+
+
 
 
 
