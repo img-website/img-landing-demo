@@ -11,7 +11,7 @@
   .glow {
     animation: move 5s linear infinite;
   offset-path: rect(0% auto 100% auto);
-  background: radial-gradient(#fff, #cdd6df, transparent);
+  background: radial-gradient(#cdd6df, transparent, transparent);
   /* transition: background-color 5s 300ms; */
 }
 
@@ -35,7 +35,7 @@
       <div class="flex items-center justify-between pb-7 sm:pb-10">
         <div class="lg:text-6xl !leading-[140%] md:text-6xl text-4xl font-bold text-white">Spot
           <span
-            class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-theme2 relative inline-block">
+            class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white/20 relative inline-block">
             <span class="relative text-white"><span
               class="[-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:white]">
               Light</span></span>
@@ -49,15 +49,11 @@
       </div>
      
       <div class="swiper mySwiper ">
-        <div class="swiper-wrapper h-full d-flex !items-stretch py-4">
-          <div class="swiper-slide !h-auto p-[1px]  overflow-hidden group">
-            <div class="glow inset-0 w-[200px] h-[200px] -z-10 absolute rotate-45  group-hover:bg-transparent group-hover:hidden"></div>
-            
+        <div class="swiper-wrapper h-full d-flex !items-stretch pt-4 pb-6">
+          <div class="swiper-slide !h-auto ">
             <div class="group h-full   overflow-hidden relative duration-300 hover:scale-105 ">
-
-             
               <div
-                class=" absolute top-[1px] left-[1px] right-[1px] bottom-[1px] z-20  size-full  origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70   duration-300 transition-timing-function: cubic-bezier(0, 0, 0, 0);">
+                class=" absolute top-[1px] left-[1px] right-[1px] bottom-[1px] z-20  size-full  origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70    duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);;">
                 <img class="size-full object-cover" src="./assets/img/spotlight01.jpg" alt="">
               </div>
               <button
@@ -90,9 +86,7 @@
               </button>
             </div>
           </div>
-          <div class="swiper-slide !h-auto p-[1px]  overflow-hidden group ">
-            <div class="glow inset-0 w-[200px] h-[200px] -z-10 absolute rotate-45 group-hover:hidden"></div>
-
+          <div class="swiper-slide !h-auto  ">
             <div class="group h-full  overflow-hidden relative  duration-300 hover:scale-105">
               <div
                 class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
@@ -127,9 +121,7 @@
               </button>
             </div>
           </div>
-          <div class="swiper-slide !h-auto  p-[1px]  overflow-hidden group">
-            <div class="glow inset-0 w-[200px] h-[200px] -z-10 absolute rotate-45 group-hover:hidden"></div>
-
+          <div class="swiper-slide !h-auto ">
             <div class="group h-full  overflow-hidden relative  duration-300 hover:scale-105">
               <div
                 class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
@@ -163,9 +155,7 @@
               </button>
             </div>
           </div>
-          <div class="swiper-slide !h-auto  p-[1px]  overflow-hidden group">
-            <div class="glow inset-0 w-[200px] h-[200px] -z-10 absolute rotate-45 group-hover:hidden"></div>
-
+          <div class="swiper-slide !h-auto ">
             <div class="group h-full  overflow-hidden relative duration-300 hover:scale-105">
               <div
                 class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
@@ -199,9 +189,7 @@
               </button>
             </div>
           </div>
-          <div class="swiper-slide !h-auto p-[1px]  overflow-hidden group ">
-            <div class="glow inset-0 w-[200px] h-[200px] -z-10 absolute rotate-45 group-hover:hidden"></div>
-
+          <div class="swiper-slide !h-auto  ">
             <div class="group h-full  overflow-hidden relative  duration-300 hover:scale-105">
               <div
                 class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
@@ -236,9 +224,7 @@
               </button>
             </div>
           </div>
-          <div class="swiper-slide !h-auto p-[1px]  overflow-hidden group">
-            <div class="glow inset-0 w-[200px] h-[200px] -z-10 absolute rotate-45 group-hover:hidden"></div>
-
+          <div class="swiper-slide !h-auto">
             <div class="group h-full  overflow-hidden relative hover:scale-105 duration-300 ">
               <div
                 class="absolute top-0 left-0  size-full z-0 origin-top-left  group-hover:scale-150 group-hover:backdrop-blur-3xl group-hover:blur-[15px] group-hover:opacity-70  duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
@@ -272,8 +258,9 @@
               </button>
             </div>
           </div>
-       
+          
         </div>
+        <div class="sm:hidden swiper-pagination  !-bottom-2 [&_.swiper-pagination-bullet]:!bg-theme3 [&_.swiper-pagination-bullet-active]:!size-3 " ></div>
         <!-- <div class="swiper-scrollbar !bg-red-600 !z-20"></div> -->
       </div>
     </div>
@@ -402,7 +389,7 @@
                    
                     <div class="glow inset-0 w-[200px] h-[200px] -z-50 absolute rotate-45 group-hover:hidden"></div>
                  
-                    <div class="size-full  bg-white group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
+                    <div class="size-full  bg-white duration-300 group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
                     <div class="text-center text-2xl font-semibold text-black group-hover:text-white">Networking</div>
                     <div class="flex items-center pt-6 justify-center h-24 text-theme2 group-hover:text-white">
                       <svg class="" stroke="currentColor" fill="none" stroke-width="1px" role="img" viewBox="0 0 24 24"
@@ -425,7 +412,7 @@
                     after:absolute after:h-[35%] after:rounded-bl-full after:w-0 after:top-0 after:right-0 after:-z-0 after:bg-theme4 group-hover:after:w-[20%] after:duration-300">
                     <div class="glow inset-0 w-[200px] h-[200px] -z-50 absolute rotate-45 group-hover:hidden"></div>
                  
-                    <div class="size-full bg-white group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
+                    <div class="size-full bg-white duration-300 group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
                     <div class="text-center text-2xl font-semibold text-black group-hover:text-white">
                       Security
                     </div>
@@ -449,7 +436,7 @@
                   after:absolute after:h-[35%] after:rounded-bl-full after:w-0 after:top-0 after:right-0 after:-z-0 after:bg-theme4 group-hover:after:w-[20%] after:duration-300">
                   <div class="glow inset-0 w-[200px] h-[200px] -z-50 absolute rotate-45 group-hover:hidden"></div>
                   
-                  <div class="size-full bg-white group-hover:bg-transparent rounded-3xl  p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
+                  <div class="size-full bg-white duration-300 group-hover:bg-transparent rounded-3xl  p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
                     <div class="text-center text-2xl font-semibold text-black group-hover:text-white">
                       Cloud
                     </div>
@@ -474,7 +461,7 @@
                      after:absolute after:h-[35%] after:rounded-bl-full after:w-0 after:top-0 after:right-0 after:-z-0 after:bg-theme4 group-hover:after:w-[20%] after:duration-300">
                      <div class="glow inset-0 w-[200px] h-[200px] -z-50 absolute rotate-45 group-hover:hidden"></div>
                   
-                     <div class="size-full bg-white group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
+                     <div class="size-full bg-white duration-300 group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
                     <div class="text-center text-2xl font-semibold text-black group-hover:text-white">
                       Automation
                     </div>
@@ -556,15 +543,15 @@
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-      },
-      autoplay: {
+     
+      autolay: {
         delay: 2500,
         disableOnInteraction: false,
       },
