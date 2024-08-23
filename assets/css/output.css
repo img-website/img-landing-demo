@@ -3402,6 +3402,10 @@ video {
   -webkit-text-fill-color: transparent;
 }
 
+.\[-webkit-text-fill-color\:white\]{
+  -webkit-text-fill-color: white;
+}
+
 .\[-webkit-text-stroke-color\:black\]{
   -webkit-text-stroke-color: black;
 }
@@ -3716,6 +3720,11 @@ body{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(24 120 188 / var(--tw-bg-opacity));
+}
+
+.before\:bg-theme2\/50::before{
+  content: var(--tw-content);
+  background-color: rgb(24 120 188 / 0.5);
 }
 
 .before\:bg-gradient-to-l::before{
