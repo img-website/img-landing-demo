@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1 /dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!--  uses radio buttons -->
+    <section class="flex flex-row flex-wrap m-8">
+
+        <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
+        <label for="tab-one"
+            class="bg-slate-300 hover:bg-slate-200 peer-checked/tab-one:bg-amber-200 cursor-default p-4 rounded-t-lg block">
+            One
+        </label>
+
+        <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
+        <label for="tab-two"
+            class="bg-slate-300 hover:bg-slate-200 peer-checked/tab-two:bg-amber-200 cursor-default p-4 rounded-t-lg block">
+            Two
+        </label>
+
+        <input id="tab-three" type="radio" name="tabs" class="peer/tab-three opacity-0 absolute" />
+        <label for="tab-three"
+            class="bg-slate-300 hover:bg-slate-200 peer-checked/tab-three:bg-amber-200 cursor-default p-4 rounded-t-lg block">
+            Three
+        </label>
+
+        <div class="basis-full h-0"></div>
+
+        <div class="bg-amber-200 hidden peer-checked/tab-one:block p-4 w-full">
+            First tab pane
+        </div>
+        <div class="bg-amber-200 hidden peer-checked/tab-two:block p-4 w-full">
+            Second tab pane
+        </div>
+        <div class="bg-amber-200 hidden peer-checked/tab-three:block p-4 w-full">
+            Third tab pane
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "fade",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
