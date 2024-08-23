@@ -12,7 +12,8 @@ module.exports = {
       },
       animation: {
         'fixed-nav': 'fixedNav 0.6s',
-        'rotate-word': 'rotateWord 18s linear infinite'
+        'rotate-word': 'rotateWord 18s linear infinite',
+        move: 'move1 18s linear infinite'
       },
       keyframes: {
        
@@ -52,7 +53,8 @@ module.exports = {
           '80%': {opacity: '0'},
           
           '100%': {opacity: '0'}
-        }
+        },
+    
       }
     },
   },
