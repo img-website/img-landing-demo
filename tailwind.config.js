@@ -11,7 +11,8 @@ module.exports = {
         // 'theme5': '#1978BC',
       },
       animation: {
-         'move1': 'move 5s linear infinite',
+        'appearBottom': 'appearB  linear',
+        'move1': 'move 5s linear infinite',
         'fixed-nav': 'fixedNav 0.6s',
         'rotate-word': 'rotateWord 18s linear infinite',
         move: 'move1 18s linear infinite'
@@ -21,6 +22,17 @@ module.exports = {
           '0%': { 'offset-distance': '0%' },
           '100%': { 'offset-distance': '100%' },
         },
+        appearB: {
+          'from': {
+              opacity: '0',
+              transform: 'translateY(100%)'
+          },
+          'to': {
+              opacity: '1',
+              transform: 'translateY(0)'
+          }
+      },
+     
         fixedNav: {
           '0%': { 
             opacity: '0',
