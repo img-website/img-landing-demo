@@ -1382,6 +1382,10 @@ video {
   width: 100%;
 }
 
+.min-w-32{
+  min-width: 8rem;
+}
+
 .min-w-40{
   min-width: 10rem;
 }
@@ -2501,6 +2505,11 @@ video {
   border-bottom-left-radius: 0.25rem;
 }
 
+.rounded-b-none{
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .rounded-e{
   border-start-end-radius: 0.25rem;
   border-end-end-radius: 0.25rem;
@@ -2978,6 +2987,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3059,10 +3073,6 @@ video {
 
 .pb-10{
   padding-bottom: 2.5rem;
-}
-
-.pb-12{
-  padding-bottom: 3rem;
 }
 
 .pb-28{
@@ -5765,16 +5775,12 @@ body{
 }
 
 @media (min-width: 640px){
-  .sm\:col-span-6{
-    grid-column: span 6 / span 6;
-  }
-
-  .sm\:col-span-3{
-    grid-column: span 3 / span 3;
-  }
-
   .sm\:col-span-5{
     grid-column: span 5 / span 5;
+  }
+
+  .sm\:col-span-6{
+    grid-column: span 6 / span 6;
   }
 
   .sm\:col-span-7{
@@ -5783,6 +5789,10 @@ body{
 
   .sm\:ms-4{
     margin-inline-start: 1rem;
+  }
+
+  .sm\:mt-10{
+    margin-top: 2.5rem;
   }
 
   .sm\:mt-12{
@@ -5801,6 +5811,10 @@ body{
     height: 100dvh;
   }
 
+  .sm\:h-full{
+    height: 100%;
+  }
+
   .sm\:w-1\/2{
     width: 50%;
   }
@@ -5811,6 +5825,10 @@ body{
 
   .sm\:w-\[550px\]{
     width: 550px;
+  }
+
+  .sm\:min-w-40{
+    min-width: 10rem;
   }
 
   .sm\:max-w-sm{
@@ -5838,6 +5856,10 @@ body{
     align-items: center;
   }
 
+  .sm\:justify-center{
+    justify-content: center;
+  }
+
   .sm\:justify-between{
     justify-content: space-between;
   }
@@ -5854,8 +5876,18 @@ body{
     gap: 2rem;
   }
 
+  .sm\:\!rounded-r-none{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+
   .sm\:p-6{
     padding: 1.5rem;
+  }
+
+  .sm\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:px-6{
@@ -5868,16 +5900,21 @@ body{
     padding-bottom: 2.5rem;
   }
 
+  .sm\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .sm\:pb-10{
     padding-bottom: 2.5rem;
   }
 
-  .sm\:pb-28{
-    padding-bottom: 7rem;
-  }
-
   .sm\:ps-8{
     padding-inline-start: 2rem;
+  }
+
+  .sm\:pt-8{
+    padding-top: 2rem;
   }
 
   .sm\:text-2xl{
@@ -5888,6 +5925,11 @@ body{
   .sm\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:text-lg{
