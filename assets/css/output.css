@@ -2841,6 +2841,10 @@ video {
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
+.bg-black\/30{
+  background-color: rgb(0 0 0 / 0.3);
+}
+
 .bg-\[radial-gradient\(theme\(colors\.gray\.300\)\2c _transparent\2c _transparent\)\]{
   background-image: radial-gradient(#d1d5db, transparent, transparent);
 }
