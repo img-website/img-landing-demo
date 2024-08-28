@@ -5103,16 +5103,8 @@ body{
     min-height: 700px;
   }
 
-  .lg\:w-2\/3{
-    width: 66.666667%;
-  }
-
   .lg\:w-52{
     width: 13rem;
-  }
-
-  .lg\:\!w-2\/3{
-    width: 66.666667% !important;
   }
 
   .lg\:max-w-\[75\%\]{
