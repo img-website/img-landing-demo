@@ -2539,10 +2539,16 @@
           </span> 
           
         </div>
-        <div class="hidden sm:flex items-center pt-5 gap-4">
-          <div class=" swiper-button-prev !static after:!text-sm md:after:!text-lg border border-black !backdrop-blur-md rounded-full !size-7  md:!size-10 after:!flex after:!items-center after:!text-black"></div>
-          <div class="swiper-button-next !static after:!text-sm md:after:!text-lg border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10 after:!flex after:!items-center after:!text-black"  ></div>
+        <div class="hidden sm:flex items-center pt-5 gap-4 ">
+          <div
+          class="swiper-button-prev *:!size-4 hover:!text-white hover:bg-black transition-all duration-300 ease-in-out !text-black  !static after:hidden  border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10  ">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
         </div>
+        <div
+        class="swiper-button-next *:rotate-180 *:!size-4 hover:!text-white hover:bg-black transition-all duration-300 ease-in-out !text-black  !static after:hidden  border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10  ">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
+      </div>
+</div>
       </div>
      
       <div class="swiper cardSwiper ">
@@ -2923,13 +2929,13 @@
         </div>
       </div>
       <div
-        class="w-full overflow-hidden sm:h-dvh md:h-auto pb-28 pt-20 mt-4 flex justify-center">
+        class="group w-full  overflow-hidden sm:h-dvh md:h-auto pb-28 pt-20 mt-4 flex justify-center">
         <div class="md:flex justify-center">
           <div class="md:w-[65%] w-full relative">
             <a
               href
-              class="group border-8 border-white shadow-2xl items-center rounded-3xl inline-flex w-full aspect-[1/.6] *:w-full *:h-full *:object-cover overflow-hidden relative before:absolute before:size-full before:-z-10 before:rotate-180 before:shadow-2xl">
-              <img src="./assets/img/amelia-cover.jpg" alt />
+              class="group   border-8 border-white shadow-2xl items-center rounded-3xl inline-flex w-full aspect-[1/.6] *:w-full *:h-full *:object-cover overflow-hidden relative before:absolute before:size-full before:-z-10 before:rotate-180 before:shadow-2xl">
+              <img class=" group-hover:scale-105 duration-500" src="./assets/img/amelia-cover.jpg" alt />
               <div
                 class="absolute md:!size-24 !size-14 flex items-center justify-center p-3 rounded-full backdrop-blur-sm bg-black/40 *:md:size-6 *:size-4 inset-1/2 -translate-y-1/2 -translate-x-1/2 *:text-white before:absolute before:size-14 before:bg-white/40 before:rounded-full before:blur-lg before:-z-10 before:opacity-0 before:duration-700 group-hover:before:opacity-100">
                 <svg
@@ -2948,15 +2954,15 @@
             </a>
             <div
               class="absolute lg:w-52 w-32 aspect-[1/.7] overflow-hidden *:object-cover rounded-2xl *:size-full -top-14 -z-30 -right-24">
-              <img src="./assets/img/amelia-small-1.jpg" alt />
+              <img class="group-hover:scale-105 duration-500" src="./assets/img/amelia-small-1.jpg" alt />
             </div>
             <div
               class="absolute lg:w-52 w-32 aspect-[1/.7] overflow-hidden border-8 border-white *:object-cover rounded-2xl *:size-full top-1/2 -left-28 -translate-y-1/2">
-              <img src="./assets/img/amelia-small-2.jpg" alt />
+              <img class="group-hover:scale-105 duration-500" src="./assets/img/amelia-small-2.jpg" alt />
             </div>
             <div
               class="absolute lg:w-52 w-32 aspect-[1/.7] overflow-hidden border-8 border-white *:object-cover rounded-2xl *:size-full md:-bottom-24 -bottom-12 md:right-24 right-8">
-              <img src="./assets/img/amelia-small-3.jpg" alt />
+              <img class="group-hover:scale-105 duration-500" src="./assets/img/amelia-small-3.jpg" alt />
             </div>
           </div>
         </div>
@@ -3080,12 +3086,12 @@
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            class="col-span-12 md:col-span-6 hover:flex-grow-3 lg:col-span-8 skewElem hover:skew-x-0 relative !z-[400] overflow-hidden h-full">
+            class="col-span-12 md:col-span-6 group hover:flex-grow-3 lg:col-span-8 skewElem hover:skew-x-0 relative !z-[400] overflow-hidden h-full">
             <div
-              class="grid grid-cols-12 bg-white h-full items-center relative before:absolute before:size-full before:bg-gradient-to-br before:from-theme2/50 before:theme3/60 before:inset-0">
+              class="grid grid-cols-12 bg-white h-full items-center relative before:z-20 before:absolute before:size-full before:bg-gradient-to-br before:from-theme2/50 before:theme3/60 before:inset-0">
               <div
-                class="col-span-3 sm:col-span-5 h-full *:size-full *:object-cover">
-                <img src="./assets/img/team-1.jpg" alt />
+                class="col-span-3 sm:col-span-5 h-full overflow-hidden *:size-full *:object-cover">
+                <img class="group-hover:scale-105 duration-300" src="./assets/img/team-1.jpg" alt />
               </div>
               <div
                 class="p-4 col-span-9 sm:col-span-7 flex flex-col h-full justify-between py-10 sm:ps-8 relative">
@@ -3119,10 +3125,10 @@
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            class="sm:col-span-6 lg:col-span-4 col-span-12 skewElem hover:skew-x-0 bg-white h-full relative before:absolute before:size-full before:bg-gradient-to-br before:from-rose-500/40 before:theme3/60 before:inset-0">
+            class="sm:col-span-6 lg:col-span-4 col-span-12 group skewElem hover:skew-x-0 bg-white h-full relative before:absolute before:z-20 before:size-full before:bg-gradient-to-br before:from-rose-500/40 before:theme3/60 before:inset-0">
             <div class="grid grid-cols-12 h-full">
-              <div class="col-span-3 h-full *:h-full *:object-cover order-1 sm:order-2">
-                <img src="./assets/img/team-3.jpeg" alt />
+              <div class="col-span-3 h-full overflow-hidden *:h-full *:object-cover order-1 sm:order-2">
+                <img class="group-hover:scale-105 duration-300" src="./assets/img/team-3.jpeg" alt />
               </div>
               <div
                 class="p-4 col-span-9 flex flex-col h-full justify-between py-10 ps-4 relative">
@@ -3156,10 +3162,10 @@
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            class="sm:col-span-6 lg:col-span-4 col-span-12 skewElem hover:skew-x-0 bg-white h-full relative before:absolute before:size-full before:bg-gradient-to-br before:from-lime-300/40 before:theme3/60 before:inset-0">
+            class="sm:col-span-6 lg:col-span-4 col-span-12 group skewElem hover:skew-x-0 bg-white h-full relative before:absolute before:z-20 before:size-full before:bg-gradient-to-br before:from-lime-300/40 before:theme3/60 before:inset-0">
             <div class="grid grid-cols-12 h-full">
-              <div class="col-span-3 sm:order-2 h-full *:h-full *:object-cover">
-                <img src="./assets/img/team-2.jpeg" alt />
+              <div class="col-span-3 sm:order-2 h-full overflow-hidden *:h-full *:object-cover">
+                <img class="group-hover:scale-105 duration-300" src="./assets/img/team-2.jpeg" alt />
               </div>
               <div
                 class="p-4 col-span-9 order-1 flex flex-col h-full justify-between py-10 ps-4 relative">
@@ -3193,12 +3199,12 @@
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            class="col-span-12 md:col-span-6 lg:col-span-8 relative skewElem hover:skew-x-0 !z-[400] overflow-hidden h-full">
+            class="col-span-12 md:col-span-6 lg:col-span-8 group relative skewElem hover:skew-x-0 !z-[400] overflow-hidden h-full">
             <div
-              class="grid grid-cols-12 bg-white h-full items-center relative before:absolute before:size-full before:bg-gradient-to-br before:from-orange-400/50 before:theme3/60 before:inset-0">
+              class="grid grid-cols-12 bg-white h-full items-center relative before:absolute before:z-20 before:size-full before:bg-gradient-to-br before:from-orange-400/50 before:theme3/60 before:inset-0">
               <div
-                class="col-span-3 sm:col-span-5 order-2 h-full *:size-full *:object-cover">
-                <img src="./assets/img/team-4.jpeg" alt />
+                class="col-span-3 sm:col-span-5 order-2 h-full overflow-hidden *:size-full *:object-cover">
+                <img class="group-hover:scale-105 duration-300" src="./assets/img/team-4.jpeg" alt />
               </div>
               <div
                 class="p-4 order-1 col-span-9 sm:col-span-7 flex flex-col h-full justify-between py-10 sm:ps-8 relative">
@@ -3281,9 +3287,13 @@
             </ul>
             <div class="hidden sm:flex items-center pt-5 gap-4">
               <div
-                class="swiper-button-prev !static after:!text-sm md:after:!text-lg border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10 after:!flex after:!items-center after:!text-black"></div>
+                class="swiper-button-prev *:!size-4 hover:!text-white hover:bg-black transition-all duration-300 ease-in-out !text-black  !static after:hidden  border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10  ">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
+              </div>
               <div
-                class="swiper-button-next !static after:!text-sm md:after:!text-lg border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10 after:!flex after:!items-center after:!text-black"></div>
+              class="swiper-button-next *:rotate-180 *:!size-4 hover:!text-white hover:bg-black transition-all duration-300 ease-in-out !text-black  !static after:hidden  border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10  ">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
+            </div>
             </div>
           </div>
           <div class="rounded-xl">
@@ -3299,12 +3309,12 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a
-                      class="group relative block rounded-xl focus:outline-none"
+                      class="group/event1 relative block rounded-xl focus:outline-none"
                       href="#">
                       <div
                         class="shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:z-[1] before:size-full before:bg-gradient-to-t before:from-gray-900/70">
                         <img
-                          class="size-full absolute top-0 start-0 object-cover"
+                          class="size-full absolute top-0 start-0 object-cover group-hover/event1:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1669828230990-9b8583a877ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -3344,12 +3354,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group relative block rounded-xl focus:outline-none"
+                      class="group/event2 relative block rounded-xl focus:outline-none"
                       href="#">
                       <div
                         class="shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:z-[1] before:size-full before:bg-gradient-to-t before:from-gray-900/70">
                         <img
-                          class="size-full absolute top-0 start-0 object-cover"
+                          class="size-full absolute top-0 start-0 object-cover group-hover/event2:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1611625618313-68b87aaa0626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -3390,12 +3400,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group relative block rounded-xl focus:outline-none"
+                      class="group/event3 relative block rounded-xl focus:outline-none"
                       href="#">
                       <div
                         class="shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:z-[1] before:size-full before:bg-gradient-to-t before:from-gray-900/70">
                         <img
-                          class="size-full absolute top-0 start-0 object-cover"
+                          class="size-full absolute top-0 start-0 object-cover group-hover/event3:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1669828230990-9b8583a877ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -3435,12 +3445,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group relative block rounded-xl focus:outline-none"
+                      class="group/event4 relative block rounded-xl focus:outline-none"
                       href="#">
                       <div
                         class="shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:z-[1] before:size-full before:bg-gradient-to-t before:from-gray-900/70">
                         <img
-                          class="size-full absolute top-0 start-0 object-cover"
+                          class="size-full absolute top-0 start-0 object-cover group-hover/event4:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1611625618313-68b87aaa0626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -3865,12 +3875,12 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a
-                      class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
+                      class="group/latest flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
                       href="#"
                       target="_parent">
-                      <div class="aspect-w-16 aspect-h-9">
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img
-                          class="w-full object-cover rounded-t-xl aspect-square"
+                          class="w-full object-cover rounded-t-xl aspect-square group-hover/latest:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=560&amp;q=80"
                           alt="Blog Image" />
                       </div>
@@ -3879,7 +3889,7 @@
                           Product
                         </p>
                         <h3
-                          class="mt-2 text-lg font-medium text-gray-800 group-hover:text-theme2">
+                          class="mt-2 text-lg font-medium text-gray-800 group-hover/latest:text-theme2">
                           Better is when everything works together
                         </h3>
                       </div>
@@ -3887,12 +3897,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
+                      class="group/latest1 flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
                       href="#"
                       target="_parent">
-                      <div class="aspect-w-16 aspect-h-9">
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img
-                          class="w-full object-cover rounded-t-xl aspect-square"
+                          class="w-full object-cover rounded-t-xl aspect-square group-hover/latest1:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -3901,7 +3911,7 @@
                           Product
                         </p>
                         <h3
-                          class="mt-2 text-lg font-medium text-gray-800 group-hover:text-theme2">
+                          class="mt-2 text-lg font-medium text-gray-800 group-hover/latest1:text-theme2">
                           Better is when everything works together
                         </h3>
                       </div>
@@ -3909,12 +3919,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
+                      class="group/latest2 flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
                       href="#"
                       target="_parent">
-                      <div class="aspect-w-16 aspect-h-9">
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img
-                          class="w-full object-cover rounded-t-xl aspect-square"
+                          class="w-full object-cover rounded-t-xl aspect-square group-hover/latest2:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -3923,7 +3933,7 @@
                           Product
                         </p>
                         <h3
-                          class="mt-2 text-lg font-medium text-gray-800 group-hover:text-theme2">
+                          class="mt-2 text-lg font-medium text-gray-800 group-hover/latest2:text-theme2">
                           Better is when everything works together
                         </h3>
                       </div>
@@ -3931,12 +3941,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
+                      class="group/latest3 flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
                       href="#"
                       target="_parent">
-                      <div class="aspect-w-16 aspect-h-9">
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img
-                          class="w-full object-cover rounded-t-xl aspect-square"
+                          class="w-full object-cover rounded-t-xl aspect-square group-hover/latest3:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -3945,7 +3955,7 @@
                           Product
                         </p>
                         <h3
-                          class="mt-2 text-lg font-medium text-gray-800 group-hover:text-theme2">
+                          class="mt-2 text-lg font-medium text-gray-800 group-hover/latest3:text-theme2">
                           Better is when everything works together
                         </h3>
                       </div>
@@ -3953,12 +3963,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
+                      class="group/latest4 flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
                       href="#"
                       target="_parent">
-                      <div class="aspect-w-16 aspect-h-9">
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img
-                          class="w-full object-cover rounded-t-xl aspect-square"
+                          class="w-full object-cover rounded-t-xl aspect-square group-hover/latest4:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=560&amp;q=80"
                           alt="Blog Image" />
                       </div>
@@ -3967,7 +3977,7 @@
                           Product
                         </p>
                         <h3
-                          class="mt-2 text-lg font-medium text-gray-800 group-hover:text-theme2">
+                          class="mt-2 text-lg font-medium text-gray-800 group-hover/latest4:text-theme2">
                           Better is when everything works together
                         </h3>
                       </div>
@@ -3975,12 +3985,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
+                      class="group/latest5 flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
                       href="#"
                       target="_parent">
-                      <div class="aspect-w-16 aspect-h-9">
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img
-                          class="w-full object-cover rounded-t-xl aspect-square"
+                          class="w-full object-cover rounded-t-xl aspect-square group-hover/latest5:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -3989,7 +3999,7 @@
                           Product
                         </p>
                         <h3
-                          class="mt-2 text-lg font-medium text-gray-800 group-hover:text-theme2">
+                          class="mt-2 text-lg font-medium text-gray-800 group-hover/latest5:text-theme2">
                           Better is when everything works together
                         </h3>
                       </div>
@@ -3997,12 +4007,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
+                      class="group/latest6 flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
                       href="#"
                       target="_parent">
-                      <div class="aspect-w-16 aspect-h-9">
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img
-                          class="w-full object-cover rounded-t-xl aspect-square"
+                          class="w-full object-cover rounded-t-xl aspect-square group-hover/latest6:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -4011,7 +4021,7 @@
                           Product
                         </p>
                         <h3
-                          class="mt-2 text-lg font-medium text-gray-800 group-hover:text-theme2">
+                          class="mt-2 text-lg font-medium text-gray-800 group-hover/latest6:text-theme2">
                           Better is when everything works together
                         </h3>
                       </div>
@@ -4019,12 +4029,12 @@
                   </div>
                   <div class="swiper-slide">
                     <a
-                      class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
+                      class="group/latest7 flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
                       href="#"
                       target="_parent">
-                      <div class="aspect-w-16 aspect-h-9">
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img
-                          class="w-full object-cover rounded-t-xl aspect-square"
+                          class="w-full object-cover rounded-t-xl aspect-square group-hover/latest7:scale-105 duration-300"
                           src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                           alt="Blog Image" />
                       </div>
@@ -4033,7 +4043,7 @@
                           Product
                         </p>
                         <h3
-                          class="mt-2 text-lg font-medium text-gray-800 group-hover:text-theme2">
+                          class="mt-2 text-lg font-medium text-gray-800 group-hover/latest7:text-theme2">
                           Better is when everything works together
                         </h3>
                       </div>

@@ -485,9 +485,36 @@
     </div>
   </section>
   <!-- partnership--- -->
+<!-- --spotligh-2-- -->
+<section class="">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="swiper mySpotlight">
+      <div class="swiper-wrapper  !h-[500px]">
+        <div class="swiper-slide !h-auto group  ">
+        <div class=" flex items-center h-full group-[&.swiper-slide-active]:!text-white group-[&.swiper-slide-active]:bg-[url('../img/spotlight05.jpg')] group-[&.swiper-slide-active]:bg-cover group-[&.swiper-slide-active]:bg-no-repeat   
+        ">
+          <div class="  p-10 ps-12 transition-all duration-300 ease-in-out  ">
+            <div class=" [&.swiper-slide-active]:text-white ">
+              <div class="font-semibold text-theme1 text-xl group-[&.swiper-slide-active]:text-white">01</div>
+              <div class="font-medium border-b-2 border-black  w-1/2 pt-4 pb-7 text-2xl  group-[&.swiper-slide-active]:border-white ">Ideation</div>
+            <div class="font-normal mt-7 text-ellipsis line-clamp-4 leading-8">
+              Brainstorm creative ideas to ideate them and come up with a plan to turn them into a successful smart solution.
+            </div>
 
+          </div>
+        
+        </div>
 
-
+        </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  
+  </div>
+</section>
+<!-- --spotligh-2-end-- -->
 
   
   <!-- latest-insights-- -->
@@ -569,6 +596,35 @@
       },
     });
   </script>
+  <!-- spotlight-swiper-2-- -->
+  <script>
+    var swiper = new Swiper(".mySpotlight", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      centeredSlides:true,
+      loop:true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+  <!-- spotlight-swiper-2-- -->
+
 </body>
 
 </html>
@@ -618,3 +674,7 @@ hhhh
     </div>
   </div>
 </div> -->
+
+
+
+  <!-- swiper-slide-active: -->
