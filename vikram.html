@@ -28,61 +28,76 @@
 </head>
 
 <body>
-  <!-- ----spotlight-cards-swiper -->
+  <!-- spotlight-cards -->
   <section class=" py-12 bg-slat-200">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full">
+    <div class="mx-auto max-2xl:max-w-7xl px-6 lg:px-8 w-full h-full">
       <div class="flex items-center justify-between pb-7 sm:pb-10">
-        <div class="lg:text-6xl !leading-[140%] md:text-6xl text-4xl font-bold text-black">Spot
+        <div
+          class="lg:text-6xl !leading-[140%] md:text-6xl 2xl:text-[90px] 3xl:text-[110px] text-4xl font-bold text-black">Spot
           <span
             class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-theme2 relative inline-block">
             <span class="relative text-black"><span
-              class="[-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:white]">
-              Light</span></span>
-          </span> 
-          
+                class="[-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:white]">
+                Light</span></span>
+          </span>
+
         </div>
-        <div class="hidden sm:flex items-center pt-5 gap-4">
+        <div class="hidden sm:flex items-center pt-5 gap-4 ">
           <div
-          class="swiper-button-prev *:!size-4 hover:!text-white hover:bg-black transition-all duration-300 ease-in-out !text-black  !static after:hidden  border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10  ">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
+            class="swiper-button-prev 3xl:*:!size-8 2xl:*:!size-7 *:!size-4 hover:!text-white hover:bg-black transition-all duration-300 ease-in-out !text-black  !static after:hidden  border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10  2xl:!size-16 3xl:!size-20 ">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+              viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path
+                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
+          </div>
+          <div
+            class="swiper-button-next *:rotate-180 3xl:*:!size-8 2xl:*:!size-7 *:!size-4 hover:!text-white hover:bg-black transition-all duration-300 ease-in-out !text-black  !static after:hidden  border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10 2xl:!size-16 3xl:!size-20 ">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+              viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path
+                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
+          </div>
         </div>
-        <div
-        class="swiper-button-next *:rotate-180 *:!size-4 hover:!text-white hover:bg-black transition-all duration-300 ease-in-out !text-black  !static after:hidden  border border-black !backdrop-blur-md rounded-full !size-7 md:!size-10  ">
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
       </div>
-        </div>
-      </div>
-     
-      <div class="swiper mySwiper ">
+
+      <div class="swiper cardSwiper ">
         <div class="swiper-wrapper h-full d-flex !items-stretch pt-4 pb-6">
           <div class="swiper-slide !h-auto ">
-            <div class="group h-full   overflow-hidden relative duration-300 sm:hover:scale-105 ">
+            <div
+              class="group h-full overflow-hidden relative duration-300 sm:hover:scale-105 ">
               <div
-                class=" absolute top-[1px] left-[1px] right-[1px] bottom-[1px] z-20  size-full  origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px]     duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);;">
-                <img class="size-full object-cover" src="./assets/img/spotlight01.jpg" alt="">
+                class="absolute top-[1px] left-[1px] right-[1px] bottom-[1px] z-20 size-full origin-top-left sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px] duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);;">
+                <img class="size-full object-cover"
+                  src="./assets/img/spotlight01.jpg" alt>
               </div>
               <button
-                class="p-5 h-full relative z-30  ">
+                class="p-5 2xl:p-8 3xl:p-10 h-full relative z-30">
                 <div class="flex flex-col h-full z-0">
-                  <div class="font-semibold text-base text-white text-start">Ethical</div>
-                  <div class="font-semibold text-2xl text-white text-start">Cyber</div>
                   <div
-                    class="text-white pt-8 text-base font-normal text-start sm:opacity-0 sm:translate-x-full
-               sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum
+                    class="font-semibold 2xl:text-2xl 3xl:text-3xl 2xl:pb-4 text-base text-white text-start">Ethical</div>
+                  <div
+                    class="font-semibold 2xl:text-3xl 3xl:text-4xl text-2xl text-white text-start">Cyber</div>
+                  <div
+                    class="text-white 2xl:pt-10 3xl:pt-12 pt-8 3xl:text-3xl text-base max-lg:font-normal text-start sm:opacity-0 sm:translate-x-full
+           sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever
+                    since the 1500s,Lorem Ipsum
                     is simply dummy text of the printing .
                   </div>
                   <div
-                    class="mt-auto flex items-center justify-end pt-10 sm:opacity-0 sm:translate-y-full
-              group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    <a href="" class="text-white font-medium text-xl flex items-center">
+                    class="mt-auto flex items-center justify-end 2xl:pt-12 3xl:pt-14 pt-10 sm:opacity-0 sm:translate-y-full
+          group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    <a href
+                      class="text-white font-medium 2xl:text-2xl 3xl:text-3xl text-xl flex items-center">
                       Expand
-                      <span class="text-white h-6">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                          height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <span class="text-white 2xl:h-8 3xl:h-9 h-6">
+                        <svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 24 24"
+                          height="100%" width="100%"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path fill="none" d="M0 0h24v24H0V0z"></path>
-                          <path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
+                          <path
+                            d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
                         </svg>
                       </span>
                     </a>
@@ -92,31 +107,41 @@
             </div>
           </div>
           <div class="swiper-slide !h-auto  ">
-            <div class="group h-full  overflow-hidden relative  duration-300 sm:hover:scale-105">
+            <div
+              class="group h-full  overflow-hidden relative  duration-300 sm:hover:scale-105">
               <div
-                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px]   duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                <img class="size-full object-cover" src="./assets/img/spotlight02.jpg" alt="">
+                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px] ration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                <img class="size-full object-cover"
+                  src="./assets/img/spotlight02.jpg" alt>
               </div>
               <button
-                class="p-5 h-full relative ">
+                class="p-5 2xl:p-8 3xl:p-10 h-full relative z-30">
                 <div class="h-full flex flex-col">
-                  <div class="font-semibold text-base text-white text-start">Articles</div>
-                  <div class="font-semibold text-2xl text-white text-start">Artificial Intelligence</div>
                   <div
-                    class="text-white pt-8 text-base font-normal text-start sm:opacity-0 sm:translate-x-full
-                   sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    class="font-semibold 2xl:text-2xl 3xl:text-3xl 2xl:pb-4 text-base text-white text-start">Articles</div>
+                  <div
+                    class="font-semibold 2xl:text-3xl 3xl:text-4xl text-2xl text-white text-start">Artificial
+                    Intelligence</div>
+                  <div
+                    class="text-white 2xl:pt-10 3xl:pt-12 pt-8 3xl:text-3xl text-base max-lg:font-normal text-start sm:opacity-0 sm:translate-x-full
+               sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
                   </div>
                   <div
-                    class="flex mt-auto items-center justify-end pt-10 sm:opacity-0 sm:translate-y-full
-                  group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    <a href="" class="text-white font-medium text-xl flex items-center">
+                    class="flex mt-auto items-center justify-end 2xl:pt-12 3xl:pt-14 pt-10 sm:opacity-0 sm:translate-y-full
+              group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    <a href
+                      class="text-white font-medium 2xl:text-2xl 3xl:text-3xl text-xl flex items-center">
                       Expand
-                      <span class="text-white h-6">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                          height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <span class="text-white 2xl:h-8 3xl:h-9 h-6">
+                        <svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 24 24"
+                          height="100%" width="100%"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path fill="none" d="M0 0h24v24H0V0z"></path>
-                          <path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
+                          <path
+                            d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
                         </svg>
                       </span>
                     </a>
@@ -127,31 +152,42 @@
             </div>
           </div>
           <div class="swiper-slide !h-auto ">
-            <div class="group h-full  overflow-hidden relative  duration-300 sm:hover:scale-105">
+            <div
+              class="group h-full  overflow-hidden relative  duration-300 sm:hover:scale-105">
               <div
-                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px]   duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                <img class="size-full object-cover" src="./assets/img/spotlight03.jpg" alt="">
+                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px] ration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                <img class="size-full object-cover"
+                  src="./assets/img/spotlight03.jpg" alt>
               </div>
               <button
-                class="p-5 h-full relative ">
+                class="p-5 2xl:p-8 3xl:p-10 h-full relative z-30">
                 <div class="h-full flex flex-col ">
-                  <div class="font-semibold text-base text-white text-start">Case Study</div>
-                  <div class="font-semibold text-2xl text-white text-start">5G Technology</div>
                   <div
-                    class="text-white pt-8 text-base font-normal text-start sm:opacity-0 sm:translate-x-full
-                  sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    class="font-semibold 2xl:text-2xl 3xl:text-3xl 2xl:pb-4 text-base text-white text-start">Case
+                    Study</div>
+                  <div
+                    class="font-semibold 2xl:text-3xl 3xl:text-4xl text-2xl text-white text-start">5G
+                    Technology</div>
+                  <div
+                    class="text-white 2xl:pt-10 3xl:pt-12 pt-8 3xl:text-3xl text-base max-lg:font-normal text-start sm:opacity-0 sm:translate-x-full
+              sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
                   </div>
                   <div
-                    class="flex mt-auto items-center justify-end pt-10 sm:opacity-0 sm:translate-y-full
-                 group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    <a href="" class="text-white font-medium text-xl flex items-center">
+                    class="flex mt-auto items-center justify-end 2xl:pt-12 3xl:pt-14 pt-10 sm:opacity-0 sm:translate-y-full
+             group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    <a href
+                      class="text-white font-medium 2xl:text-2xl 3xl:text-3xl text-xl flex items-center">
                       Expand
-                      <span class="text-white h-6">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                          height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <span class="text-white 2xl:h-8 3xl:h-9 h-6">
+                        <svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 24 24"
+                          height="100%" width="100%"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path fill="none" d="M0 0h24v24H0V0z"></path>
-                          <path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
+                          <path
+                            d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
                         </svg>
                       </span>
                     </a>
@@ -161,31 +197,41 @@
             </div>
           </div>
           <div class="swiper-slide !h-auto ">
-            <div class="group h-full  overflow-hidden relative duration-300 sm:hover:scale-105">
+            <div
+              class="group h-full  overflow-hidden relative duration-300 sm:hover:scale-105">
               <div
-                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px]   duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                <img class="size-full object-cover" src="./assets/img/spotlight04.jpg" alt="">
+                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px] ration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                <img class="size-full object-cover"
+                  src="./assets/img/spotlight04.jpg" alt>
               </div>
               <button
-                class="p-5 h-full relative ">
+                class="p-5 2xl:p-8 3xl:p-10 h-full relative z-30">
                 <div class="h-full flex flex-col">
-                  <div class="font-semibold text-base text-white text-start">Prespectives</div>
-                  <div class="font-semibold text-2xl text-white text-start">Automation Intelligent</div>
                   <div
-                    class="text-white pt-8 text-base font-normal text-start sm:opacity-0 sm:translate-x-full
-                   sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.try.
+                    class="font-semibold 2xl:text-2xl 3xl:text-3xl 2xl:pb-4 text-base text-white text-start">Prespectives</div>
+                  <div
+                    class="font-semibold 2xl:text-3xl 3xl:text-4xl text-2xl text-white text-start">Automation
+                    Intelligent</div>
+                  <div
+                    class="text-white 2xl:pt-10 3xl:pt-12 pt-8 3xl:text-3xl text-base max-lg:font-normal text-start sm:opacity-0 sm:translate-x-full
+               sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.try.
                   </div>
                   <div
-                    class="flex mt-auto items-center justify-end pt-10 sm:opacity-0 sm:translate-y-full
-                  group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    <a href="" class="text-white font-medium text-xl flex items-center">
+                    class="flex mt-auto items-center justify-end 2xl:pt-12 3xl:pt-14 pt-10 sm:opacity-0 sm:translate-y-full
+              group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    <a href
+                      class="text-white font-medium 2xl:text-2xl 3xl:text-3xl text-xl flex items-center">
                       Expand
-                      <span class="text-white h-6">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                          height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <span class="text-white 2xl:h-8 3xl:h-9 h-6">
+                        <svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 24 24"
+                          height="100%" width="100%"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path fill="none" d="M0 0h24v24H0V0z"></path>
-                          <path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
+                          <path
+                            d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
                         </svg>
                       </span>
                     </a>
@@ -195,31 +241,40 @@
             </div>
           </div>
           <div class="swiper-slide !h-auto  ">
-            <div class="group h-full  overflow-hidden relative  duration-300 sm:hover:scale-105">
+            <div
+              class="group h-full  overflow-hidden relative  duration-300 sm:hover:scale-105">
               <div
-                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px]   duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                <img class="size-full object-cover" src="./assets/img/spotlight02.jpg" alt="">
+                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px] ration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                <img class="size-full object-cover"
+                  src="./assets/img/spotlight02.jpg" alt>
               </div>
               <button
-                class="p-5 h-full relative ">
+                class="p-5 2xl:p-8 3xl:p-10 h-full relative z-30">
                 <div class="h-full flex flex-col">
-                  <div class="font-semibold text-base text-white text-start">Articles</div>
-                  <div class="font-semibold text-2xl text-white text-start">Cloud</div>
                   <div
-                    class="text-white pt-8 text-base font-normal text-start sm:opacity-0 sm:translate-x-full
-                   sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    class="font-semibold 2xl:text-2xl 3xl:text-3xl 2xl:pb-4 text-base text-white text-start">Articles</div>
+                  <div
+                    class="font-semibold 2xl:text-3xl 3xl:text-4xl text-2xl text-white text-start">Cloud</div>
+                  <div
+                    class="text-white 2xl:pt-10 3xl:pt-12 pt-8 3xl:text-3xl text-base max-lg:font-normal text-start sm:opacity-0 sm:translate-x-full
+               sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
                   </div>
                   <div
-                    class="mt-auto flex items-center justify-end pt-10 sm:opacity-0 sm:translate-y-full
-                  group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    <a href="" class="text-white font-medium text-xl flex items-center">
+                    class="mt-auto flex items-center justify-end 2xl:pt-12 3xl:pt-14 pt-10 sm:opacity-0 sm:translate-y-full
+              group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    <a href
+                      class="text-white font-medium 2xl:text-2xl 3xl:text-3xl text-xl flex items-center">
                       Expand
-                      <span class="text-white h-6">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                          height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <span class="text-white 2xl:h-8 3xl:h-9 h-6">
+                        <svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 24 24"
+                          height="100%" width="100%"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path fill="none" d="M0 0h24v24H0V0z"></path>
-                          <path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
+                          <path
+                            d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
                         </svg>
                       </span>
                     </a>
@@ -230,31 +285,42 @@
             </div>
           </div>
           <div class="swiper-slide !h-auto">
-            <div class="group h-full  overflow-hidden relative sm:hover:scale-105 duration-300 ">
+            <div
+              class="group h-full  overflow-hidden relative sm:hover:scale-105 duration-300 ">
               <div
-                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px]   duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                <img class="size-full object-cover" src="./assets/img/spotlight03.jpg" alt="">
+                class="absolute top-0 left-0  size-full z-0 origin-top-left  sm:group-hover:scale-150 sm:group-hover:backdrop-blur-3xl sm:group-hover:blur-[15px] ration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                <img class="size-full object-cover"
+                  src="./assets/img/spotlight03.jpg" alt>
               </div>
               <button
-                class="p-5 h-full relative ">
+                class="p-5 2xl:p-8 3xl:p-10 h-full relative z-30">
                 <div class="h-full flex flex-col">
-                  <div class="font-semibold text-base text-white text-start">Case Study</div>
-                  <div class="font-semibold text-2xl text-white text-start">Wifi Enterprises</div>
                   <div
-                    class="text-white pt-8 text-base font-normal text-start sm:opacity-0 sm:translate-x-full
-                  sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    class="font-semibold 2xl:text-2xl 3xl:text-3xl 2xl:pb-4 text-base text-white text-start">Case
+                    Study</div>
+                  <div
+                    class="font-semibold 2xl:text-3xl 3xl:text-4xl text-2xl text-white text-start">Wifi
+                    Enterprises</div>
+                  <div
+                    class="text-white 2xl:pt-10 3xl:pt-12 pt-8 3xl:text-3xl text-base max-lg:font-normal text-start sm:opacity-0 sm:translate-x-full
+              sm:group-hover:translate-x-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
                   </div>
                   <div
-                    class="mt-auto flex items-center justify-end pt-10 sm:opacity-0 sm:translate-y-full
-                 group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
-                    <a href="" class="text-white font-medium text-xl flex items-center">
+                    class="mt-auto flex items-center justify-end 2xl:pt-12 3xl:pt-14 pt-10 sm:opacity-0 sm:translate-y-full
+             group-hover:translate-y-0 group-hover:opacity-100 duration-300 [transition-timing-function:cubic-bezier(0.85,0,0,1);]">
+                    <a href
+                      class="text-white font-medium 2xl:text-2xl 3xl:text-3xl text-xl flex items-center">
                       Expand
-                      <span class="text-white h-6">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                          height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <span class="text-white 2xl:h-8 3xl:h-9 h-6">
+                        <svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 24 24"
+                          height="100%" width="100%"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path fill="none" d="M0 0h24v24H0V0z"></path>
-                          <path d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
+                          <path
+                            d="M10.02 6 8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
                         </svg>
                       </span>
                     </a>
@@ -263,92 +329,14 @@
               </button>
             </div>
           </div>
-          
+
         </div>
-        <div class="sm:hidden swiper-pagination  !-bottom-1 [&_.swiper-pagination-bullet]:!bg-theme3 [&_.swiper-pagination-bullet-active]:!size-3 " ></div>
+        <div
+          class="sm:hidden swiper-pagination  !-bottom-1 [&_.swiper-pagination-bullet]:!bg-theme3 [&_.swiper-pagination-bullet-active]:!size-3 "></div>
       </div>
     </div>
   </section>
-  <!-- ----spotlight-cards-swiper-end -->
-
-
-
-  <!-- partnership--- -->
-  <!-- <section class="py-20">
-    <div class="mx-auto max-w-7xl py-6 lg:py-8 w-full">
-    <div class="grid grid-cols-4 gap-4">
-     <div class="col-auto group">
-            <div class="size-full">
-                <div class="size-full  bg-black p-5  relative rounded-md
-                after:absolute after:-inset-1   after:-z-10 after:[background:linear-gradient(-45deg,_#e81cff_0%,_#40c9ff_100%);]  group-hover:after:-inset-2 group-hover:after:rotate-180 after:rounded-md after:duration-500
-                before:absolute before:-inset-0   before:-z-[8] before:[background:linear-gradient(-45deg,_#e81cff_0%,_#40c9ff_100%);] before:blur-md group-hover:before:-inset-1 group-hover:before:rotate-180 before:rounded-md before:duration-500">
-                   
-
-                <div class="text-center text-2xl font-semibold text-white">Networking</div>
-                <div class="flex items-center pt-6 justify-center">
-                  <img class="h-24" src="assets/img/partnershipBenefits01.png" alt="">
-                </div>
-                <div class="font-medium text-center text-white pt-6">
-                  IT manages network and security devices.
-                </div>
-                </div>
-            </div>
-         </div>
-          <div class="col-auto group">
-            <div class="size-full">
-                <div class="size-full  bg-black p-5  relative rounded-md
-                after:absolute after:-inset-1   after:-z-10 after:[background:linear-gradient(-45deg,_#e81cff_0%,_#40c9ff_100%);]  group-hover:after:-inset-2 group-hover:after:rotate-180 after:rounded-md after:duration-500
-                before:absolute before:-inset-0   before:-z-[8] before:[background:linear-gradient(-45deg,_#e81cff_0%,_#40c9ff_100%);] before:blur-md group-hover:before:-inset-1 group-hover:before:rotate-180 before:rounded-md before:duration-500">
-                   
-
-                <div class="text-center text-2xl font-semibold text-white">Security</div>
-                <div class="flex items-center pt-6 justify-center">
-                  <img class="h-24" src="assets/img/partnershipBenefits02.png" alt="">
-                </div>
-                <div class="font-medium text-center text-white pt-6">
-               IT makes changes, guided by crowed
-                </div>
-                </div>
-            </div>
-         </div>
-          <div class="col-auto group">
-            <div class="size-full">
-                <div class="size-full  bg-black p-5  relative rounded-md
-                after:absolute after:-inset-1   after:-z-10 after:[background:linear-gradient(-45deg,_#e81cff_0%,_#40c9ff_100%);]  group-hover:after:-inset-2 group-hover:after:rotate-180 after:rounded-md after:duration-500
-                before:absolute before:-inset-0   before:-z-[8] before:[background:linear-gradient(-45deg,_#e81cff_0%,_#40c9ff_100%);] before:blur-md group-hover:before:-inset-1 group-hover:before:rotate-180 before:rounded-md before:duration-500">
-                   
-
-                <div class="text-center text-2xl font-semibold text-black">Cloud</div>
-                <div class="flex items-center pt-6 justify-center">
-                  <img class="h-24" src="assets/img/partnershipBenefits03.png" alt="">
-                </div>
-                <div class="font-medium text-center text-black pt-6">
-               User allows software to make low risk changes
-                </div>
-                </div>
-            </div>
-         </div>
-         <div class="col-auto group">
-            <div class="size-full">
-                <div class="size-full  bg-black p-5  relative rounded-md
-                after:absolute after:-inset-1   after:-z-10 after:[background:linear-gradient(-45deg,_#e81cff_0%,_#40c9ff_100%);]  group-hover:after:-inset-2 group-hover:after:rotate-180 after:rounded-md after:duration-500
-                before:absolute before:-inset-0   before:-z-[8] before:[background:linear-gradient(-45deg,_#e81cff_0%,_#40c9ff_100%);] before:blur-md group-hover:before:-inset-1 group-hover:before:rotate-180 before:rounded-md before:duration-500">
-                   
-
-                <div class="text-center text-2xl font-semibold text-white">Automation</div>
-                <div class="flex items-center pt-6 justify-center">
-                  <img class="h-24" src="assets/img/partnershipBenefits04.png" alt="">
-                </div>
-                <div class="font-medium text-center text-white pt-6">
-               Users allows software to make high risk changes
-                </div>
-                </div>
-            </div>
-         </div>
-    </div>
-    </div>
-   </section> -->
-  <!-- partnership--- -->
+  <!-- spotlight-cards  -->
 
 
 
@@ -360,7 +348,7 @@
           <div class="col-span-12 lg:col-span-5">
             <div class="size-full">
               
-              <div class="lg:text-6xl !leading-[140%] md:text-6xl text-4xl font-bold ">The
+              <div class="lg:text-6xl !leading-[140%] 2xl:text-[90px] 3xl:text-[110px]  md:text-6xl text-4xl font-bold ">The
                 <span
                   class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-theme2 relative inline-block">
                   <span class="relative text-white">Power</span>
@@ -369,33 +357,33 @@
                   class="[-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:black]">
                   Partnership</span>
               </div>
-              <div class="md:text-xl text-base  font-medium text-balance mt-5">
+              <div class="3xl:text-3xl 2xl:text-2xl md:text-xl text-base  font-medium text-balance mt-5">
                 Collaborate with the world’s leading platform and infrastructure leaders.
               </div>
               <div class="pb-1 pt-5 lg:pt-10">
                 <a href="javascript:;"
-                  class="inline-flex items-center gap-3 sm:text-lg text-sm  relative ps-6 py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-black md:before:min-w-[42px] before:min-w-10 md:before:h-[42px] before:h-10 before:left-0 before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[206px]">
-                  <span>
-                    <img src="./assets/img/arrow.svg" alt="arrow" class="filter ">
-                  </span>
-                  Contact HPIT
-                </a>
+                      class="inline-flex items-center gap-3 md:text-lg 2xl:text-2xl 3xl:text-3xl text-sm text-black relative ps-6 2xl:ps-8 2xl:py-3 py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-black md:before:min-w-[42px] 2xl:before:size-12  before:size-10 before:top-1/2 before:-translate-y-1/2 before:left-0  before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[100%]">
+                      <span>
+                        <img src="./assets/img/arrow.svg" alt="arrow" class="filter " />
+                      </span>
+                    Learn more
+                    </a>
               </div>
             </div>
           </div>
           <div class="col-span-12 lg:col-span-7">
             <div class="size-full">
-              <div class="grid grid-cols-1  sm:grid-cols-2 gap-y-6 sm:gap-8">
+              <div class="grid grid-cols-1  sm:grid-cols-2 gap-y-6 sm:gap-8 2xl:gap-12">
                 <div class="col-auto group animate-appearBottom [animation-timeline:view()] [animation-range:entry_0%_cover_25%] ">
                   <label for="networking" 
-                    class="p-[2px] inline-flex sm:group-hover:p-0 sm:-translate-y-6 size-full rounded-3xl  overflow-hidden relative sm:group-hover:[box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)] sm:before:absolute sm:before:h-full sm:before:w-0 !before:right-0  before:bg-gradient-to-tr before:from-theme4 before:to-theme2 before:-z-10  group-hover:before:w-full !group-hover:before:left-0  before:duration-300
+                    class="2xl:p-[3px] 3xl:p-1 p-[2px] inline-flex sm:group-hover:p-0 sm:-translate-y-6 size-full rounded-3xl  overflow-hidden relative sm:group-hover:[box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)] sm:before:absolute sm:before:h-full sm:before:w-0 !before:right-0  before:bg-gradient-to-tr before:from-theme4 before:to-theme2 before:-z-10  group-hover:before:w-full !group-hover:before:left-0  before:duration-300
                       sm:after:absolute sm:after:h-[35%] sm:after:rounded-bl-full after:w-0 after:top-0 after:right-0 after:-z-10 after:bg-theme4 group-hover:after:w-[20%] after:duration-300">
                      
                       <div class="animate-move1 [offset-path:rect(0%_auto_100%_auto)] bg-[radial-gradient(theme(colors.gray.300),_transparent,_transparent)] inset-0 w-[200px] h-[200px] -z-50 absolute rotate-45 sm:group-hover:hidden"></div>
                    
-                      <div class="size-full  bg-white duration-300 sm:group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
-                      <div class="text-center text-2xl font-semibold text-black sm:group-hover:text-white">Networking</div>
-                      <div class="flex items-center pt-6 justify-center h-24 text-theme2 sm:group-hover:text-white">
+                      <div class="size-full  bg-white duration-300 sm:group-hover:bg-transparent rounded-3xl 2xl:p-12 3xl:p-16 p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
+                      <div class="text-center 2xl:text-4xl 3xl:text-5xl text-2xl font-semibold text-black sm:group-hover:text-white">Networking</div>
+                      <div class="flex items-center 2xl:pt-8 3xl:pt-10 pt-6 justify-center 2xl:h-28 3xl:h-32 h-24 text-theme2 sm:group-hover:text-white">
                         <svg class="" stroke="currentColor" fill="none" stroke-width="1px" role="img" viewBox="0 0 24 24"
                           height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -403,7 +391,7 @@
                           </path>
                         </svg>
                       </div>
-                      <div class="font-medium text-center text-black sm:group-hover:text-white pt-6">
+                      <div class="font-medium text-center text-black sm:group-hover:text-white 2xl:pt-8 3xl:pt-10 pt-6 text-base 2xl:2xl 3xl:text-3xl">
                         IT manages network and security devices.
                       </div>
                     </div>
@@ -411,15 +399,15 @@
                 </div>
                 <div class="col-auto group animate-appearBottom [animation-timeline:view()] [animation-range:entry_0%_cover_25%] sm:[animation-range:entry_0%_cover_40%]">
                   <label for="security"
-                    class="p-[2px] inline-flex sm:group-hover:p-0 size-full rounded-3xl sm:group-hover:[box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)] overflow-hidden relative sm:before:absolute sm:before:h-full sm:before:w-0 !before:right-0  before:bg-gradient-to-tr before:from-theme4 before:to-theme2 before:-z-10  group-hover:before:w-full !group-hover:before:left-0  before:duration-300
+                    class="2xl: 3xl:p-1 p-[2px] inline-flex sm:group-hover:p-0 size-full rounded-3xl sm:group-hover:[box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)] overflow-hidden relative sm:before:absolute sm:before:h-full sm:before:w-0 !before:right-0  before:bg-gradient-to-tr before:from-theme4 before:to-theme2 before:-z-10  group-hover:before:w-full !group-hover:before:left-0  before:duration-300
                       sm:after:absolute sm:after:h-[35%] sm:after:rounded-bl-full after:w-0 after:top-0 after:right-0 after:-z-0 after:bg-theme4 group-hover:after:w-[20%] after:duration-300">
                       <div class="animate-move1 [offset-path:rect(0%_auto_100%_auto)] bg-[radial-gradient(theme(colors.gray.300),_transparent,_transparent)] inset-0 w-[200px] h-[200px] -z-50 absolute rotate-45 sm:group-hover:hidden"></div>
                    
-                      <div class="size-full bg-white duration-300 sm:group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
-                      <div class="text-center text-2xl font-semibold text-black sm:group-hover:text-white">
+                      <div class="size-full bg-white duration-300 sm:group-hover:bg-transparent rounded-3xl 2xl:p-12 3xl:p-16 p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
+                      <div class="text-center 2xl:text-4xl 3xl:text-5xl text-2xl font-semibold text-black sm:group-hover:text-white">
                         Security
-                      </div>
-                      <div class="flex items-center pt-6 justify-center  h-24 text-theme2 sm:group-hover:text-white">
+                       </div>
+                      <div class="flex items-center 2xl:pt-8 3xl:pt-10 pt-6 justify-center 2xl:h-28 3xl:h-32 h-24 text-theme2 sm:group-hover:text-white">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%"
                           width="100%" xmlns="http://www.w3.org/2000/svg">
                           <path fill="none" stroke-width="1px"
@@ -427,7 +415,7 @@
                           </path>
                         </svg>
                       </div>
-                      <div class="font-medium text-center text-black sm:group-hover:text-white pt-6">
+                      <div class="font-medium text-center text-black sm:group-hover:text-white 2xl:pt-8 3xl:pt-10 pt-6 text-base 2xl:2xl 3xl:text-3xl">
                         IT makes changes, guided by crowed
                       </div>
                     </div>
@@ -435,15 +423,15 @@
                 </div>
                 <div class="col-auto group animate-appearBottom [animation-timeline:view()] [animation-range:entry_0%_cover_25%]">
                   <label for="cloud"
-                    class="p-[2px] inline-flex sm:group-hover:p-0 sm:-translate-y-6 size-full rounded-3xl sm:group-hover:[box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)] overflow-hidden relative sm:before:absolute sm:before:h-full sm:before:w-0 !before:right-0  before:bg-gradient-to-tr before:from-theme4 before:to-theme2 before:-z-10  group-hover:before:w-full !group-hover:before:left-0  before:duration-300
+                    class="2xl: 3xl:p-1 p-[2px] inline-flex sm:group-hover:p-0 sm:-translate-y-6 size-full rounded-3xl sm:group-hover:[box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)] overflow-hidden relative sm:before:absolute sm:before:h-full sm:before:w-0 !before:right-0  before:bg-gradient-to-tr before:from-theme4 before:to-theme2 before:-z-10  group-hover:before:w-full !group-hover:before:left-0  before:duration-300
                     sm:after:absolute sm:after:h-[35%] sm:after:rounded-bl-full after:w-0 after:top-0 after:right-0 after:-z-0 after:bg-theme4 group-hover:after:w-[20%] after:duration-300">
                     <div class="animate-move1 [offset-path:rect(0%_auto_100%_auto)] bg-[radial-gradient(theme(colors.gray.300),_transparent,_transparent)] inset-0 w-[200px] h-[200px] -z-50 absolute rotate-45 sm:group-hover:hidden"></div>
                     
-                    <div class="size-full bg-white duration-300 sm:group-hover:bg-transparent rounded-3xl  p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
-                      <div class="text-center text-2xl font-semibold text-black sm:group-hover:text-white">
+                    <div class="size-full bg-white duration-300 sm:group-hover:bg-transparent rounded-3xl 2xl:p-12 3xl:p-16 p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
+                      <div class="text-center 2xl:text-4xl 3xl:text-5xl text-2xl font-semibold text-black sm:group-hover:text-white">
                         Cloud
-                      </div>
-                      <div class="flex items-center pt-6 justify-center h-24 text-theme2 sm:group-hover:text-white">
+                       </div>
+                      <div class="flex items-center 2xl:pt-8 3xl:pt-10 pt-6 justify-center 2xl:h-28 3xl:h-32 h-24 text-theme2 sm:group-hover:text-white">
                         <svg stroke="currentColor" fill="none" stroke-width="1" viewBox="0 0 24 24" aria-hidden="true"
                           height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
                           <path stroke-linecap="round" stroke-linejoin="round"
@@ -452,7 +440,7 @@
                         </svg>
                         <!-- <svg stroke="currentColor" fill="currentColr" stroke-width="0.5px" viewBox="0 0 512 512" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M288 124c30.3 0 59.3 11.2 81.8 31.5 22.3 20.1 36.3 47.6 39.5 77.3l1.2 11.1c.6 5.8 5 10.5 10.7 11.5l11 2c14 2.5 27 10.4 36.7 22.1 9.8 12 15.2 26.9 15.2 42.1 0 17-6.9 34.1-18.9 46.8C453 381 437.4 388 421.1 388H90.9c-16.3 0-31.9-7-43.9-19.7s-18.9-29.7-18.9-46.8c0-14.4 4.6-28.9 13.1-40.9 8.6-12.2 20.2-20.9 33.7-25.1l10.3-3.3c5.3-1.7 9-6.6 9.1-12.2l.2-10.8c.2-11.8 5.1-23.6 13.5-32.4 8.3-8.7 18.9-13.4 29.9-13.4 5.6 0 11.1 1.1 16.3 3.2l11.1 4.5c5.7 2.3 12.2.4 15.7-4.7l6.8-9.8C210.4 143.7 248 124 288 124m0-28c-51.2 0-96.3 25.6-123.4 64.7-8.3-3.4-17.4-5.3-26.9-5.3-39.1 0-70.8 34.4-71.4 73.4C26.4 241.5 0 280.5 0 321.5 0 371.7 40.7 416 90.9 416h330.3c50.2 0 90.9-44.3 90.9-94.5 0-44.7-32.3-84.1-74.9-91.7C429 154.6 365.4 96 288 96z"></path></svg> -->
                       </div>
-                      <div class="font-medium text-center text-black sm:group-hover:text-white pt-6">
+                       <div class="font-medium text-center text-black sm:group-hover:text-white 2xl:pt-8 3xl:pt-10 pt-6 text-base 2xl:2xl 3xl:text-3xl">
                         User allows software to make low risk changes
                       </div>
                     </div>
@@ -460,15 +448,15 @@
                 </div>
                 <div class="col-auto group animate-appearBottom [animation-timeline:view()] [animation-range:entry_0%_cover_25%] sm:[animation-range:entry_0%_cover_40%]">
                   <label for="automation"
-                    class="p-[2px] inline-flex sm:group-hover:p-0 size-full rounded-3xl sm:group-hover:[box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)] overflow-hidden relative sm:before:absolute sm:before:h-full sm:before:w-0 !before:right-0  before:bg-gradient-to-tr before:from-theme4 before:to-theme2 before:-z-10  group-hover:before:w-full !group-hover:before:left-0  before:duration-300
+                    class="2xl: 3xl:p-1 p-[2px] inline-flex sm:group-hover:p-0 size-full rounded-3xl sm:group-hover:[box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)] overflow-hidden relative sm:before:absolute sm:before:h-full sm:before:w-0 !before:right-0  before:bg-gradient-to-tr before:from-theme4 before:to-theme2 before:-z-10  group-hover:before:w-full !group-hover:before:left-0  before:duration-300
                        sm:after:absolute sm:after:h-[35%] sm:after:rounded-bl-full after:w-0 after:top-0 after:right-0 after:-z-0 after:bg-theme4 group-hover:after:w-[20%] after:duration-300">
                        <div class="animate-move1 [offset-path:rect(0%_auto_100%_auto)] bg-[radial-gradient(theme(colors.gray.300),_transparent,_transparent)] inset-0 w-[200px] h-[200px] -z-50 absolute rotate-45 sm:group-hover:hidden"></div>
                     
-                       <div class="size-full bg-white duration-300 sm:group-hover:bg-transparent rounded-3xl p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
-                      <div class="text-center text-2xl font-semibold text-black sm:group-hover:text-white">
+                       <div class="size-full bg-white duration-300 sm:group-hover:bg-transparent rounded-3xl 2xl:p-12 3xl:p-16 p-5  [box-shadow:0_2px_5px_1px_rgba(64,60,67,0.16)]">
+                      <div class="text-center 2xl:text-4xl 3xl:text-5xl text-2xl font-semibold text-black sm:group-hover:text-white">
                         Automation
-                      </div>
-                      <div class="flex items-center pt-6 justify-center h-24 text-theme2 sm:group-hover:text-white">
+                       </div>
+                      <div class="flex items-center 2xl:pt-8 3xl:pt-10 pt-6 justify-center 2xl:h-28 3xl:h-32 h-24 text-theme2 sm:group-hover:text-white">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
                           height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -476,7 +464,7 @@
                           </path>
                         </svg>
                       </div>
-                      <div class="font-medium text-center text-black sm:group-hover:text-white pt-6">
+                      <div class="font-medium text-center text-black sm:group-hover:text-white 2xl:pt-8 3xl:pt-10 pt-6 text-base 2xl:2xl 3xl:text-3xl">
                         Users allows software to make high risk changes
                       </div>
                     </div>
@@ -490,6 +478,9 @@
       </div>
     </section>
     <!-- partnership--- -->
+
+
+
 <!-- --spotligh-2-- -->
 <section class="">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -908,32 +899,39 @@
     });
   </script>
   <!-- spotlight-swiper-2-- -->
-  <script>
-    var swiper = new Swiper(".mySpotlight", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      centeredSlides:true,
-      loop:true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+    <script>
+      var swiper = new Swiper(".cardSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
         },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
+  
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
         },
-      },
-    });
-  </script>
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
   <!-- spotlight-swiper-2-- -->
 
 </body>
