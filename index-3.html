@@ -6749,165 +6749,336 @@
     </div>
 
     <!-- side bar end -->
+
+
+        <!-- cursor start -->
+        <div
+        class='
+    max-md:!hidden
+    cursor 
+    fixed 
+    rounded-full 
+    -translate-x-1/2 
+    -translate-y-1/2 
+    pointer-events-none 
+    -left-[100px] 
+    top-1/2 
+    border-[3px] 
+    border-white 
+    w-0 
+    h-0 
+    z-[2000] 
+    group-[]/preload:border-0
+    transition
+    '
+        id="cursor"></div>
+      <div
+        class='
+    max-md:!hidden
+    cursor2 
+    fixed 
+    rounded-full 
+    -translate-x-1/2 
+    -translate-y-1/2 
+    pointer-events-none 
+    -left-[100px] 
+    top-1/2 
+    border-[3px] 
+    border-white 
+    shadow-2xl 
+    shadow-white/60 
+    z-[2000] 
+    w-9 
+    h-9
+    transition
+    [box-shadow:_0_0_12px_rgba(255,255,255,0.3)]
+    opacity-20
+  
+    group-[.hover]:scale-[2]
+    group-[.hover]:-translate-x-1/2
+    group-[.hover]:-translate-y-1/2
+    group-[.hover]:border-0
+    group-[.hover]:bg-white/10
+    group-[.hover]:[box-shadow:_0_0_12px_rgba(255,255,255,0.3)]
+    group-[.hover]:opacity-100
+  
+    group-[]/cyan:border-[3px]
+    group-[]/cyan:border-solid
+    group-[]/cyan:border-cyan-600
+    group-[]/cyan:[box-shadow:0_0_14px_rgba(155,89,182,0.6)]
+    group-[]/cyan:opacity-100
+  
+  
+    {{-- group-[.hover]/cyan:bg-cyan-600/10
+    group-[.hover]/cyan:border-0
+    group-[.hover]/cyan:[box-shadow:0_0_14px_rgba(155,89,182,0.3)]
+    group-[.hover]/cyan:opacity-100 --}}
+  
+    group-[]/preload:border-0
+    group-[]/preload:border-white/0
+    group-[]/preload:[box-shadow:_0_0_12px_rgba(255,255,255,0.6)]
+    group-[]/preload:scale-[2]
+    group-[]/preload:-translate-x-1/2
+    group-[]/preload:-translate-y-1/2
+    group-[]/preload:backdrop-sepia
+    group-[]/preload:opacity-100
+  
+    {{-- group-[.hover]/preload:bg-transparent
+    group-[.hover]/preload:bg-no-repeat
+    group-[.hover]/preload:drop-shadow-lg
+    group-[.hover]/preload:[background-image:url(https://ivang-design.com/svg-load/rings.svg?id=31a5defd3b15daed788cf2bd1997fc55)]
+    group-[.hover]/preload:[background-size:55px_55px]
+    group-[.hover]/preload:[background-position:center_center]
+    group-[.hover]/preload:border-0
+    group-[.hover]/preload:[box-shadow:0_0_14px_rgba(255,255,255,0)]
+    group-[.hover]/preload:opacity-50 --}}
+    '
+        id="cursor2"></div>
+  
+      <!-- cursor ends -->
+  
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "fade",
+        loop: "true",
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  
+    <script>
+      var swiper = new Swiper(".cardSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+  
+        autolay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  
+    <!-- tabs  -->
+    <script>
+      var swiper = new Swiper(".pressSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".newsSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".eventSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+    <!-- end  -->
+  
+    <!-- header -->
+  
+    <script>
+      window.addEventListener("scroll", function () {
+        var scroll = window.scrollY;
+        var navbar = document.querySelector("body");
+        if (scroll <= 120) {
+          navbar.classList.remove("group/nav");
+        } else {
+          navbar.classList.add("group/nav");
+        }
+      });
+    </script>
+    <!-- end  -->
+  
+  
+        <!-- cursor script start -->
+    
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+        
+        document.body.addEventListener("mousemove", function (event) {
+            var cursor = document.getElementById("cursor");
+            var cursor2 = document.getElementById("cursor2");
+        
+            cursor.style.left = event.clientX + "px";
+            cursor.style.top = event.clientY + "px";
+            cursor2.style.left = event.clientX + "px";
+            cursor2.style.top = event.clientY + "px";
+        });
+        
+        var cursor2 = document.getElementById("cursor2");
+        
+        // function addHoverClass() {
+        //     document.body.classList.add("hover");
+        // }
+        
+        // function removeHoverClass() {
+        //     document.body.classList.remove("hover");
+        // }
+        
+        // removeHoverClass();
+        
+        // var hoverLinks = document.querySelectorAll(".hoverLink");
+        
+        // hoverLinks.forEach(function (link)
+        {
+        //     link.addEventListener("mouseover", addHoverClass);
+        //     link.addEventListener("mouseout", removeHoverClass);
+        // });
+        
+        // var buttons = document.querySelectorAll("button");
+        var anchors = document.querySelectorAll("a");
+        
+        // buttons.forEach(function (button) {
+        //     button.addEventListener("mouseover", addColorViolet);
+        //     button.addEventListener("mouseout", removeColorViolet);
+        // });
+        
+        anchors.forEach(function (anchor)
+        {
+            anchor.addEventListener("mouseover", addPreload);
+            anchor.addEventListener("mouseout", removePreload);
+        });
+        
+        // function addColorViolet() {
+        //     document.body.classList.add("group/cyan");
+        // }
+        
+        // function removeColorViolet() {
+        //     document.body.classList.remove("group/cyan");
+        // }
+        
+        function addPreload() {
+            document.body.classList.add("group/preload");
+        }
+        
+        function removePreload() {
+            document.body.classList.remove("group/preload");
+        }
+        }
+        
+        });
+        </script>
+          <!-- cursor script ends -->
+
+    
   </body>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "fade",
-      loop: "true",
-      // navigation: {
-      //   nextEl: ".swiper-button-next",
-      //   prevEl: ".swiper-button-prev",
-      // },
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true,
-      // },
-    });
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-    });
-  </script>
-
-  <script>
-    var swiper = new Swiper(".cardSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-      autolay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-
-  <!-- tabs  -->
-  <script>
-    var swiper = new Swiper(".pressSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-      },
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".newsSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".eventSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-      },
-    });
-  </script>
-  <!-- end  -->
-
-  <!-- header -->
-
-  <script>
-    window.addEventListener("scroll", function () {
-      var scroll = window.scrollY;
-      var navbar = document.querySelector("body");
-      if (scroll <= 120) {
-        navbar.classList.remove("group/nav");
-      } else {
-        navbar.classList.add("group/nav");
-      }
-    });
-  </script>
-  <!-- end  -->
 </html>
