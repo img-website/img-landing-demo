@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./index-2.html", "./index-3.html"],
+  // content: ["./index.html", "./index-2.html", "./index-3.html", "./main.html"],
+  content: ["./**/*.{html,js}"],
   theme: {
+ 
     extend: {
+      screens: {
+        '3xl': '1800px',
+      },
       colors: {
         'theme1': '#FE0000',
         'theme2': '#1878bc',
