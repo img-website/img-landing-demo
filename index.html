@@ -143,7 +143,7 @@
                 <div
                   class="overfolow-hidden md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:opacity-100 group-hover:visible pt-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                   <div
-                    class="relative py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden">
+                    class="relative py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden rounded-lg">
                     <div class="flex flex-col">
                       <a
                         class="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg"
@@ -348,8 +348,10 @@
                         </div>
                       </a>
                     </div>
-                    <div class="bg-theme2 text-white font-bold text-2xl size-56 rounded-full flex justify-center items-center p-5 absolute -bottom-10 -right-10 -rotate-45">
-                      Who We Are
+                    <div class="bg-theme2 text-white font-bold text-2xl size-56 rounded-full flex justify-center items-start p-5 absolute -bottom-16 -right-14 -rotate-45">
+                      <span class="mt-10">
+                        Who We Are
+                      </span>
                     </div>
                   </div>
                   
@@ -376,9 +378,9 @@
                   </span>
                 </a>
                 <div
-                  class="!w-full xl:!w-2/3 md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 left-1/2 -translate-x-1/2 absolute group-hover:opacity-100 group-hover:visible py-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                  class="!w-full xl:!w-2/3 md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 left-1/2 -translate-x-1/2 absolute group-hover:opacity-100 group-hover:visible pt-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                   <div
-                    class="py-1 md:p-2 md:grid md:grid-cols-2 gap-4 items-start justify-center">
+                    class="relative py-1 md:p-2 md:grid md:grid-cols-2 gap-4 items-start justify-center overflow-hidden rounded-lg">
                     <div class="flex flex-wrpa w-full my-5">
                       <div class="rounded-xl bg-gray-100 p-5">
                         <ul class="flex flex-col gap-2 w-full">
@@ -1012,32 +1014,12 @@
                           </p>
                         </div>
                       </a>
+                    </div>
 
-                      <a
-                        class="p-3 flex gap-x-5 items-center rounded-xl hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                        href="#" target="_parent">
-                        <img class="size-32 rounded-lg"
-                          src="https://images.unsplash.com/photo-1648737967328-690548aec14f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"
-                          alt="Avatar">
-                        <div class="grow">
-                          <p class="text-sm text-gray-800">
-                            HPIT Projects has proved to be most efficient cloud
-                            based project tracking and bug tracking tool.
-                          </p>
-                          <p
-                            class="mt-3 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium">
-                            Learn more
-                            <svg class="shrink-0 size-4"
-                              xmlns="http://www.w3.org/2000/svg" width="24"
-                              height="24"
-                              viewBox="0 0 24 24" fill="none"
-                              stroke="currentColor" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round">
-                              <path d="m9 18 6-6-6-6"></path>
-                            </svg>
-                          </p>
-                        </div>
-                      </a>
+                    <div class="bg-theme2 text-white font-bold text-2xl size-56 rounded-full flex justify-center items-start p-5 absolute -bottom-16 -right-14 -rotate-45">
+                      <span class="mt-10">
+                        What We Do
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1063,9 +1045,9 @@
                   </span>
                 </a>
                 <div
-                  class="md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:opacity-100 group-hover:visible py-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                  class="md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:opacity-100 group-hover:visible pt-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                   <div
-                    class="py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    class="relative py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden rounded-lg">
                     <div class="flex flex-col">
                       <a
                         class="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg"
@@ -1236,28 +1218,30 @@
                             connect with other HPIT users.</p>
                         </div>
                       </a>
+
+                      <a
+                      class="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg"
+                      href="#" target="_parent">
+                      <svg class="shrink-0 size-4 mt-1 text-gray-800"
+                        xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <path d="M12 17h.01"></path>
+                      </svg>
+                      <div class="grow">
+                        <p
+                          class="font-medium text-sm text-gray-800">Manufacturing</p>
+                        <p class="text-sm text-gray-500">Learn how to install,
+                          set up, and use HPIT.</p>
+                      </div>
+                    </a>
+
                     </div>
 
                     <div class="flex flex-col">
-                      <a
-                        class="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg"
-                        href="#" target="_parent">
-                        <svg class="shrink-0 size-4 mt-1 text-gray-800"
-                          xmlns="http://www.w3.org/2000/svg" width="24"
-                          height="24" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round">
-                          <circle cx="12" cy="12" r="10"></circle>
-                          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                          <path d="M12 17h.01"></path>
-                        </svg>
-                        <div class="grow">
-                          <p
-                            class="font-medium text-sm text-gray-800">Manufacturing</p>
-                          <p class="text-sm text-gray-500">Learn how to install,
-                            set up, and use HPIT.</p>
-                        </div>
-                      </a>
 
                       <a
                         class="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg"
@@ -1323,6 +1307,12 @@
                       </a>
                     </div>
 
+                    <div class="bg-theme2 text-white font-bold text-2xl size-56 rounded-full flex justify-center items-start p-9 absolute -bottom-20 -right-16 -rotate-45 text-center">
+                      <span class="mt-5">
+                        Who We Serve
+                      </span>
+                    </div>
+
                   </div>
                   <!-- End Grid -->
                 </div>
@@ -1348,9 +1338,9 @@
                   </span>
                 </a>
                 <div
-                  class="md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:opacity-100 group-hover:visible py-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                  class="md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:opacity-100 group-hover:visible pt-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                   <div
-                    class="py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    class="relative py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden rounded-lg">
                     <div class="flex flex-col">
                       <a
                         class="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg"
@@ -1490,6 +1480,12 @@
                         </div>
                       </a>
                     </div>
+
+                    <div class="bg-theme2 text-white font-bold text-2xl size-56 rounded-full flex justify-center items-start p-5 absolute -bottom-16 -right-14 -rotate-45">
+                      <span class="mt-10">
+                        Preceptive
+                      </span>
+                    </div>
                   </div>
                   <!-- End Grid -->
                 </div>
@@ -1515,9 +1511,9 @@
                   </span>
                 </a>
                 <div
-                  class="md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:opacity-100 group-hover:visible py-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
+                  class="md:bg-white md:rounded-lg md:shadow-md translate-y-[22px] opacity-0 invisible duration-300 !w-full left-0 absolute group-hover:opacity-100 group-hover:visible pt-8 after:absolute after:-top-5 after:w-full after:h-10 after:bg-transparent">
                   <div
-                    class="py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    class="relative py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden rounded-lg">
                     <div class="flex flex-col">
                       <a
                         class="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg"
@@ -1720,6 +1716,12 @@
                           </p>
                         </div>
                       </a>
+                    </div>
+
+                    <div class="bg-theme2 text-white font-bold text-2xl size-56 rounded-full flex justify-center items-start p-5 absolute -bottom-16 -right-14 -rotate-45">
+                      <span class="mt-10">
+                        Search Jobs
+                      </span>
                     </div>
                   </div>
                   <!-- End Grid -->

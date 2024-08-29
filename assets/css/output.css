@@ -714,6 +714,22 @@ video {
   right: -2.5rem;
 }
 
+.-bottom-16{
+  bottom: -4rem;
+}
+
+.-right-14{
+  right: -3.5rem;
+}
+
+.-bottom-20{
+  bottom: -5rem;
+}
+
+.-right-16{
+  right: -4rem;
+}
+
 .\!z-20{
   z-index: 20 !important;
 }
@@ -1433,6 +1449,10 @@ video {
   align-items: stretch;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-end{
   justify-content: flex-end;
 }
@@ -1849,6 +1869,10 @@ video {
 
 .p-\[2px\]{
   padding: 2px;
+}
+
+.p-9{
+  padding: 2.25rem;
 }
 
 .px-1\.5{
@@ -5310,6 +5334,12 @@ body{
   }
 
   .xl\:text-\[200px\]{
+    font-size: 200px;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:text-\[200px\]{
     font-size: 200px;
   }
 }
