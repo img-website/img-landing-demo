@@ -6917,16 +6917,6 @@ body{
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 
-  .group:hover .sm\:group-hover\:brightness-200{
-    --tw-brightness: brightness(2);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
-  .group:hover .sm\:group-hover\:brightness-\[5\]{
-    --tw-brightness: brightness(5);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
   .group:hover .sm\:group-hover\:brightness-\[15\]{
     --tw-brightness: brightness(15);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -7447,8 +7437,17 @@ body{
 }
 
 @media (min-width: 1536px){
+  .\32xl\:mt-6{
+    margin-top: 1.5rem;
+  }
+
   .\32xl\:aspect-\[1\/\.8\]{
     aspect-ratio: 1/.8;
+  }
+
+  .\32xl\:\!size-12{
+    width: 3rem !important;
+    height: 3rem !important;
   }
 
   .\32xl\:\!size-14{
@@ -7481,6 +7480,11 @@ body{
     height: 1.25rem;
   }
 
+  .\32xl\:size-6{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .\32xl\:size-7{
     width: 1.75rem;
     height: 1.75rem;
@@ -7493,6 +7497,10 @@ body{
 
   .\32xl\:h-11{
     height: 2.75rem;
+  }
+
+  .\32xl\:h-12{
+    height: 3rem;
   }
 
   .\32xl\:h-16{
@@ -7515,8 +7523,20 @@ body{
     height: 2rem;
   }
 
+  .\32xl\:h-\[400px\]{
+    height: 400px;
+  }
+
+  .\32xl\:h-\[420px\]{
+    height: 420px;
+  }
+
   .\32xl\:h-\[450px\]{
     height: 450px;
+  }
+
+  .\32xl\:\!w-3\/4{
+    width: 75% !important;
   }
 
   .\32xl\:w-40{
@@ -7525,6 +7545,10 @@ body{
 
   .\32xl\:w-56{
     width: 14rem;
+  }
+
+  .\32xl\:w-60{
+    width: 15rem;
   }
 
   .\32xl\:w-\[70\%\]{
@@ -7541,6 +7565,10 @@ body{
 
   .\32xl\:gap-12{
     gap: 3rem;
+  }
+
+  .\32xl\:gap-2{
+    gap: 0.5rem;
   }
 
   .\32xl\:gap-3{
@@ -7615,10 +7643,6 @@ body{
     padding-top: 2rem;
   }
 
-  .\32xl\:pt-3{
-    padding-top: 0.75rem;
-  }
-
   .\32xl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -7632,6 +7656,10 @@ body{
   .\32xl\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .\32xl\:text-\[75px\]{
+    font-size: 75px;
   }
 
   .\32xl\:text-\[90px\]{
@@ -7648,13 +7676,19 @@ body{
     line-height: 1.75rem;
   }
 
+  .\32xl\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .\32xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
-  .\32xl\:text-\[80px\]{
-    font-size: 80px;
+  .\32xl\:\*\:\!size-5 > *{
+    width: 1.25rem !important;
+    height: 1.25rem !important;
   }
 
   .\32xl\:\*\:\!size-6 > *{
@@ -7675,6 +7709,11 @@ body{
   .\32xl\:\*\:size-14 > *{
     width: 3.5rem;
     height: 3.5rem;
+  }
+
+  .\32xl\:\*\:size-8 > *{
+    width: 2rem;
+    height: 2rem;
   }
 
   .\32xl\:before\:size-12::before{
@@ -7706,6 +7745,19 @@ body{
 }
 
 @media (min-width: 1920px){
+  .\33xl\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .\33xl\:aspect-\[1\/1\.2\]{
+    aspect-ratio: 1/1.2;
+  }
+
+  .\33xl\:\!size-14{
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+
   .\33xl\:\!size-16{
     width: 4rem !important;
     height: 4rem !important;
@@ -7721,12 +7773,24 @@ body{
     height: 1.5rem;
   }
 
+  .\33xl\:h-16{
+    height: 4rem;
+  }
+
   .\33xl\:h-32{
     height: 8rem;
   }
 
   .\33xl\:h-9{
     height: 2.25rem;
+  }
+
+  .\33xl\:h-\[500px\]{
+    height: 500px;
+  }
+
+  .\33xl\:w-80{
+    width: 20rem;
   }
 
   .\33xl\:w-\[80\%\]{
@@ -7802,9 +7866,24 @@ body{
     font-size: 110px;
   }
 
+  .\33xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .\33xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .\33xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .\33xl\:\*\:\!size-6 > *{
+    width: 1.5rem !important;
+    height: 1.5rem !important;
   }
 
   .\33xl\:\*\:\!size-7 > *{
@@ -7815,6 +7894,11 @@ body{
   .\33xl\:\*\:\!size-8 > *{
     width: 2rem !important;
     height: 2rem !important;
+  }
+
+  .\33xl\:\*\:size-10 > *{
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .\33xl\:\*\:size-20 > *{
