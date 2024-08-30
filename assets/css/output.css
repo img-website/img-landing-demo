@@ -7543,11 +7543,6 @@ body{
     padding: 3px;
   }
 
-  .\32xl\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .\32xl\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -7699,11 +7694,6 @@ body{
     padding: 4rem;
   }
 
-  .\33xl\:px-28{
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
   .\33xl\:px-36{
     padding-left: 9rem;
     padding-right: 9rem;
@@ -7747,10 +7737,6 @@ body{
 
   .\33xl\:text-\[110px\]{
     font-size: 110px;
-  }
-
-  .\33xl\:text-\[140px\]{
-    font-size: 140px;
   }
 
   .\33xl\:text-xl{
