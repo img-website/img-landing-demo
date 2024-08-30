@@ -897,10 +897,6 @@ video {
   z-index: 600;
 }
 
-.z-\[9999\]{
-  z-index: 9999;
-}
-
 .z-\[999\]{
   z-index: 999;
 }
@@ -6800,11 +6796,6 @@ body{
     line-height: 1.5rem;
   }
 
-  .sm\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -7486,8 +7477,8 @@ body{
     height: 450px;
   }
 
-  .\32xl\:w-36{
-    width: 9rem;
+  .\32xl\:h-11{
+    height: 2.75rem;
   }
 
   .\32xl\:w-40{
