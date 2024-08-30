@@ -462,9 +462,9 @@
 
 
 <!-- --spotligh-2-- -->
-<section class="">
+<section class="py-10">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="swiper mySpotlight">
+    <div class="swiper mySwiper">
       <div class="swiper-wrapper  !h-[500px]">
         <div class="swiper-slide !h-auto group  ">
         <div class=" flex items-center h-full group-[&.swiper-slide-active]:!text-white group-[&.swiper-slide-active]:bg-[url('../img/spotlight05.jpg')] group-[&.swiper-slide-active]:bg-cover group-[&.swiper-slide-active]:bg-no-repeat   
@@ -826,7 +826,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- spotlight Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".cardSwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
@@ -860,10 +860,11 @@
   </script>
   <!-- spotlight-swiper-2-- -->
     <script>
-      var swiper = new Swiper(".cardSwiper", {
+      var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        centeredSlides: true,
         pagination: {
           el: ".swiper-pagination",
         },
@@ -886,7 +887,7 @@
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
           },
         },
